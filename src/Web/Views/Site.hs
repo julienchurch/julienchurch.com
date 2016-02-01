@@ -24,7 +24,6 @@ siteView sv body =
         do H.title (H.toHtml $ sv_blogName sv)
            H.meta ! A.charset "utf-8"
            H.meta ! A.name "viewport" ! A.content "width=device-width, initial-scale=1"
-           H.link ! A.href "/css/bootstrap.min.css" ! A.rel "stylesheet"
            H.link ! A.href "/css/blog.css" ! A.rel "stylesheet"
        H.body $
         do H.div ! A.class_ "blog-masthead" $
@@ -43,16 +42,6 @@ siteView sv body =
                                H.a ! A.class_ "blog-nav-item" ! A.href "/manage" $ "Manage"
                           H.a ! A.class_ "blog-nav-item" ! A.href "/logout" $ "Logout"
            H.div ! A.class_ "container" $ body
-           H.div ! A.class_ "blog-footer" $
-            do H.p $
-                do H.span "Blog template built for "
-                   H.a ! A.href "http://getbootstrap.com" $ "Bootstrap"
-                   H.span " by "
-                   H.a ! A.href "https://twitter.com/mdo" $ "@mdo"
-               H.p $
-                H.a ! A.href "#" $ "Back to top"
-           H.script ! A.href "https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" $ mempty
-           H.script ! A.href "/js/bootstrap.min.js" $ mempty
 
 panelWithErrorView :: T.Text -> Maybe T.Text -> H.Html -> H.Html
 panelWithErrorView title mError ct =

@@ -45,6 +45,7 @@ executable funblog
                        base16-bytestring >=0.1,
                        blaze-bootstrap >=0.1,
                        blaze-html >=0.7,
+                       shakespeare >= 2.0.5,
                        bytestring >=0.10,
                        configurator >=0.3,
                        cryptohash >=0.11,
