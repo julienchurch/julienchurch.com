@@ -17,7 +17,7 @@ extra-source-files:
     static/css/main.css
 
 executable run 
-  main-is:             Bootstrap.hs
+  main-is:             Main.hs 
   other-modules:
                        Model.CoreTypes
                        Model.ResponseTypes
