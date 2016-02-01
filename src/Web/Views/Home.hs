@@ -12,13 +12,23 @@ import Database.Persist
 {- import qualified Text.Blaze.XHtml5.Attributes as A -}
 import Text.Blaze.Html
 import Text.Blaze.Html.Renderer.String (renderHtml)
-import Text.Hamlet (shamlet)
+import Text.Hamlet (shamlet, hamlet, hamletFile, hamletFile)
 import Data.Char (toLower)
 import Data.List (sort)
 
 homeView :: [Entity Post] -> SiteView -> Html
 homeView posts sv = [shamlet|
+                    $forall post <- posts
+                        #{ (postTitle (entityVal post)) }
+                        <br>
+                        #{ (show $ postDate (entityVal post)) }
+                        <br>
+                        #{ (postContent (entityVal post)) }
   |]
+
+{- homeView :: [Entity Post] -> SiteView -> Html -}
+{- homeView posts sv = toHtml (hamletFile "homev.hamlet") -}
+
 {- homeView posts sv = -}
     {- do H.div ! A.class_ "blog-header" $ -}
         {- do H.h1 ! A.class_ "blog-title" $ H.toHtml $ sv_blogName sv -}
