@@ -9,5 +9,6 @@
 *.prof
 *.aux
 *.hp
+*.swp
 .stack-work/
 funblog.db*
