@@ -1,9 +1,8 @@
-julienchurch.com
-=====
+# julienchurch.com
 
-# About 
+## About 
 
-The repository is just code for my personal website, using Alexander Thiemann's funblog project for Spock as a base.
+The code for my website. It's written in Haskell using Alexander Thiemann's [Spock](https://github.com/agrafix/Spock). It was originally based off of the [funblog](https://github.com/agrafix/funblog) project. Shout out to Michael Snoyman for Hamlet and Persistent.
 
 ### License
 
@@ -13,4 +12,3 @@ The repository is just code for my personal website, using Alexander Thiemann's 
 
 Released under the Apache-2.0 license.
 
-(c) 2014 - 2015 Alexander Thiemann
