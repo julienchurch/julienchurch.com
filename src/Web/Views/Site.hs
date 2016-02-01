@@ -34,7 +34,6 @@ siteView sv body =
                  case sv_user sv of
                    Nothing ->
                        do H.a ! A.class_ "blog-nav-item" ! A.href "/login" $ "Login"
-                          H.a ! A.class_ "blog-nav-item" ! A.href "/register" $ "Register"
                    Just user ->
                        do when (userIsAdmin user || userIsAuthor user) $
                                H.a ! A.class_ "blog-nav-item" ! A.href "/write" $ "Write"
