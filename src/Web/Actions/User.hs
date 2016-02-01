@@ -81,3 +81,13 @@ registerUser username email password =
                     hash = hashPassword password salt
                 _ <- insert (User username (makeHex hash) (makeHex salt) email False False)
                 return (CommonSuccess "Signup complete. You may now login.")
+
+updateUser :: T.Text -> SqlPersistM CommonResponse
+updateUser name = do
+    user <- getBy (UniqueUsername name)
+    case user of
+        (Just _) -> do
+            updateWhere ([UserName ==. name]) ([UserIsAdmin =. True, UserIsAuthor =. True])
+            return (CommonSuccess "It worked...")
+        Nothing ->
+            return (CommonError "Fuck")

@@ -112,6 +112,14 @@ loginAction =
          (view, Just loginReq) ->
              do loginRes <-
                     runSQL $ loginUser (lr_user loginReq) (lr_password loginReq)
+                -- Shameful admission: it took me several hours of reading up on
+                -- Persistent just to be able to change my goddamn user account
+                -- to have posting privileges to the blog, and I did it in this
+                -- hacky way:
+
+                -- runSQL $ updateUser "julien"
+
+                -- Go to the bottom of Actions/User for the full code
                 case loginRes of
                   Just userId ->
                       do sid <- runSQL $ createSession userId
