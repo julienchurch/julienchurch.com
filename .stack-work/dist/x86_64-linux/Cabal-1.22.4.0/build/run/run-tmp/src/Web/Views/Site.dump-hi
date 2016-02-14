@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2016-02-14 08:38:54.079923 UTC
+2016-02-14 17:05:16.714786 UTC
 
 interface main@main:Web.Views.Site 7102
-  interface hash: fef58174df4509337e975f7867db9ec9
-  ABI hash: 53e4b0e8796183e0162e95282b612441
+  interface hash: f62134bd67c2b81815ec5263b24fcac5
+  ABI hash: 46019edfbb7dacac07c3419136333ec6
   export-list hash: 0d1308e13b0c53eaeab20044b32b39b7
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 93aea4b50a58681d2633eb545e03ee3e
@@ -363,7 +363,7 @@ fc2badf410aef3610d6a30d91df1ab62
   {- Strictness: m2,
      Unfolding: (Text.Blaze.Internal.String
                    Web.Views.Site.panelWithErrorView10) -}
-5e9565995e099129ee9f76a3a21352b4
+fb4e84d16a28d98912b8d52552d166e8
   siteView ::
     Web.Views.Site.SiteView
     -> Text.Blaze.Html.Html -> Text.Blaze.Html.Html
@@ -1027,7 +1027,7 @@ b702bf9faba08664c34f3d86c91a24f4
 40d6443d9ce0407dd237efc2826a9bb7
   siteView78 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "body"#) -}
-56bbe2ea549f165db916593c66b45ff2
+78eb520cdf21737cd440902cbd4c4f52
   siteView79 :: Text.Blaze.Internal.MarkupM ()
   {- Unfolding: (Text.Blaze.Internal.Append
                    @ ()
@@ -1038,7 +1038,7 @@ b702bf9faba08664c34f3d86c91a24f4
 b56e46e46d8f6f2f98661ead051e5843
   siteView8 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "</a>"#) -}
-ff84de08a2f854e9df45a2fb3ce49a0c
+bcad6ca43f04ab0d6760ac3a4e901828
   siteView80 :: Text.Blaze.Internal.MarkupM ()
   {- Unfolding: (Text.Blaze.Internal.Append
                    @ ()
@@ -1046,7 +1046,7 @@ ff84de08a2f854e9df45a2fb3ce49a0c
                    @ ()
                    Web.Views.Site.siteView91
                    Web.Views.Site.siteView81) -}
-72961c0a50fbe36f7302c6885a7e535f
+ec7ee6e9d654795f90f1c6c85126d5e6
   siteView81 :: Text.Blaze.Internal.MarkupM ()
   {- Strictness: m8,
      Unfolding: (Text.Blaze.Internal.AddAttribute
@@ -1055,7 +1055,7 @@ ff84de08a2f854e9df45a2fb3ce49a0c
                    Web.Views.Site.siteView87
                    Web.Views.Site.siteView85
                    Web.Views.Site.siteView82) -}
-65320a384006dc629677e76251b83baf
+87c7d98413928bbca9da613a90fafa5a
   siteView82 :: Text.Blaze.Internal.MarkupM ()
   {- Strictness: m8,
      Unfolding: (Text.Blaze.Internal.AddAttribute
@@ -1064,14 +1064,15 @@ ff84de08a2f854e9df45a2fb3ce49a0c
                    Web.Views.Site.siteView17
                    Web.Views.Site.siteView83
                    Text.Blaze.XHtml5.link) -}
-f3bea59269b09058303852f9c3a9d89d
+11c7086c3b3bc6d290c4bf341876956c
   siteView83 :: Text.Blaze.Internal.ChoiceString
   {- Strictness: m2,
      Unfolding: (Text.Blaze.Internal.String
                    Web.Views.Site.siteView84) -}
-23da621b75345b5afd0f0ec0c34de7ee
+a350622bf5985dd6c6356f8517db1c5d
   siteView84 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "/css/main.css"#) -}
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "http://localhost:3030/css/main.css"#) -}
 31959972b71395ca5b371ef937578992
   siteView85 :: Text.Blaze.Internal.ChoiceString
   {- Strictness: m2,

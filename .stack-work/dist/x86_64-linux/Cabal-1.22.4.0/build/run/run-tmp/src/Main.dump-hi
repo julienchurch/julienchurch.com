@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2016-02-14 08:38:57.590122 UTC
+2016-02-14 17:05:20.636299 UTC
 
 interface main@main:Main 7102
-  interface hash: 17182662a4b837f0bc306c87a1469bb5
-  ABI hash: c9ef81f8cb73e9b0f614c470acd4e6fc
+  interface hash: e2155fc02b73a132344142df41ba94da
+  ABI hash: 484d9bb32bbded81bba23a447deba2ce
   export-list hash: cf7bf7b3f43aa687921b23c31816b370
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 89d0360f6e6820188a76082f35de53a3
@@ -178,16 +178,16 @@ family instance modules: Spock-0.9.0.0@Spock_D7fBc2tsE9qH55YO3j1mi8:Web.Spock.In
 import  -/  base-4.8.1.0:Prelude 518f762991bc287d78f21a73c974da1f
 import  -/  base-4.8.1.0:System.Environment 946ddc2d7c48138bb213316abaff2a8d
 import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
-import  -/  Web.Blog d361245e79637dd268d220dd5590c3cf
+import  -/  Web.Blog f1fbbc4ffa31b40e82ff5eba4a8cd6fd
   exports: 608391a773bb75aa26c4ca456204ba66
   parseConfig c9fc886c98bf27d3c04998a6bcbb0f97
-  runBlog f901adbe1840bc4adb5b236106ded84a
-78e77117d3b8e75f4d84fb4a37719588
+  runBlog de0d2a9b4e8ccca36b571965870f8472
+5569314b37cbdc90d88c84c5b38acbe4
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <L,U>,
      Unfolding: InlineRule (0, True, True)
                 Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
-d920d0d5a96730fa7b416ea59f15484f
+2ca2f6b1d4eb7accf628b8f59a0343f2
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -198,7 +198,7 @@ d920d0d5a96730fa7b416ea59f15484f
 5d1d0d6be6c1f2a1cb0d2156c022ca38
   main2 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "blog.cfg"#) -}
-7ab4173e5ca31e86bf031fe39a67f310
+d4ec53da2ba53b6d95ef9a6a24e65f3a
   main3 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)

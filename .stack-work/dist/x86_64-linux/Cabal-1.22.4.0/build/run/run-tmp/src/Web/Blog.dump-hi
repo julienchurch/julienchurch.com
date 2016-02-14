@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2016-02-14 08:38:56.595732 UTC
+2016-02-14 17:05:19.489782 UTC
 
 interface main@main:Web.Blog 7102
-  interface hash: c733d2c53bb65ea2266216a948df209f
-  ABI hash: d361245e79637dd268d220dd5590c3cf
+  interface hash: ace10bdb9f14ccdf082ffa741b880c99
+  ABI hash: f1fbbc4ffa31b40e82ff5eba4a8cd6fd
   export-list hash: 608391a773bb75aa26c4ca456204ba66
   orphan hash: cc6a20fc6692dd93c99b7d079155b2a8
   flag hash: 89a42ee6a69b8f060198a161ba42fd1a
@@ -262,12 +262,12 @@ import  -/  Web.Utils f9dfef03a6829afe2791511d6e850df9
 import  -/  Web.Views.Home eeef363989271105f5687be41dbc2fb2
   exports: 00815dcffbbbce0ad8bfdb5411bade6c
   homeView dbe1acbfc9167b1217f2407374367da3
-import  -/  Web.Views.Site 53e4b0e8796183e0162e95282b612441
+import  -/  Web.Views.Site 46019edfbb7dacac07c3419136333ec6
   exports: 0d1308e13b0c53eaeab20044b32b39b7
   SiteView 34c01e9fb5641a8ee42a3fa6d6afcb36
   SiteView dbc74571d588279740edb358bbe3ab55
   panelWithErrorView 4f5fb8972c71a9328096dba2d1c7b093
-  siteView 5e9565995e099129ee9f76a3a21352b4
+  siteView fb4e84d16a28d98912b8d52552d166e8
   sv_blogDesc ea16b609eac0b3b441411679d71e164c
   sv_blogName e1dbb1b2538b25e871c33151bec1c572
   sv_user 0e78e9178e6a7d22e13b57d0dc6fda1e
@@ -286,7 +286,7 @@ import  -/  time-1.5.0.1@time_AXTdBF9VRQoBOqJT6qtmVH:Data.Time 32980eeddfe26f4d4
 import  -/  time-1.5.0.1@time_AXTdBF9VRQoBOqJT6qtmVH:Data.Time.Clock fbad5c654231b61a0d6aaad7d18d82fc
 import  -/  transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X:Control.Monad.IO.Class 9605d683dd45bfe8c9f8bdf894951b7c
 import  -/  wai-middleware-static-0.7.0.1@waimi_8ny9pLroEvi1roO9BON0wM:Network.Wai.Middleware.Static 4d4a6929a37b1e886723eb38953e1b2f
-02be06682b40905fde594ff2c58925c1
+76cd410c0dbef89c4a6312cf64600b4b
   $s$fApplicativeActionCtxT1 ::
     GHC.Base.Monad
       (Web.Spock.Internal.Types.WebStateT
@@ -304,7 +304,7 @@ import  -/  wai-middleware-static-0.7.0.1@waimi_8ny9pLroEvi1roO9BON0wM:Network.W
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 Network.Wai.Parse.$s$fMonadBasebResourceT_$s$fMonadResourceT -}
-9b7acb3d2aa7782c7a98532defe7af99
+b5e62158992720db91011b0d3192062a
   $s$fApplicativeActionCtxT3 ::
     GHC.Base.Applicative
       (Web.Spock.Internal.Types.WebStateT
@@ -322,20 +322,21 @@ import  -/  wai-middleware-static-0.7.0.1@waimi_8ny9pLroEvi1roO9BON0wM:Network.W
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 Network.Wai.Parse.$s$fApplicativeResourceT -}
-9dc342aae757d1a77e430fd2d077c1f9
-  $s$fApplicativeActionCtxT_$dFunctor ::
+5ada6aa00ef368d4ac01597c7bc1e594
+  $s$fApplicativeActionCtxT5 ::
     GHC.Base.Functor
-      (Web.Spock.Internal.Types.WebStateM
+      (Web.Spock.Internal.Types.WebStateT
          Database.Persist.Sql.Types.SqlBackend
          Web.Blog.SessionVal
-         Web.Blog.BlogState)
+         Web.Blog.BlogState
+         (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO))
   {- Strictness: m,
      Unfolding: InlineRule (0, True, True)
                 (Web.Spock.Internal.Monad.$fHasSpockt_$s$fFunctorWebStateT
                    @ Database.Persist.Sql.Types.SqlBackend
                    @ (GHC.Base.Maybe Model.CoreTypes.SessionId)
                    @ Web.Blog.BlogState) -}
-8e61e0a5adae140e1c6df2480dec7785
+939818ebd7ec459d606ccdd6b4557ef2
   $s$fApplicativeActionCtxT_$s$fApplicativeWebStateT ::
     GHC.Base.Applicative
       (Web.Spock.Internal.Types.WebStateT
@@ -350,67 +351,71 @@ import  -/  wai-middleware-static-0.7.0.1@waimi_8ny9pLroEvi1roO9BON0wM:Network.W
                        (GHC.Base.Maybe Model.CoreTypes.SessionId)
                        Web.Blog.BlogState
                        (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO))
-                  Web.Blog.$s$fApplicativeActionCtxT_$dFunctor
+                  Web.Blog.$s$fApplicativeActionCtxT5
                   (Web.Spock.Internal.Types.$fApplicativeWebStateT_$cpure
                      @ Database.Persist.Sql.Types.SqlBackend
                      @ (GHC.Base.Maybe Model.CoreTypes.SessionId)
                      @ Web.Blog.BlogState
                      @ (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
-                     Web.Blog.$s$fApplicativeActionCtxT_$dFunctor
+                     Web.Blog.$s$fApplicativeActionCtxT5
                      Web.Blog.$s$fApplicativeActionCtxT4)
                   (Web.Spock.Internal.Types.$fApplicativeWebStateT_$c<*>
                      @ Database.Persist.Sql.Types.SqlBackend
                      @ (GHC.Base.Maybe Model.CoreTypes.SessionId)
                      @ Web.Blog.BlogState
                      @ (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
-                     Web.Blog.$s$fApplicativeActionCtxT_$dFunctor
+                     Web.Blog.$s$fApplicativeActionCtxT5
                      Web.Blog.$s$fApplicativeActionCtxT4)
                   (Web.Spock.Internal.Types.$fApplicativeWebStateT_$c*>
                      @ Database.Persist.Sql.Types.SqlBackend
                      @ (GHC.Base.Maybe Model.CoreTypes.SessionId)
                      @ Web.Blog.BlogState
                      @ (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
-                     Web.Blog.$s$fApplicativeActionCtxT_$dFunctor
+                     Web.Blog.$s$fApplicativeActionCtxT5
                      Web.Blog.$s$fApplicativeActionCtxT4)
                   (Web.Spock.Internal.Types.$fApplicativeWebStateT_$c<*
                      @ Database.Persist.Sql.Types.SqlBackend
                      @ (GHC.Base.Maybe Model.CoreTypes.SessionId)
                      @ Web.Blog.BlogState
                      @ (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
-                     Web.Blog.$s$fApplicativeActionCtxT_$dFunctor
+                     Web.Blog.$s$fApplicativeActionCtxT5
                      Web.Blog.$s$fApplicativeActionCtxT4) -}
-d14da544e0877e48b828505538e66d25
+e51f71080010ba79b27d90978c03e702
   $s$fApplicativeActionCtxT_$s$fFunctorActionCtxT ::
     GHC.Base.Functor
       (Web.Spock.Internal.Wire.ActionCtxT
          ctx
-         (Web.Spock.Internal.Types.WebStateM
+         (Web.Spock.Internal.Types.WebStateT
             Database.Persist.Sql.Types.SqlBackend
             Web.Blog.SessionVal
-            Web.Blog.BlogState))
+            Web.Blog.BlogState
+            (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)))
   {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
      Unfolding: DFun: @ ctx.
                   @ (Web.Spock.Internal.Wire.ActionCtxT
                        ctx
-                       (Web.Spock.Internal.Types.WebStateM
+                       (Web.Spock.Internal.Types.WebStateT
                           Database.Persist.Sql.Types.SqlBackend
                           Web.Blog.SessionVal
-                          Web.Blog.BlogState))
+                          Web.Blog.BlogState
+                          (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)))
                   (Web.Spock.Internal.Wire.$fFunctorActionCtxT_$cfmap
                      @ ctx
-                     @ (Web.Spock.Internal.Types.WebStateM
+                     @ (Web.Spock.Internal.Types.WebStateT
                           Database.Persist.Sql.Types.SqlBackend
                           Web.Blog.SessionVal
-                          Web.Blog.BlogState)
-                     Web.Blog.$s$fApplicativeActionCtxT_$dFunctor)
+                          Web.Blog.BlogState
+                          (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO))
+                     Web.Blog.$s$fApplicativeActionCtxT5)
                   (Web.Spock.Internal.Wire.$fFunctorActionCtxT_$c<$
                      @ ctx
-                     @ (Web.Spock.Internal.Types.WebStateM
+                     @ (Web.Spock.Internal.Types.WebStateT
                           Database.Persist.Sql.Types.SqlBackend
                           Web.Blog.SessionVal
-                          Web.Blog.BlogState)
-                     Web.Blog.$s$fApplicativeActionCtxT_$dFunctor) -}
-6c5c9165f68cfa75f9b3f4a11ab535e5
+                          Web.Blog.BlogState
+                          (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO))
+                     Web.Blog.$s$fApplicativeActionCtxT5) -}
+8301ec3156cfc32c2b7e9bbba7f3cad8
   $s$fApplicativeActionCtxT_$s$fMonadWebStateT ::
     GHC.Base.Monad
       (Web.Spock.Internal.Types.WebStateT
@@ -534,7 +539,7 @@ d14da544e0877e48b828505538e66d25
                                          <GHC.Base.Maybe Model.CoreTypes.SessionId>_N
                                          <Web.Blog.BlogState>_N) <Control.Monad.Trans.Resource.Internal.ResourceT
                                                                     GHC.Types.IO>_N <a123>_N))) -}
-c67b2c056103f88bd8df2d7f6a9d1670
+8e78d36815be8ecc11ab7ab9870cd198
   $s$fMonadIOActionCtxT_$cliftIO_$s$fMonadIOWebStateT ::
     Control.Monad.IO.Class.MonadIO
       (Web.Spock.Internal.Types.WebStateT
@@ -844,7 +849,7 @@ a9b7a94235b9ba41c48e489c9142dd67
      Unfolding: (\ e1 :: GHC.Exception.SomeException[OneShot]
                    eta :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
                  (# eta, GHC.Tuple.() #)) -}
-879b491160a0edf20f43a8b51a575546
+be1b3a80214666d10244b993c65eb407
   $wa ::
     (Data.HVect.SNatRep n,
      Data.HVect.HVectIdx n xs
@@ -2723,7 +2728,7 @@ d5554a9394b76176b6c506f1c77fb6b8
      Unfolding: InlineRule (1, True, False)
                 (\ ds :: Web.Blog.BlogCfg ->
                  case ds of wild { Web.Blog.BlogCfg ds1 ds2 ds3 ds4 -> ds2 }) -}
-fc7be3fc0be73900f30b25831327ec48
+e96ccf03a085f9de8a855cffc7928f30
   blogApp :: Web.Blog.BlogApp ()
   {- Unfolding: (Web.Blog.blogApp106
                    Web.Blog.baseHook1
@@ -2849,7 +2854,7 @@ fc7be3fc0be73900f30b25831327ec48
                                      Web.Blog.BlogState
                                      (Control.Monad.Trans.Resource.Internal.ResourceT
                                         GHC.Types.IO)>_N)) <()>_N)) -}
-76179b3ae16ffb10b35fbf00ebfd5f3a
+20593d01fb729a646ade1d5516661cf0
   blogApp1 ::
     Control.Monad.Trans.RWS.Strict.RWST
       (Web.Routing.AbstractRouter.RoutePath
@@ -3038,7 +3043,7 @@ fc7be3fc0be73900f30b25831327ec48
                                         Web.Blog.BlogState)>_R
                                   <()>_N)))
                    Web.Blog.blogApp2) -}
-376b931995a6e5f8c13750282e0ec453
+0293e3417c26ef0678668ff8a8e0fa2e
   blogApp10 ::
     Web.Spock.Internal.Wire.RequestInfo (Data.HVect.HVect xs)
     -> Web.Spock.Internal.Wire.ResponseState
@@ -3176,7 +3181,7 @@ b0607774cc18dd920d44104a9771b9a8
                  GHC.Base.Just
                    @ GHC.Base.String
                    (System.FilePath.Posix.combine Web.Blog.blogApp_b x)) -}
-7c1bc216206d94e2d3011f80c1ff44c3
+3d30d3760e21ce287454a341d88702f1
   blogApp106 ::
     Web.Spock.Internal.Wire.ActionCtxT
       ()
@@ -3214,7 +3219,7 @@ b0607774cc18dd920d44104a9771b9a8
      Unfolding: InlineRule (1, True, True)
                 (\ ds :: Web.Views.Site.SiteView ->
                  Text.Blaze.Internal.Empty @ ()) -}
-acc4c8e31e75c946ddf5e34702532fde
+99bcdc9330f580add8079d283226b5bb
   blogApp12 ::
     (Web.Views.Site.SiteView -> Text.Blaze.Html.Html)
     -> Web.Spock.Internal.Wire.RequestInfo ctx
@@ -3659,7 +3664,7 @@ beb861e69c9736f957c5a372d5c09a36
                    @ Web.Spock.Internal.Wire.ActionInterupt
                    @ ()
                    GHC.Tuple.()) -}
-dc19e4933795ed429b04593c02a8c77d
+f4c2242aacf2cb45460a47331c20ebbf
   blogApp15 ::
     Control.Monad.Trans.Except.ExceptT
       Web.Spock.Internal.Wire.ActionInterupt
@@ -3721,7 +3726,7 @@ dc19e4933795ed429b04593c02a8c77d
 778be7052373e08e73ac0395b32df795
   blogApp18 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "/manage"#) -}
-c98647919f9dcdf903dc695c586c9b48
+e69064c72b016fdcfdc3657038da9d46
   blogApp19 ::
     Network.HTTP.Types.Method.StdMethod
     -> Web.Routing.SafeRouting.Path '[]
@@ -3756,7 +3761,7 @@ c98647919f9dcdf903dc695c586c9b48
                         Web.Blog.BlogState)
                    Data.HVect.$WRNil `cast` (Sym (Data.HVect.NTCo:HasRep[0]) <'[]>_N)
                    Web.Blog.$s$fApplicativeActionCtxT_$s$fMonadWebStateT) -}
-2eb12291142cc4aea00a9be38d3b7305
+fdd4e443839a07cd1c984a38073a0578
   blogApp2 ::
     Control.Monad.Trans.RWS.Strict.RWST
       (Web.Routing.AbstractRouter.RoutePath
@@ -3998,7 +4003,7 @@ c98647919f9dcdf903dc695c586c9b48
                                ww7),
                           w1,
                           GHC.Tuple.()) #) } } } }) -}
-a7e8dba7582603ff213801edbacaf411
+465eaa4f8fabd4686813ca6e016ad656
   blogApp21 ::
     Web.Spock.Internal.Wire.ActionCtxT
       (Data.HVect.HVect
@@ -4038,7 +4043,7 @@ a7e8dba7582603ff213801edbacaf411
                         '[Web.Blog.IsAdmin,
                           (Model.CoreTypes.UserId, Model.CoreTypes.User)])
                    Web.Blog.$s$fMonadIOActionCtxT_$cliftIO_$s$fMonadIOWebStateT) -}
-2d49f6656b539a7dc442d0752d57fc65
+3c291dc0ae61b717767d53028f616247
   blogApp22 ::
     Web.Spock.Safe.SpockCtxT
       (Data.HVect.HVect
@@ -4162,7 +4167,7 @@ a7e8dba7582603ff213801edbacaf411
                                                                          (Model.CoreTypes.UserId,
                                                                           Model.CoreTypes.User)]>_N))))
                    Web.Blog.blogApp23) -}
-878d8f46e5270b4821e9c43745f27f45
+c616eac71e699309f219709cba17b3d1
   blogApp23 ::
     Web.Spock.Safe.SpockCtxT
       (Data.HVect.HVect
@@ -4244,7 +4249,7 @@ a7e8dba7582603ff213801edbacaf411
                                                        Web.Blog.SessionVal
                                                        Web.Blog.BlogState)
                                                     ()>_N))))))) -}
-03a25d74828d203eb1ab168ed4320ced
+3079de2244c59782f054a4581bfde29f
   blogApp24 ::
     Web.Spock.Internal.Wire.RequestInfo (Data.HVect.HVect xs)
     -> Web.Spock.Internal.Wire.ResponseState
@@ -4798,7 +4803,7 @@ c73cd395354bfcd995930aba902a372e
                    Web.Views.Site.panelWithErrorView19
                    Web.Views.Site.panelWithErrorView5
                    Web.Blog.blogApp30) -}
-80a390db0811da0a459c7758b781f08f
+34d1e1e5496821c988a863935df1b934
   blogApp3 ::
     Control.Monad.Trans.RWS.Strict.RWST
       (Web.Routing.AbstractRouter.RoutePath
@@ -4948,7 +4953,7 @@ ba2525196f075fc25fdccd482f6a9ba4
                    Web.Views.Site.panelWithErrorView13
                    Web.Views.Site.panelWithErrorView11
                    Web.Blog.blogApp40) -}
-3555329276d8df00574e04b9eebde18b
+3dec2ac38b0c794361d34d1b5ab5ef96
   blogApp4 ::
     Control.Monad.Trans.RWS.Strict.RWST
       (Web.Routing.AbstractRouter.RoutePath
@@ -5126,7 +5131,7 @@ a9be0750e4e0743a68a6abff0828d954
 6872ff70a34c5a33318112227fdb8531
   blogApp49 :: Text.Blaze.Internal.ChoiceString
   {- Unfolding: (Text.Blaze.Internal.Text Web.Blog.blogApp50) -}
-c9d9425184cab31bce0488f96708a427
+e8532ea323bbaab4e72e7e81bf490c94
   blogApp5 ::
     Web.Spock.Safe.SpockCtxT
       (Data.HVect.HVect '[])
@@ -5222,7 +5227,7 @@ c9d9425184cab31bce0488f96708a427
 af6ecb41c7557cd1be2e20c7a1e132d1
   blogApp50 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "Write a Post"#) -}
-e2f59fddb5998c9107522ce4891fa763
+a3964a81a0fb370360070e7883aebe94
   blogApp51 ::
     GHC.Base.Monad
       (Web.Spock.Internal.Wire.ActionCtxT
@@ -5241,7 +5246,7 @@ e2f59fddb5998c9107522ce4891fa763
                         (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO))
                    (Web.Blog.blogApp52 @ xs)
                    Web.Blog.$s$fApplicativeActionCtxT_$s$fMonadWebStateT) -}
-bbe449a1a53d0a5e6f9a507e92c02059
+15066a974c7c1a9f7381f18e968dbbe2
   blogApp52 ::
     GHC.Base.Applicative
       (Web.Spock.Internal.Wire.ActionCtxT
@@ -5265,7 +5270,7 @@ bbe449a1a53d0a5e6f9a507e92c02059
 3345028abdc2224486935a367d2a187d
   blogApp53 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "writePost"#) -}
-a6b9271bc2afb1467356a3bbd402cfa3
+947148d2c8b969ac6eaf37d1f6e0f55d
   blogApp54 ::
     Data.Text.Internal.Text
     -> Text.Digestive.Form.Internal.Form
@@ -5295,7 +5300,7 @@ a6b9271bc2afb1467356a3bbd402cfa3
                         Web.Blog.BlogState)
                    @ Model.CoreTypes.Post
                    Web.Blog.$s$fMonadIOActionCtxT_$cliftIO_$s$fMonadIOWebStateT) -}
-3a1ab526dce1b4e71575933989e5913c
+b9d12617dc0bc59d1d0bc1a27766a4c5
   blogApp55 ::
     Web.Spock.Internal.Wire.ActionCtxT
       (Data.HVect.HVect xs)
@@ -5491,7 +5496,7 @@ c022deab6970c97b08d5fe97e9f5a5a8
                                ww7),
                           w1,
                           GHC.Tuple.()) #) } } } }) -}
-86c6a638dcd6e6b2f216b94fe4f833f9
+7c5f98601ea67ffec80b3673c2637d05
   blogApp59 ::
     Web.Spock.Internal.Wire.ActionCtxT
       (Data.HVect.HVect
@@ -5531,7 +5536,7 @@ c022deab6970c97b08d5fe97e9f5a5a8
                         '[Web.Blog.IsAuthor,
                           (Model.CoreTypes.UserId, Model.CoreTypes.User)])
                    Web.Blog.$s$fMonadIOActionCtxT_$cliftIO_$s$fMonadIOWebStateT) -}
-df8859b9d3131d2cddd93e58e63a17fc
+5d956a1d1239587154be11b1c827d4ea
   blogApp6 ::
     Control.Monad.Trans.RWS.Strict.RWST
       (Web.Routing.AbstractRouter.RoutePath
@@ -5611,7 +5616,7 @@ df8859b9d3131d2cddd93e58e63a17fc
                                                                            (Control.Monad.Trans.Resource.Internal.ResourceT
                                                                               GHC.Types.IO))>_N) <()>_N)
                    Web.Blog.blogApp7) -}
-fbc2a2683d5cf943b4663f89ae47a408
+347bd618b558b670725cb1b6c6a66f18
   blogApp60 ::
     Control.Monad.Trans.RWS.Strict.RWST
       (Web.Routing.AbstractRouter.RoutePath
@@ -5735,7 +5740,7 @@ fbc2a2683d5cf943b4663f89ae47a408
                    Web.Blog.$s$fApplicativeActionCtxT_$s$fMonadWebStateT
                    @ ()
                    @ ()) -}
-01cbfcd06eed0326a30b83d6bf929b7b
+dfdcd9e29d930529b86e01d7d144e645
   blogApp61 ::
     Web.Spock.Safe.SpockCtxT
       (Data.HVect.HVect
@@ -5849,7 +5854,7 @@ fbc2a2683d5cf943b4663f89ae47a408
                                                             Web.Blog.SessionVal
                                                             Web.Blog.BlogState)
                                                          ()>_N)))))))) -}
-432bff7e297f1cd939cab49915b29f46
+49ae7d85a015fd7008f6db51780f2dd9
   blogApp62 ::
     Web.Spock.Internal.Wire.RequestInfo
       (Data.HVect.HVect
@@ -5910,7 +5915,7 @@ af26820beb0864475eefd19cc656ce73
                    @ (Model.CoreTypes.UserId, Model.CoreTypes.User)
                    @~ (Data.HVect.TFCo:R:HVectIdx[0]
                            <(Model.CoreTypes.UserId, Model.CoreTypes.User)>_N <'[]>_N)) -}
-6d64384cc3a1708312695409cbaa92f5
+95f03e268aee85a20c0cdecf01af7775
   blogApp64 ::
     Control.Monad.Trans.Except.ExceptT
       Web.Spock.Internal.Wire.ActionInterupt
@@ -6212,7 +6217,7 @@ af26820beb0864475eefd19cc656ce73
                         eta4 of ds15 { (#,#) ipv ipv1 ->
                  case ipv1 of wild2 { (,,) b1 s'' w' ->
                  (# ipv, (b1, s'', GHC.Tuple.()) #) } } } }) -}
-b929dac9a21435ad4a54bc83498035e2
+1455af66537155bf82eb3a6935d67e5c
   blogApp68 ::
     Control.Monad.Trans.Except.ExceptT
       Web.Spock.Internal.Wire.ActionInterupt
@@ -6265,7 +6270,7 @@ b929dac9a21435ad4a54bc83498035e2
   blogApp69 :: Web.Routing.SafeRouting.Path '[]
   {- Unfolding: (Web.Routing.SafeRouting.static
                    Web.Blog.blogApp70) -}
-7d94dbcf4ed9382d3604aa2150066d8c
+264be76e1b64bddc2db81dc7bbc00a0d
   blogApp7 ::
     Control.Monad.Trans.RWS.Strict.RWST
       (Web.Routing.AbstractRouter.RoutePath
@@ -6386,7 +6391,7 @@ b929dac9a21435ad4a54bc83498035e2
 e214939417ddab58dd1f4dc02117c305
   blogApp70 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "/logout"#) -}
-24da5cb3067d8e8944eecd675b02dd51
+fb0b0881bba85f322da41c6c701e3fe6
   blogApp71 ::
     Network.HTTP.Types.Method.StdMethod
     -> Web.Routing.SafeRouting.Path '[]
@@ -6418,7 +6423,7 @@ e214939417ddab58dd1f4dc02117c305
                         Web.Blog.BlogState)
                    Data.HVect.$WRNil `cast` (Sym (Data.HVect.NTCo:HasRep[0]) <'[]>_N)
                    Web.Blog.$s$fApplicativeActionCtxT_$s$fMonadWebStateT) -}
-6c299ae1505206683524b38133b19438
+2c42352e6a33cd9e44a34ad23ea030ef
   blogApp72 ::
     Web.Spock.Internal.Wire.ActionCtxT
       (Data.HVect.HVect '[])
@@ -6452,7 +6457,7 @@ e214939417ddab58dd1f4dc02117c305
                    @ (Data.HVect.HVect
                         '[(Model.CoreTypes.UserId, Model.CoreTypes.User)])
                    Web.Blog.$s$fMonadIOActionCtxT_$cliftIO_$s$fMonadIOWebStateT) -}
-749c68f1a050bff6cc2294a7e76db878
+001c244527a19d14f755bd1108a38d1d
   blogApp73 ::
     Web.Spock.Safe.SpockCtxT
       (Data.HVect.HVect '[])
@@ -6540,7 +6545,7 @@ e214939417ddab58dd1f4dc02117c305
                                      Web.Blog.BlogState
                                      (Control.Monad.Trans.Resource.Internal.ResourceT
                                         GHC.Types.IO)>_N)) <()>_N)) -}
-b4f0cf55f72f57095855a6bb0d6dbd8d
+6874c12a9069fd9378e2a888fe101f72
   blogApp74 ::
     Control.Monad.Trans.RWS.Strict.RWST
       (Web.Routing.AbstractRouter.RoutePath
@@ -6653,7 +6658,7 @@ b4f0cf55f72f57095855a6bb0d6dbd8d
                                                                            Web.Blog.BlogState
                                                                            (Control.Monad.Trans.Resource.Internal.ResourceT
                                                                               GHC.Types.IO))>_N) <()>_N)) -}
-b854e065329947c9ff80a5a3a39a1b37
+c3e0eed9a360d1902fafa089e9c1fc7c
   blogApp75 ::
     Web.Spock.Safe.SpockCtxT
       (Data.HVect.HVect '[Web.Blog.IsGuest])
@@ -6739,7 +6744,7 @@ e38508f995433d4807fbb603585a2f71
 267ef253e28e8cacecb81e36e3528112
   blogApp78 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "/login"#) -}
-af089189cde5d20b02653d8d5c707fce
+fb049e13e3a664b2e5fc9ecdc0a6b3b2
   blogApp79 ::
     Web.Spock.Safe.SpockCtxT
       (Data.HVect.HVect '[Web.Blog.IsGuest])
@@ -6805,7 +6810,7 @@ af089189cde5d20b02653d8d5c707fce
                                                        Web.Blog.SessionVal
                                                        Web.Blog.BlogState)
                                                     ()>_N))))))) -}
-7df25086848defa51f16492557b9cf0a
+00ce4b5eda370eddbe365c42e4ae340f
   blogApp8 ::
     Web.Spock.Safe.SpockCtxT
       (Data.HVect.HVect
@@ -6949,7 +6954,7 @@ af089189cde5d20b02653d8d5c707fce
 1dcb1d4c015f70b1ce6ebad8214718a9
   blogApp82 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "/register"#) -}
-14c00592ad4de577f6a2638ea78ddd0a
+b3bda07e4d707a059ca50dffc2800e04
   blogApp83 ::
     Control.Monad.Trans.RWS.Strict.RWST
       (Web.Routing.AbstractRouter.RoutePath
@@ -7238,7 +7243,7 @@ aaea8555443cc3486695ce515effb11b
                             Web.Blog.blogApp_eta,
                           eta1,
                           GHC.Tuple.()) #) }) -}
-5be8975ae866373b68869871d025baf2
+d599151bb2b689c342cec53a12725062
   blogApp86 ::
     Web.Spock.Internal.Wire.ActionCtxT
       (Data.HVect.HVect '[])
@@ -7269,7 +7274,7 @@ aaea8555443cc3486695ce515effb11b
                    @ (Data.HVect.HVect '[])
                    @ (Data.HVect.HVect '[Web.Blog.IsGuest])
                    Web.Blog.$s$fMonadIOActionCtxT_$cliftIO_$s$fMonadIOWebStateT) -}
-41bde2cf1caf10246a77b49cc9be920d
+227eaf9a19eec9842f544e95c540e081
   blogApp87 ::
     Control.Monad.Trans.RWS.Strict.RWST
       (Web.Routing.AbstractRouter.RoutePath
@@ -7389,7 +7394,7 @@ aaea8555443cc3486695ce515effb11b
                    Web.Blog.$s$fApplicativeActionCtxT_$s$fMonadWebStateT
                    @ ()
                    @ ()) -}
-b2adf85df8f09240355661048cb30ff0
+5105f5c6dd4d8668171b5b30c4956586
   blogApp88 ::
     Web.Spock.Safe.SpockCtxT
       (Data.HVect.HVect '[])
@@ -7447,7 +7452,7 @@ b2adf85df8f09240355661048cb30ff0
                                                        Web.Blog.SessionVal
                                                        Web.Blog.BlogState)
                                                     ()>_N))))))) -}
-ee6e2049b0b5269718a5341c4c93c828
+51cb4ce0d9603646166a1869e43e934d
   blogApp89 ::
     Web.Spock.Internal.Wire.RequestInfo (Data.HVect.HVect '[])
     -> Web.Spock.Internal.Wire.ResponseState
@@ -7464,7 +7469,7 @@ ee6e2049b0b5269718a5341c4c93c828
                    @ (Data.HVect.HVect '[])
                    @ ()
                    Web.Blog.blogApp11) -}
-78ef9acfbd8a2c3e4c2b0b6480d102de
+c70b7e1beb45b9895fc47a20490f652e
   blogApp9 ::
     Web.Spock.Safe.SpockCtxT
       (Data.HVect.HVect
@@ -7544,7 +7549,7 @@ ee6e2049b0b5269718a5341c4c93c828
 6e259b3dfaa77d078f7c8cf2890eddbc
   blogApp91 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "/about"#) -}
-ac01e23a8f12af6a038b51aad5500ffb
+3e5303786a4d1723ee684d7b7d8c9e57
   blogApp92 ::
     Network.HTTP.Types.Method.StdMethod
     -> Web.Routing.SafeRouting.Path '[]
@@ -7573,7 +7578,7 @@ ac01e23a8f12af6a038b51aad5500ffb
                         Web.Blog.BlogState)
                    Data.HVect.$WRNil `cast` (Sym (Data.HVect.NTCo:HasRep[0]) <'[]>_N)
                    Web.Blog.$s$fApplicativeActionCtxT_$s$fMonadWebStateT) -}
-3b89026773cd64f7775de209e2554a97
+1b987ad12e307056bc5d0ec82587ee6f
   blogApp93 ::
     Web.Spock.Safe.SpockCtxT
       (Data.HVect.HVect '[])
@@ -7677,7 +7682,7 @@ ac01e23a8f12af6a038b51aad5500ffb
                                                             Web.Blog.SessionVal
                                                             Web.Blog.BlogState)
                                                          ()>_N)))))))) -}
-0b5a4f4b038d219ee297e12528f7f37a
+e15db4fa7510c82554486089e280d451
   blogApp94 ::
     Web.Spock.Internal.Wire.RequestInfo (Data.HVect.HVect '[])
     -> Web.Spock.Internal.Wire.ResponseState
@@ -8134,7 +8139,7 @@ cfab15bd570c6f008fc5ea155edb85e4
                    eta :: Web.Spock.Internal.Wire.RequestInfo (Data.HVect.HVect xs)
                    eta1 :: Web.Spock.Internal.Wire.ResponseState ->
                  Web.Blog.blogApp76 @ xs @ a123 eta eta1) -}
-3c615c29ac5dbf50b886ba359473db81
+1f0d64a90f2f0c978ea0acb87ad926f4
   logoutAction ::
     Data.HVect.ListContains
       n (Model.CoreTypes.UserId, Model.CoreTypes.User) xs =>
@@ -8229,7 +8234,7 @@ cfab15bd570c6f008fc5ea155edb85e4
                                                  Web.Blog.BlogState
                                                  (Control.Monad.Trans.Resource.Internal.ResourceT
                                                     GHC.Types.IO)>_N) <a123>_N)))) -}
-3a954b958406fa23987cd9c7b739976f
+29adb13fc84e462a5b5aebe59c0fed6d
   logoutAction6 ::
     Data.HVect.ListContains
       n (Model.CoreTypes.UserId, Model.CoreTypes.User) xs =>
@@ -8283,7 +8288,7 @@ cfab15bd570c6f008fc5ea155edb85e4
                    w3
                    w4
                    w5 } } }) -}
-ec73031698659f62d1e4b42e55c0c7e6
+87579f4ef4db52a745932356ac8b5b04
   manageAction ::
     Data.HVect.ListContains n Web.Blog.IsAdmin xs =>
     Web.Blog.BlogAction (Data.HVect.HVect xs) a
@@ -8329,7 +8334,7 @@ ec73031698659f62d1e4b42e55c0c7e6
                                             Web.Blog.BlogState
                                             (Control.Monad.Trans.Resource.Internal.ResourceT
                                                GHC.Types.IO)>_N) <a123>_N))) -}
-42b72124421abe52c6d55ac03baca2bb
+270e4b4c7d486e4f1b6d78ec6d104d85
   manageAction2 ::
     Data.HVect.ListContains n Web.Blog.IsAdmin xs =>
     Web.Spock.Internal.Wire.RequestInfo (Data.HVect.HVect xs)
@@ -8398,7 +8403,7 @@ ec73031698659f62d1e4b42e55c0c7e6
                                             Web.Blog.BlogState
                                             (Control.Monad.Trans.Resource.Internal.ResourceT
                                                GHC.Types.IO)>_N) <a123>_N))) -}
-2e376e7a2c6f7f1190114d3da0adb9ea
+de0543928172fa5937d3383369ce836a
   mkSite ::
     (Web.Views.Site.SiteView -> Text.Blaze.Html.Html)
     -> Web.Blog.BlogAction ctx a
@@ -8443,7 +8448,7 @@ ec73031698659f62d1e4b42e55c0c7e6
                                             Web.Blog.BlogState
                                             (Control.Monad.Trans.Resource.Internal.ResourceT
                                                GHC.Types.IO)>_N) <a123>_N))) -}
-3858880becf11d35db430efe22fc29bf
+476b633bf13f5350b7c45a750c72355f
   mkSite' :: Text.Blaze.Html.Html -> Web.Blog.BlogAction ctx a
   {- Arity: 3, Strictness: <L,U><L,U><L,U>,
      Unfolding: InlineRule (0, True, True)
@@ -8486,7 +8491,7 @@ ec73031698659f62d1e4b42e55c0c7e6
                                             Web.Blog.BlogState
                                             (Control.Monad.Trans.Resource.Internal.ResourceT
                                                GHC.Types.IO)>_N) <a123>_N))) -}
-e87e3e0deaad90e9eb42b60a7f045791
+c3b51191e4438198b7bf776a6e409220
   mkSite'1 ::
     Text.Blaze.Html.Html
     -> Web.Spock.Internal.Wire.RequestInfo ctx
@@ -8746,14 +8751,14 @@ e86a86841da77c14550b0398e3ca8899
                    eta :: Web.Spock.Internal.Wire.RequestInfo (Data.HVect.HVect xs)
                    eta1 :: Web.Spock.Internal.Wire.ResponseState ->
                  Web.Blog.blogApp80 @ xs @ a123 eta eta1) -}
-f901adbe1840bc4adb5b236106ded84a
+de0d2a9b4e8ccca36b571965870f8472
   runBlog :: Web.Blog.BlogCfg -> GHC.Types.IO ()
   {- Arity: 2, Strictness: <L,U(U(U,U,U),U(U),U,U)><L,U>,
      Unfolding: InlineRule (0, True, True)
                 Web.Blog.runBlog1
                   `cast`
                 (<Web.Blog.BlogCfg>_R ->_R Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
-a0e2bf303103c5b4d61722d75b334126
+65a8b5de1358ef728725facd90609e53
   runBlog1 ::
     Web.Blog.BlogCfg
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -8916,7 +8921,7 @@ b5f6547b3eb565897c7dc44f34316926
                            (GHC.Types.NTCo:IO[0] <[Data.Text.Internal.Text]>_R))
                         s of ds1 { (#,#) ipv ipv1 ->
                  (# ipv, GHC.Tuple.() #) }) -}
-c6e2a74e8bab8bf6e2c9ad288ff2bbde
+5171e6bc1949e4e6da447669fd5a7cd0
   writeAction ::
     (Data.HVect.ListContains n Web.Blog.IsAuthor xs,
      Data.HVect.ListContains
@@ -8969,7 +8974,7 @@ c6e2a74e8bab8bf6e2c9ad288ff2bbde
                                             Web.Blog.BlogState
                                             (Control.Monad.Trans.Resource.Internal.ResourceT
                                                GHC.Types.IO)>_N) <a123>_N))) -}
-c7fb3e6f4745faa41a91f64bd3ec113c
+6f3f7c0bae03aa686fab1838c6b299ab
   writeAction4 ::
     (Data.HVect.ListContains n Web.Blog.IsAuthor xs,
      Data.HVect.ListContains
@@ -9016,13 +9021,15 @@ c7fb3e6f4745faa41a91f64bd3ec113c
                                                   $dFunctor
                                                   $dApplicative
   = Web.Blog.$s$fApplicativeActionCtxT_$s$fApplicativeWebStateT
-"SPEC/Web.Blog $fFunctorActionCtxT _ @ (WebStateM
-                                         SqlBackend SessionVal BlogState)" [ALWAYS] forall @ ctx
-                                                                                                                                             $dFunctor :: GHC.Base.Functor
-                                                                                                                                                            (Web.Spock.Internal.Types.WebStateM
-                                                                                                                                                               Database.Persist.Sql.Types.SqlBackend
-                                                                                                                                                               Web.Blog.SessionVal
-                                                                                                                                                               Web.Blog.BlogState)
+"SPEC/Web.Blog $fFunctorActionCtxT _ @ (WebStateT
+                                         SqlBackend SessionVal BlogState (ResourceT IO))" [ALWAYS] forall @ ctx
+                                                                                                                                                            $dFunctor :: GHC.Base.Functor
+                                                                                                                                                                           (Web.Spock.Internal.Types.WebStateT
+                                                                                                                                                                              Database.Persist.Sql.Types.SqlBackend
+                                                                                                                                                                              Web.Blog.SessionVal
+                                                                                                                                                                              Web.Blog.BlogState
+                                                                                                                                                                              (Control.Monad.Trans.Resource.Internal.ResourceT
+                                                                                                                                                                                 GHC.Types.IO))
   Web.Spock.Internal.Wire.$fFunctorActionCtxT @ ctx
                                               @ (Web.Spock.Internal.Types.WebStateT
                                                    Database.Persist.Sql.Types.SqlBackend

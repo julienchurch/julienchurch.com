@@ -24,7 +24,7 @@ siteView sv body =
         do H.title (H.toHtml $ sv_blogName sv)
            H.meta ! A.charset "utf-8"
            H.meta ! A.name "viewport" ! A.content "width=device-width, initial-scale=1"
-           H.link ! A.href "/css/main.css" ! A.rel "stylesheet"
+           H.link ! A.href "http://localhost:3030/css/main.css" ! A.rel "stylesheet"
        H.body $
         do H.div ! A.class_ "blog-masthead" $
             H.div ! A.class_ "container" $
