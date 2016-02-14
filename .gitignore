@@ -11,4 +11,6 @@
 *.hp
 *.swp
 julienchurch.db
+julienchurch.db-shm
+julienchurch.db-wal
 blog.cfg
