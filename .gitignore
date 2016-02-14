@@ -11,6 +11,12 @@
 *.hp
 *.swp
 julienchurch.db
+<<<<<<< HEAD
 julienchurch.db-shm
 julienchurch.db-wal
+=======
+julienchurch.db-wal
+julienchurch.db-shm
+>>>>>>> 7a96ba3b50cee1cf6cbb91b3a665e6453751b0dd
 blog.cfg
+.stack-work/**
