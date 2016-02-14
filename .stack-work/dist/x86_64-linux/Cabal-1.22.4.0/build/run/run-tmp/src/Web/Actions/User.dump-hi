@@ -1,0 +1,1691 @@
+
+==================== FINAL INTERFACE ====================
+2016-02-14 08:38:53.785044 UTC
+
+interface main@main:Web.Actions.User 7102
+  interface hash: 47680845a710e78b0d6c4d7195ea0ac6
+  ABI hash: 331608c6b39ade259decf77163e65c66
+  export-list hash: ecac879cb1e6916cf6f437db9e8ab037
+  orphan hash: 0b80ad523c6657d0bf5d3da4e9180db0
+  flag hash: 746027cebae41f31b3ddeb6661e75653
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Web.Actions.User.createSession
+  Web.Actions.User.hashPassword
+  Web.Actions.User.killSessions
+  Web.Actions.User.loadUser
+  Web.Actions.User.loginUser
+  Web.Actions.User.randomBS
+  Web.Actions.User.randomBytes
+  Web.Actions.User.registerUser
+  Web.Actions.User.updateUser
+module dependencies: Model.CoreTypes Model.ResponseTypes Web.Utils
+package dependencies: Spock-0.9.0.0@Spock_D7fBc2tsE9qH55YO3j1mi8
+                      aeson-0.8.0.2@aeson_DIEa3Sufx1r590sbWNooBS
+                      appar-0.1.4@appar_3CaAIJvwfNLEy6bEqQYYYc
+                      array-0.5.1.0@array_E0sTtauuKsGDLZoT7lTbgZ
+                      attoparsec-0.12.1.6@attop_5hY081sve2m8WX8p1glGNS
+                      auto-update-0.1.2.2@autou_2DkwjWlXXrh60SbDElbu3f base-4.8.1.0
+                      base16-bytestring-0.1.1.6@base1_LGFgY5jaffY4IePNqJx55U
+                      base64-bytestring-1.0.0.1@base6_5ombtuUXex39dVe2nth8cH
+                      base-prelude-0.1.19@basep_FxX9573ye3E4LZ0W9LfRS8
+                      binary-0.7.5.0@binar_IvYoLp9H6Xy3zEH13MmZwd
+                      blaze-html-0.8.1.0@blaze_66ArNDIe2grI2k2uqvUABl
+                      blaze-builder-0.4.0.1@blaze_6BKEupqZliOD9r4rLG9ckJ
+                      blaze-markup-0.7.0.2@blaze_6nhu7sRJtdB5v7vsVCCq8v
+                      byteable-0.1.1@bytea_F2pcQljAfpbDG2panTEyo8
+                      byteorder-1.0.4@byteo_7FRRspR69KU9KubkPZfm74
+                      bytestring-0.10.6.0@bytes_6elQVSg5cWdFrvRnfxTUrH
+                      case-insensitive-1.2.0.4@casei_1oUSRTaAjIb5W25lYdnxTT
+                      conduit-1.2.5@condu_9wHaNJrxyyq9dFXfK2u9W6
+                      conduit-extra-1.1.9.1@condu_IGLhqayJDkl15wF4YzebBM
+                      containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN
+                      crypto-random-0.0.9@crypt_0TxQIWRrs6aB9KaxmYuWeZ
+                      cryptohash-0.11.6@crypt_5epyAhdyCoGIBkp2icUC24
+                      deepseq-1.4.1.1@deeps_LbCWUlehDDeLxurARKDH5o
+                      directory-1.2.2.0@direc_KowvXytSqazBcvN7MGpFtg
+                      dlist-0.7.1.1@dlist_CWmYfPEEnFvAl2glQ7oHsq
+                      exceptions-0.8.0.2@excep_8GsEeHgaIks3pVGk6GaELJ
+                      fast-logger-2.4.0@fastl_FX1lGQOn8J7GzA3D60NRQv
+                      filepath-1.4.0.0@filep_KsGE6pHE5eZHSN90ZVax6A
+                      focus-0.1.4@focus_HrVssaTTPQ72m0PlHXYTLm ghc-prim-0.4.0.0
+                      hashable-1.2.3.3@hasha_2GTZqecVp8NJZrNuKzGxfy
+                      http2-1.0.4@http2_HyIxdiPi8mi3tgJjMf6vKg
+                      http-date-0.0.6.1@httpd_0dHtxK84Zgj3nDKVGfG5ak
+                      http-types-0.8.6@httpt_9EbXaDnKxhPJJk9e6cJlj9 integer-gmp-1.0.0.0
+                      iproute-1.5.0@iprou_B0SP369TCng5d8Pd7LByY9
+                      lifted-base-0.2.3.6@lifte_K3cQFA6mRg85rpDaA9numU
+                      list-t-0.4.5.1@listt_E9qZ5qAziOa5enUDgzprbk
+                      loch-th-0.2.1@locht_8HB0ZHxbMas0Fzv7KkrO0g
+                      memory-0.7@memor_ByKf2PUnWbr6V2Z5gsXbfn
+                      mmorph-1.0.4@mmorp_8dNpUU8QFPe77rrwKAb20b
+                      monad-control-1.0.0.4@monad_3XCDr1mqlERGZgaxuwJF6b
+                      monad-logger-0.3.13.2@monad_8qVm7c4f9QaCOqR295rhbU
+                      monad-loops-0.4.3@monad_EQoySqNZ2bd85KCgzAOO4M
+                      mtl-2.2.1@mtl_KMpng31YRYc5JfMWFZ3FCU
+                      mwc-random-0.13.3.2@mwcra_EHoyvQtULlqL3HO0jyND4E
+                      network-2.6.2.1@netwo_F6mK9sCIw3M5SbZMt2lUQE
+                      path-pieces-0.2.0@pathp_J0g0J8bkzER1Juj01TEf96
+                      persistent-2.2@persi_2mtWWVUTzqfGzk252K79hF
+                      persistent-template-2.1.3.4@persi_DrthTAYXyyBCg42rvivsgR
+                      placeholders-0.1@place_EfsNOFLgiTlC6tXolnzMeS
+                      pretty-1.1.2.0@prett_7UQTOB05U7lIYPkFOVraeR
+                      primitive-0.6@primi_3d4UsQu7pJCEtlsxN3gLjk
+                      random-1.1@rando_1z8Ujelqc6aKgvPnbRUKkP
+                      reroute-0.3.1.0@rerou_098So9EX3EyHHnYM0S48vX
+                      resource-pool-0.2.3.2@resou_BSEAD4ilQB9IrQYOqYnJjA
+                      resourcet-1.1.6@resou_Ic1TzDDmqYbFNHpzRsDmfS
+                      scientific-0.3.3.8@scien_5NQHiMKEgH2DOLHdLSFbA2
+                      securemem-0.1.9@secur_IVsZrOqGXes1eaVFfLeM4x
+                      silently-1.2.5@silen_8uJ39lhRp4MCX1bkpH7HLp
+                      simple-sendfile-0.2.21@simpl_8JinxnD07KP3TRgmAVYt64
+                      stm-2.4.4@stm_C1kFMnPqFjvDhFjgMZGUpr
+                      stm-chans-3.0.0.4@stmch_7j9sHjGqeHj8Gs1cUILhfw
+                      stm-containers-0.2.9@stmco_Ggjems9Gnyk0j1T3CCWhwA
+                      streaming-commons-0.1.12.1@strea_1kUF85WuW2a4bnXucVgo6A
+                      stringsearch-0.3.6.6@strin_LD3tXxltwdY99HXR2kj3px
+                      template-haskell-2.10.0.0 text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh
+                      time-1.5.0.1@time_AXTdBF9VRQoBOqJT6qtmVH
+                      transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X
+                      transformers-base-0.4.4@trans_88TAFm21vtn2NrYUppy50c
+                      unix-2.7.1.0@unix_A3WgcI5QiHK4PDo4jSYdwQ
+                      unix-compat-0.4.1.4@unixc_DeAF5HEzYMu4CPLnbGbHUz
+                      unordered-containers-0.2.5.1@unord_7E41cj9RvqSJeZ4jSnbs1a
+                      vault-0.3.0.4@vault_0ClHfttEXGC8o1TYTuenH0
+                      vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs
+                      wai-3.0.3.0@wai_BZZHcfcYsq30yS9HqF042t
+                      wai-extra-3.0.10@waiex_DcXo2Mp3xMtF42WXnfSFkE
+                      warp-3.1.2@warp_4CWLnd0ndNCLeRHFAcWsw5
+                      word8-0.1.2@word8_JFinUbIMmjfAdy4qiZBFBe
+orphans: Spock-0.9.0.0@Spock_D7fBc2tsE9qH55YO3j1mi8:Web.Spock.Internal.Monad
+         Spock-0.9.0.0@Spock_D7fBc2tsE9qH55YO3j1mi8:Web.Spock.Internal.Wire
+         aeson-0.8.0.2@aeson_DIEa3Sufx1r590sbWNooBS:Data.Aeson.Types.Generic
+         aeson-0.8.0.2@aeson_DIEa3Sufx1r590sbWNooBS:Data.Aeson.Types.Instances
+         attoparsec-0.12.1.6@attop_5hY081sve2m8WX8p1glGNS:Data.Attoparsec.ByteString.Char8
+         base-4.8.1.0:GHC.Base base-4.8.1.0:GHC.Float
+         binary-0.7.5.0@binar_IvYoLp9H6Xy3zEH13MmZwd:Data.Binary.Generic
+         bytestring-0.10.6.0@bytes_6elQVSg5cWdFrvRnfxTUrH:Data.ByteString.Builder
+         conduit-1.2.5@condu_9wHaNJrxyyq9dFXfK2u9W6:Data.Conduit.List
+         hashable-1.2.3.3@hasha_2GTZqecVp8NJZrNuKzGxfy:Data.Hashable.Generic
+         network-2.6.2.1@netwo_F6mK9sCIw3M5SbZMt2lUQE:Network.Socket
+         network-2.6.2.1@netwo_F6mK9sCIw3M5SbZMt2lUQE:Network.Socket.Types
+         persistent-2.2@persi_2mtWWVUTzqfGzk252K79hF:Database.Persist.Sql.Orphan.PersistQuery
+         persistent-2.2@persi_2mtWWVUTzqfGzk252K79hF:Database.Persist.Sql.Orphan.PersistStore
+         persistent-2.2@persi_2mtWWVUTzqfGzk252K79hF:Database.Persist.Sql.Orphan.PersistUnique
+         persistent-template-2.1.3.4@persi_DrthTAYXyyBCg42rvivsgR:Database.Persist.TH
+         stm-2.4.4@stm_C1kFMnPqFjvDhFjgMZGUpr:Control.Monad.STM
+         stm-containers-0.2.9@stmco_Ggjems9Gnyk0j1T3CCWhwA:STMContainers.Map
+         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text
+         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Lazy
+         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Show
+         time-1.5.0.1@time_AXTdBF9VRQoBOqJT6qtmVH:Data.Time.Calendar.Gregorian
+         time-1.5.0.1@time_AXTdBF9VRQoBOqJT6qtmVH:Data.Time.Format.Parse
+         time-1.5.0.1@time_AXTdBF9VRQoBOqJT6qtmVH:Data.Time.LocalTime.LocalTime
+         transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X:Control.Monad.Trans.Error
+         vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector.Fusion.Stream
+         vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector.Unboxed
+family instance modules: Spock-0.9.0.0@Spock_D7fBc2tsE9qH55YO3j1mi8:Web.Spock.Internal.Monad
+                         Spock-0.9.0.0@Spock_D7fBc2tsE9qH55YO3j1mi8:Web.Spock.Internal.SessionVault
+                         Spock-0.9.0.0@Spock_D7fBc2tsE9qH55YO3j1mi8:Web.Spock.Internal.Types
+                         Spock-0.9.0.0@Spock_D7fBc2tsE9qH55YO3j1mi8:Web.Spock.Internal.Wire
+                         attoparsec-0.12.1.6@attop_5hY081sve2m8WX8p1glGNS:Data.Attoparsec.Internal.Types
+                         base-4.8.1.0:Control.Applicative base-4.8.1.0:Data.Either
+                         base-4.8.1.0:Data.Functor.Identity base-4.8.1.0:Data.Monoid
+                         base-4.8.1.0:Data.Type.Equality base-4.8.1.0:Data.Void
+                         base-4.8.1.0:GHC.Exts base-4.8.1.0:GHC.Generics
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.IntMap.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.IntSet.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Map.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Sequence
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Set.Base
+                         dlist-0.7.1.1@dlist_CWmYfPEEnFvAl2glQ7oHsq:Data.DList
+                         iproute-1.5.0@iprou_B0SP369TCng5d8Pd7LByY9:Data.IP.Addr
+                         iproute-1.5.0@iprou_B0SP369TCng5d8Pd7LByY9:Data.IP.Range
+                         list-t-0.4.5.1@listt_E9qZ5qAziOa5enUDgzprbk:ListT
+                         main@main:Model.CoreTypes
+                         monad-control-1.0.0.4@monad_3XCDr1mqlERGZgaxuwJF6b:Control.Monad.Trans.Control
+                         monad-logger-0.3.13.2@monad_8qVm7c4f9QaCOqR295rhbU:Control.Monad.Logger
+                         mwc-random-0.13.3.2@mwcra_EHoyvQtULlqL3HO0jyND4E:System.Random.MWC
+                         persistent-2.2@persi_2mtWWVUTzqfGzk252K79hF:Database.Persist.Class.PersistConfig
+                         persistent-2.2@persi_2mtWWVUTzqfGzk252K79hF:Database.Persist.Sql.Orphan.PersistStore
+                         pretty-1.1.2.0@prett_7UQTOB05U7lIYPkFOVraeR:Text.PrettyPrint.HughesPJ
+                         primitive-0.6@primi_3d4UsQu7pJCEtlsxN3gLjk:Control.Monad.Primitive
+                         resourcet-1.1.6@resou_Ic1TzDDmqYbFNHpzRsDmfS:Control.Monad.Trans.Resource.Internal
+                         stm-containers-0.2.9@stmco_Ggjems9Gnyk0j1T3CCWhwA:STMContainers.Map
+                         template-haskell-2.10.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text
+                         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Lazy
+                         unordered-containers-0.2.5.1@unord_7E41cj9RvqSJeZ4jSnbs1a:Data.HashMap.Base
+                         unordered-containers-0.2.5.1@unord_7E41cj9RvqSJeZ4jSnbs1a:Data.HashSet
+                         vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector
+                         vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector.Primitive
+                         vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector.Storable
+                         vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector.Unboxed
+                         vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector.Unboxed.Base
+import  -/  base-4.8.1.0:Control.Monad dfea142d91349c4861427789d50d5b80
+import  -/  base-4.8.1.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.1.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.1.0:GHC.Real 4c3b525ecbd4d62bb287aec36d4c2f0d
+import  -/  base-4.8.1.0:GHC.Word ef6286c279d61931eb675109b4b93579
+import  -/  base-4.8.1.0:Prelude 518f762991bc287d78f21a73c974da1f
+import  -/  bytestring-0.10.6.0@bytes_6elQVSg5cWdFrvRnfxTUrH:Data.ByteString 65bd6f108f33ac736977e12af3a12795
+import  -/  bytestring-0.10.6.0@bytes_6elQVSg5cWdFrvRnfxTUrH:Data.ByteString.Internal bf4b7d23d1b8365e073bc2ac77444155
+import  -/  cryptohash-0.11.6@crypt_5epyAhdyCoGIBkp2icUC24:Crypto.Hash.SHA512 6e0c8c21260c7d5e30b0a642ad899d48
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  Model.CoreTypes d1e7be48ca140ee063dd9e994a44d5bf
+  exports: 1ee21e489e932a4ae4a395307266550e
+  Session 1f5f0b72a1ca87cb07cb10d8827cebd6
+  SessionId a4d0c424c670163c36b748b8c04e244a
+  SessionUserId 732786b425fda332693f77639f14d15b
+  UniqueEmail 53c49eb3330164df8a950fa26915db7c
+  UniqueUsername b99f8a5a65ef236e3255c14573fce068
+  User 3abba7698e3979da2a9c16be55703b77
+  User ea0e6c24b02f164bf843d1c90ae6b861
+  UserId d7cddbe38b0c1e86557e2a8e85a1b169
+  UserIsAdmin 8eea66666a88a28305c3cdd89004c620
+  UserIsAuthor 827b800a5c77e4d29b843afb42757fa1
+  UserName be6931fb2a034866f88867b8ce003fb7
+  sessionUserId 6dca625d0beb73eaab5c5896ea4b465a
+  sessionValidUntil 5e1de272973f2a2834402ea6cc8bba89
+  userPassword b16b2c29c41796104217dbfdd0b531a4
+  userSalt 09b79fdaea8214c094c2e34c23868bb6
+import  -/  Model.ResponseTypes 612df62bed49cd127306fce19c9ed563
+  exports: d7468dd8be5feb8aa6d2441b013e1f68
+  CommonError 3da6d0c809b311bcf22403445368bb51
+  CommonResponse 8a26deeb6a41d9dbb424fcc9132c4953
+  CommonSuccess 75ca3193e3dac83e59138b6ad7a2c397
+import  -/  Web.Utils f9dfef03a6829afe2791511d6e850df9
+  exports: 3109ce50e6788be183e28943518cdc38
+  decodeHex f910c94c262fd5638e3f59546ec56971
+  makeHex e58a3f6f656455aa242c706fb779c050
+import  -/  mtl-2.2.1@mtl_KMpng31YRYc5JfMWFZ3FCU:Control.Monad.Trans c51150e77f1800dfbae9c5f48d899e6e
+import  -/  persistent-2.2@persi_2mtWWVUTzqfGzk252K79hF:Database.Persist 6be914e0177d9d33649b9f972607694d
+import  -/  persistent-2.2@persi_2mtWWVUTzqfGzk252K79hF:Database.Persist.Class.PersistEntity 7bb99fe3e0ff8a58222d08c3248a0dec
+import  -/  persistent-2.2@persi_2mtWWVUTzqfGzk252K79hF:Database.Persist.Class.PersistQuery fcf75e2d8bd255da26d2bbb308db0482
+import  -/  persistent-2.2@persi_2mtWWVUTzqfGzk252K79hF:Database.Persist.Class.PersistStore b0afd2fef34fcf7591255c9b16393a6b
+import  -/  persistent-2.2@persi_2mtWWVUTzqfGzk252K79hF:Database.Persist.Class.PersistUnique bc09fbd0743143ad3680109b5d4613c5
+import  -/  persistent-2.2@persi_2mtWWVUTzqfGzk252K79hF:Database.Persist.Sql 3a7136ffbc4b03be9307da1f8c6b00de
+import  -/  persistent-2.2@persi_2mtWWVUTzqfGzk252K79hF:Database.Persist.Sql.Types bb545fad5f6bae16b7e0437ebbbdd244
+import  -/  random-1.1@rando_1z8Ujelqc6aKgvPnbRUKkP:System.Random 043afd3a72ee464fc1e36264f990a1de
+import  -/  text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text a305d268b7ef3fbd1de87bd464ac8e2a
+import  -/  text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Encoding dd55773185676aee3ee972ff5aca13b5
+import  -/  text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Internal 9aaf446b91649c416d85a19f08d51f8e
+import  -/  time-1.5.0.1@time_AXTdBF9VRQoBOqJT6qtmVH:Data.Time 32980eeddfe26f4d4e29d9341bdd87d9
+import  -/  time-1.5.0.1@time_AXTdBF9VRQoBOqJT6qtmVH:Data.Time.Clock fbad5c654231b61a0d6aaad7d18d82fc
+import  -/  time-1.5.0.1@time_AXTdBF9VRQoBOqJT6qtmVH:Data.Time.Clock.UTCDiff 9e183b159ccf9a07db210ce46abb6e44
+import  -/  transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X:Control.Monad.IO.Class 9605d683dd45bfe8c9f8bdf894951b7c
+import  -/  word8-0.1.2@word8_JFinUbIMmjfAdy4qiZBFBe:Data.Word8 70cf89278920eb9be6aa2c3a6098ebcc
+ac4fd50adef438a1dc9103b3f8360514
+  $s$fApplicativeNoLoggingT ::
+    GHC.Base.Applicative
+      (Control.Monad.Logger.NoLoggingT
+         (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO))
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Control.Monad.Logger.NoLoggingT
+                       (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO))
+                  Web.Actions.User.$s$fApplicativeNoLoggingT5
+                  (Control.Monad.Logger.$fApplicativeNoLoggingT_$cpure
+                     @ (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+                     Web.Actions.User.$s$fApplicativeNoLoggingT5
+                     Web.Actions.User.$s$fApplicativeNoLoggingT1)
+                  (Control.Monad.Logger.$fApplicativeNoLoggingT_$c<*>
+                     @ (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+                     Web.Actions.User.$s$fApplicativeNoLoggingT5
+                     Web.Actions.User.$s$fApplicativeNoLoggingT1)
+                  (Control.Monad.Logger.$fApplicativeNoLoggingT_$c*>
+                     @ (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+                     Web.Actions.User.$s$fApplicativeNoLoggingT5
+                     Web.Actions.User.$s$fApplicativeNoLoggingT1)
+                  (Control.Monad.Logger.$fApplicativeNoLoggingT_$c<*
+                     @ (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+                     Web.Actions.User.$s$fApplicativeNoLoggingT5
+                     Web.Actions.User.$s$fApplicativeNoLoggingT1) -}
+ce2b74c52cc9c848174aa6fb56c0839a
+  $s$fApplicativeNoLoggingT1 ::
+    GHC.Base.Monad
+      (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Web.Actions.User.$s$fApplicativeNoLoggingT_$s$fMonadResourceT -}
+53be4db20408314e828cdd2e5894390e
+  $s$fApplicativeNoLoggingT2 ::
+    GHC.Base.String
+    -> Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a
+  {- Arity: 1, Strictness: <B,U>b,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ a27 eta :: [GHC.Types.Char] ->
+                 GHC.Err.error
+                   @ (Control.Monad.Trans.Resource.Internal.ResourceT
+                        GHC.Types.IO a27)
+                   eta) -}
+ca2531b48981184930fc2498c6ac5fac
+  $s$fApplicativeNoLoggingT3 ::
+    GHC.Base.Applicative
+      (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Web.Actions.User.$s$fApplicativeNoLoggingT_$s$fApplicativeResourceT -}
+2c4d8143bba9af00aef01c885a3032da
+  $s$fApplicativeNoLoggingT4 ::
+    GHC.Base.Functor
+      (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Web.Actions.User.$s$fApplicativeNoLoggingT_$s$fFunctorResourceT -}
+7be23b9028874a8e6fc088f42bc51ade
+  $s$fApplicativeNoLoggingT5 ::
+    GHC.Base.Functor
+      (Control.Monad.Logger.NoLoggingT
+         (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO))
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Web.Actions.User.$s$fApplicativeNoLoggingT_$s$fFunctorNoLoggingT -}
+9e46355ac7e129a38a861ff671763b0c
+  $s$fApplicativeNoLoggingT_$s$fApplicativeResourceT ::
+    GHC.Base.Applicative
+      (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+                  Web.Actions.User.$s$fApplicativeNoLoggingT4
+                  Web.Actions.User.$s$fApplicativeNoLoggingT_$s$fApplicativeResourceT_$cpure
+                  (Control.Monad.Trans.Resource.Internal.$fApplicativeResourceT_$c<*>
+                     @ GHC.Types.IO
+                     Web.Actions.User.$s$fApplicativeNoLoggingT4
+                     GHC.Base.$fApplicativeIO)
+                  Web.Actions.User.$s$fApplicativeNoLoggingT_$s$fApplicativeResourceT_$c*>
+                  Web.Actions.User.$s$fApplicativeNoLoggingT_$s$fApplicativeResourceT_$c<* -}
+42a71e7b24bc0c8ee76ee02fb84ad4bb
+  $s$fApplicativeNoLoggingT_$s$fApplicativeResourceT_$c*> ::
+    Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a
+    -> Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO b
+    -> Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO b
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <C(C(S)),1*C1(C1(U(U,A)))><L,1*C1(C1(U(U,U)))><L,U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a27
+                   @ b
+                   eta :: Control.Monad.Trans.Resource.Internal.ResourceT
+                            GHC.Types.IO a27
+                   eta1 :: Control.Monad.Trans.Resource.Internal.ResourceT
+                             GHC.Types.IO b
+                   eta2 :: GHC.IORef.IORef
+                             Control.Monad.Trans.Resource.Internal.ReleaseMap ->
+                 GHC.Base.$fApplicativeIO_$sap
+                   @ b
+                   @ b
+                   ((Control.Monad.Trans.Resource.Internal.$fFunctorResourceT_$c<$
+                       @ GHC.Types.IO
+                       GHC.Base.$fFunctorIO
+                       @ (b -> b)
+                       @ a27
+                       (GHC.Base.id @ b)
+                       eta)
+                      `cast`
+                    (Control.Monad.Trans.Resource.Internal.NTCo:ResourceT[0]
+                         <GHC.Types.IO>_R <b -> b>_N)
+                      eta2)
+                   (eta1
+                      `cast`
+                    (Control.Monad.Trans.Resource.Internal.NTCo:ResourceT[0]
+                         <GHC.Types.IO>_R <b>_N)
+                      eta2))
+                  `cast`
+                (forall a27 b.
+                 <Control.Monad.Trans.Resource.Internal.ResourceT
+                    GHC.Types.IO a27>_R
+                 ->_R <Control.Monad.Trans.Resource.Internal.ResourceT
+                         GHC.Types.IO b>_R
+                 ->_R Sym (Control.Monad.Trans.Resource.Internal.NTCo:ResourceT[0]
+                               <GHC.Types.IO>_R <b>_N)) -}
+3fb060508ce44f2e12aa3d4d9e81dc5e
+  $s$fApplicativeNoLoggingT_$s$fApplicativeResourceT_$c<* ::
+    Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a
+    -> Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO b
+    -> Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <C(C(S)),1*C1(C1(U(U,U)))><L,1*C1(C1(U(U,A)))><L,U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a27
+                   @ b
+                   eta :: Control.Monad.Trans.Resource.Internal.ResourceT
+                            GHC.Types.IO a27
+                   eta1 :: Control.Monad.Trans.Resource.Internal.ResourceT
+                             GHC.Types.IO b
+                   eta2 :: GHC.IORef.IORef
+                             Control.Monad.Trans.Resource.Internal.ReleaseMap ->
+                 GHC.Base.$fApplicativeIO_$sap
+                   @ b
+                   @ a27
+                   ((Control.Monad.Trans.Resource.Internal.$fFunctorResourceT_$cfmap
+                       @ GHC.Types.IO
+                       GHC.Base.$fFunctorIO
+                       @ a27
+                       @ (b -> a27)
+                       (GHC.Base.const @ a27 @ b)
+                       eta)
+                      `cast`
+                    (Control.Monad.Trans.Resource.Internal.NTCo:ResourceT[0]
+                         <GHC.Types.IO>_R <b -> a27>_N)
+                      eta2)
+                   (eta1
+                      `cast`
+                    (Control.Monad.Trans.Resource.Internal.NTCo:ResourceT[0]
+                         <GHC.Types.IO>_R <b>_N)
+                      eta2))
+                  `cast`
+                (forall a27 b.
+                 <Control.Monad.Trans.Resource.Internal.ResourceT
+                    GHC.Types.IO a27>_R
+                 ->_R <Control.Monad.Trans.Resource.Internal.ResourceT
+                         GHC.Types.IO b>_R
+                 ->_R Sym (Control.Monad.Trans.Resource.Internal.NTCo:ResourceT[0]
+                               <GHC.Types.IO>_R <a27>_N)) -}
+394b99e179ee123b3ba6bc9f0559b3df
+  $s$fApplicativeNoLoggingT_$s$fApplicativeResourceT_$cpure ::
+    a -> Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,A><L,U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ a27
+                   eta :: a27
+                   eta1 :: GHC.IORef.IORef
+                             Control.Monad.Trans.Resource.Internal.ReleaseMap
+                   eta2 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 (GHC.Base.returnIO @ a27 eta) `cast` (GHC.Types.NTCo:IO[0] <a27>_R)
+                   eta2)
+                  `cast`
+                (forall a27.
+                 <a27>_R
+                 ->_R Trans
+                          (<GHC.IORef.IORef
+                              Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                           ->_R Sym (GHC.Types.NTCo:IO[0] <a27>_R))
+                          (Sym (Control.Monad.Trans.Resource.Internal.NTCo:ResourceT[0]
+                                    <GHC.Types.IO>_R <a27>_N))) -}
+7421ee0f59b4814c1aa296404bb037a5
+  $s$fApplicativeNoLoggingT_$s$fFunctorNoLoggingT ::
+    GHC.Base.Functor
+      (Control.Monad.Logger.NoLoggingT
+         (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO))
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Control.Monad.Logger.NoLoggingT
+                       (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO))
+                  (Control.Monad.Logger.$fFunctorNoLoggingT_$cfmap
+                     @ (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+                     Web.Actions.User.$s$fApplicativeNoLoggingT1)
+                  (Control.Monad.Logger.$fFunctorNoLoggingT_$c<$
+                     @ (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+                     Web.Actions.User.$s$fApplicativeNoLoggingT1) -}
+a5c54a8cc24671188e51c50d647f279c
+  $s$fApplicativeNoLoggingT_$s$fFunctorResourceT ::
+    GHC.Base.Functor
+      (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+                  (Control.Monad.Trans.Resource.Internal.$fFunctorResourceT_$cfmap
+                     @ GHC.Types.IO
+                     GHC.Base.$fFunctorIO)
+                  (Control.Monad.Trans.Resource.Internal.$fFunctorResourceT_$c<$
+                     @ GHC.Types.IO
+                     GHC.Base.$fFunctorIO) -}
+8ea71391c02f2ee663e2ece94cf2e411
+  $s$fApplicativeNoLoggingT_$s$fMonadResourceT ::
+    GHC.Base.Monad
+      (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+                  Web.Actions.User.$s$fApplicativeNoLoggingT3
+                  (Control.Monad.Trans.Resource.Internal.$fMonadResourceT_$c>>=
+                     @ GHC.Types.IO
+                     Web.Actions.User.$s$fApplicativeNoLoggingT3
+                     GHC.Base.$fMonadIO)
+                  (Control.Monad.Trans.Resource.Internal.$fMonadResourceT_$c>>
+                     @ GHC.Types.IO
+                     Web.Actions.User.$s$fApplicativeNoLoggingT3
+                     GHC.Base.$fMonadIO)
+                  Web.Actions.User.$s$fApplicativeNoLoggingT_$s$fApplicativeResourceT_$cpure
+                  Web.Actions.User.$s$fApplicativeNoLoggingT2 -}
+1009c02d36186052007f73a1e762c017
+  $s$fApplicativeReaderT1 ::
+    GHC.Base.Applicative
+      (Control.Monad.Logger.NoLoggingT
+         (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO))
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Web.Actions.User.$s$fApplicativeNoLoggingT -}
+e789f79ddccc2edbd619e8a86c8f3c66
+  $s$fMonadIONoLoggingT ::
+    Control.Monad.IO.Class.MonadIO
+      (Control.Monad.Logger.NoLoggingT
+         (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO))
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Control.Monad.Logger.NoLoggingT
+                       (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO))
+                  Web.Actions.User.$s$fMonadIONoLoggingT2
+                  (Control.Monad.Logger.$fMonadIONoLoggingT_$cliftIO
+                     @ (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+                     Web.Actions.User.$s$fMonadIONoLoggingT2
+                     Web.Actions.User.$s$fMonadIONoLoggingT1) -}
+741f45d62e3137544531da22f65f95b6
+  $s$fMonadIONoLoggingT1 ::
+    Control.Monad.IO.Class.MonadIO
+      (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Web.Actions.User.$s$fMonadIONoLoggingT_$s$fMonadIOResourceT -}
+e12a964495a44af2b73e276485a4be91
+  $s$fMonadIONoLoggingT2 ::
+    GHC.Base.Monad
+      (Control.Monad.Logger.NoLoggingT
+         (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO))
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Web.Actions.User.$s$fMonadIONoLoggingT_$s$fMonadNoLoggingT -}
+cb8e8c84744ac4f8f792ea683631cf3e
+  $s$fMonadIONoLoggingT3 ::
+    GHC.Base.String
+    -> Control.Monad.Logger.NoLoggingT
+         (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO) a
+  {- Arity: 1, Strictness: <B,U>b,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ a27 eta :: [GHC.Types.Char] ->
+                 GHC.Err.error
+                   @ (Control.Monad.Logger.NoLoggingT
+                        (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO) a27)
+                   eta) -}
+2ffbae4124d8e11fab5640d28ca07737
+  $s$fMonadIONoLoggingT_$s$fMonadIOResourceT ::
+    Control.Monad.IO.Class.MonadIO
+      (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+                  Web.Actions.User.$s$fApplicativeNoLoggingT1
+                  Web.Actions.User.$s$fMonadIONoLoggingT_$s$fMonadIOResourceT_$cliftIO -}
+88c92d6824910fd07cb789ed07d75794
+  $s$fMonadIONoLoggingT_$s$fMonadIOResourceT_$cliftIO ::
+    GHC.Types.IO a
+    -> Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,A>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a27 eta :: GHC.Types.IO a27 ->
+                 let {
+                   eta1 :: GHC.Types.IO a27 = GHC.Base.id @ (GHC.Types.IO a27) eta
+                 } in
+                 (\ ds :: GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap ->
+                  eta1)
+                   `cast`
+                 (Sym (Control.Monad.Trans.Resource.Internal.NTCo:ResourceT[0]
+                           <GHC.Types.IO>_R <a27>_N))) -}
+427fdd641a5005fd7996396926ea823c
+  $s$fMonadIONoLoggingT_$s$fMonadNoLoggingT ::
+    GHC.Base.Monad
+      (Control.Monad.Logger.NoLoggingT
+         (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO))
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Control.Monad.Logger.NoLoggingT
+                       (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO))
+                  Web.Actions.User.$s$fApplicativeReaderT1
+                  (Control.Monad.Logger.$fMonadNoLoggingT_$c>>=
+                     @ (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+                     Web.Actions.User.$s$fApplicativeReaderT1
+                     Web.Actions.User.$s$fApplicativeNoLoggingT1)
+                  Web.Actions.User.$s$fMonadIONoLoggingT_$s$fMonadNoLoggingT_$c>>
+                  (Control.Monad.Logger.$fMonadNoLoggingT_$creturn
+                     @ (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+                     Web.Actions.User.$s$fApplicativeReaderT1
+                     Web.Actions.User.$s$fApplicativeNoLoggingT1)
+                  Web.Actions.User.$s$fMonadIONoLoggingT3 -}
+3f220112925b8e290b3f476fca230fd9
+  $s$fMonadIONoLoggingT_$s$fMonadNoLoggingT_$c>> ::
+    Control.Monad.Logger.NoLoggingT
+      (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO) a
+    -> Control.Monad.Logger.NoLoggingT
+         (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO) b
+    -> Control.Monad.Logger.NoLoggingT
+         (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO) b
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <C(C(S)),1*C1(C1(U(U,A)))><L,1*C1(C1(U(U,U)))><L,U><L,U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ a27
+                   @ b
+                   m1 :: Control.Monad.Logger.NoLoggingT
+                           (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO) a27
+                   k :: Control.Monad.Logger.NoLoggingT
+                          (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO) b ->
+                 Control.Monad.Logger.$fMonadNoLoggingT_$c>>=
+                   @ (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+                   Web.Actions.User.$s$fApplicativeReaderT1
+                   Web.Actions.User.$s$fApplicativeNoLoggingT1
+                   @ a27
+                   @ b
+                   m1
+                   (\ ds :: a27 -> k)) -}
+9a2080ef665ba64d7b07ea05eb396c5f
+  $wrandomBytes ::
+    GHC.Prim.Int# -> System.Random.StdGen -> [GHC.Word.Word8]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U(U,U)>,
+     Inline: [0] -}
+7286c624249ac5394c0cead8feb307dd
+  createSession ::
+    Model.CoreTypes.UserId
+    -> Database.Persist.Sql.Types.SqlPersistM Model.CoreTypes.SessionId
+  {- Arity: 4, Strictness: <L,1*U(U)><L,U><L,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Web.Actions.User.createSession1
+                  `cast`
+                (<Model.CoreTypes.UserId>_R
+                 ->_R Trans
+                          (<Database.Persist.Sql.Types.SqlBackend>_R
+                           ->_R Trans
+                                    (<GHC.IORef.IORef
+                                        Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                                     ->_R Sym (GHC.Types.NTCo:IO[0] <Model.CoreTypes.SessionId>_R))
+                                    (Trans
+                                         (Sym (Control.Monad.Trans.Resource.Internal.NTCo:ResourceT[0]
+                                                   <GHC.Types.IO>_R <Model.CoreTypes.SessionId>_N))
+                                         (Sym (Control.Monad.Logger.NTCo:NoLoggingT[0]
+                                                   <Control.Monad.Trans.Resource.Internal.ResourceT
+                                                      GHC.Types.IO>_R) <Model.CoreTypes.SessionId>_N)))
+                          (Sym (Control.Monad.Trans.Reader.NTCo:ReaderT[0]
+                                    <Database.Persist.Sql.Types.SqlBackend>_R
+                                    <Control.Monad.Logger.NoLoggingT
+                                       (Control.Monad.Trans.Resource.Internal.ResourceT
+                                          GHC.Types.IO)>_R
+                                    <Model.CoreTypes.SessionId>_N))) -}
+68a50aca56763f42d0f4eb6e8dcb08f7
+  createSession1 ::
+    Model.CoreTypes.UserId
+    -> Database.Persist.Sql.Types.SqlBackend
+    -> GHC.IORef.IORef Control.Monad.Trans.Resource.Internal.ReleaseMap
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Model.CoreTypes.SessionId #)
+  {- Arity: 4, Strictness: <L,1*U(U)><L,U><L,U><L,U>,
+     Unfolding: (\ userId :: Model.CoreTypes.UserId
+                   eta :: Database.Persist.Sql.Types.SqlBackend
+                   eta1 :: GHC.IORef.IORef
+                             Control.Monad.Trans.Resource.Internal.ReleaseMap
+                   eta2 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case Data.Time.Clock.POSIX.getPOSIXTime1
+                        eta2 of ds { (#,#) ipv ipv1 ->
+                 (((Web.Actions.User.createSession5
+                      (case Data.Time.Clock.POSIX.$wposixSecondsToUTCTime
+                              (case Data.Time.Clock.POSIX.$wposixSecondsToUTCTime
+                                      ipv1 of ww { (#,#) ww1 ww2 ->
+                               (GHC.Integer.Type.plusInteger
+                                  Web.Actions.User.createSession2
+                                  (Data.Time.Clock.POSIX.$wutcTimeToPOSIXSeconds ww1 ww2)
+                                    `cast`
+                                  (Trans
+                                       (Data.Time.Clock.UTC.NTCo:NominalDiffTime[0])
+                                       (Data.Fixed.NTCo:Fixed[0] <Data.Fixed.E12>_P)))
+                                 `cast`
+                               (Trans
+                                    (Sym (Data.Fixed.NTCo:Fixed[0] <Data.Fixed.E12>_P))
+                                    (Sym (Data.Time.Clock.UTC.NTCo:NominalDiffTime[0]))) }) of ww { (#,#) ww1 ww2 ->
+                       case userId
+                              `cast`
+                            (Trans
+                                 (Sub (Model.CoreTypes.TFCo:R:KeyUser[0]))
+                                 (Trans
+                                      (Model.CoreTypes.NTCo:R:KeyUser[0])
+                                      (Trans
+                                           (Sub (Database.Persist.Sql.Orphan.PersistStore.TFCo:R:BackendKeySqlBackend[0]))
+                                           (Database.Persist.Sql.Orphan.PersistStore.NTCo:R:BackendKeySqlBackend[0])))) of nt { GHC.Int.I64# ipv2 ->
+                       Model.CoreTypes.Session
+                         (Data.Time.Clock.UTC.UTCTime ww1 ww2)
+                         nt
+                           `cast`
+                         (Trans
+                              (Sym (Database.Persist.Sql.Orphan.PersistStore.NTCo:R:BackendKeySqlBackend[0]))
+                              (Trans
+                                   (Sub (Sym (Database.Persist.Sql.Orphan.PersistStore.TFCo:R:BackendKeySqlBackend[0])))
+                                   (Trans
+                                        (Sym (Model.CoreTypes.NTCo:R:KeyUser[0]))
+                                        (Sub (Sym (Model.CoreTypes.TFCo:R:KeyUser[0])))))) } }))
+                     `cast`
+                   (Control.Monad.Trans.Reader.NTCo:ReaderT[0]
+                        <Database.Persist.Sql.Types.SqlBackend>_R
+                        <Control.Monad.Logger.NoLoggingT
+                           (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)>_R
+                        <Model.CoreTypes.SessionId>_N)
+                     eta)
+                    `cast`
+                  (Trans
+                       (Control.Monad.Logger.NTCo:NoLoggingT[0]
+                            <Control.Monad.Trans.Resource.Internal.ResourceT
+                               GHC.Types.IO>_R <Model.CoreTypes.SessionId>_N)
+                       (Control.Monad.Trans.Resource.Internal.NTCo:ResourceT[0]
+                            <GHC.Types.IO>_R <Model.CoreTypes.SessionId>_N))
+                    eta1)
+                   `cast`
+                 (GHC.Types.NTCo:IO[0] <Model.CoreTypes.SessionId>_R)
+                   ipv }) -}
+be1653701483f02c02beb300a217e7d5
+  createSession2 :: GHC.Integer.Type.Integer
+  {- Unfolding: (Data.Fixed.$fNumFixed5
+                   @ Data.Fixed.E12
+                   Data.Fixed.$fHasResolutionE12_$cresolution
+                     `cast`
+                   (Sym (Data.Fixed.NTCo:HasResolution[0] <Data.Fixed.E12>_N))
+                   Web.Actions.User.createSession4
+                     `cast`
+                   (Sym (Data.Fixed.NTCo:Fixed[0] <Data.Fixed.E12>_P))
+                   Web.Actions.User.createSession3
+                     `cast`
+                   (Sym (Data.Fixed.NTCo:Fixed[0] <Data.Fixed.E12>_P))) -}
+511216eaf9ffb44d665252dcbf568310
+  createSession3 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 3600000000000000) -}
+3c95ca581f2da678a6c9aa8e05d6f1e4
+  createSession4 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 5000000000000) -}
+5d09758cc1e63ff9dadb28d7dfc237b6
+  createSession5 ::
+    Model.CoreTypes.Session
+    -> Control.Monad.Trans.Reader.ReaderT
+         Database.Persist.Sql.Types.SqlBackend
+         (Control.Monad.Logger.NoLoggingT
+            (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO))
+         (Database.Persist.Class.PersistEntity.Key Model.CoreTypes.Session)
+  {- Unfolding: (Database.Persist.Sql.Orphan.PersistStore.$w$cinsert
+                   @ Model.CoreTypes.Session
+                   @ (Control.Monad.Logger.NoLoggingT
+                        (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO))
+                   Web.Actions.User.$s$fMonadIONoLoggingT
+                   Model.CoreTypes.$fPersistEntitySession) -}
+9e1e09d930f1dd30bea9edffe26c21bb
+  hashPassword ::
+    Data.Text.Internal.Text
+    -> Data.ByteString.Internal.ByteString
+    -> Data.ByteString.Internal.ByteString
+  {- Arity: 2, Strictness: <L,1*U(U,U,1*U)><L,U>,
+     Unfolding: (\ password :: Data.Text.Internal.Text
+                   salt :: Data.ByteString.Internal.ByteString ->
+                 Crypto.Hash.SHA512.finalize
+                   (Crypto.Hash.SHA512.updates
+                      Crypto.Hash.SHA512.init
+                      (GHC.Types.:
+                         @ Data.ByteString.Internal.ByteString
+                         salt
+                         (GHC.Types.:
+                            @ Data.ByteString.Internal.ByteString
+                            (case password of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                             Data.Text.Encoding.$wencodeUtf8 ww1 ww2 ww3 })
+                            (GHC.Types.[] @ Data.ByteString.Internal.ByteString))))) -}
+263830462e9d401019a40b731e62ec46
+  killSessions ::
+    Model.CoreTypes.UserId -> Database.Persist.Sql.Types.SqlPersistM ()
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ userId :: Model.CoreTypes.UserId ->
+                 let {
+                   m2 :: Control.Monad.Trans.Reader.ReaderT
+                           Database.Persist.Sql.Types.SqlBackend
+                           (Control.Monad.Logger.NoLoggingT
+                              (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO))
+                           GHC.Int.Int64
+                   = Web.Actions.User.killSessions2
+                       (GHC.Types.:
+                          @ (Database.Persist.Class.PersistEntity.Filter
+                               Model.CoreTypes.Session)
+                          (Database.Persist.Class.PersistEntity.Filter
+                             @ Model.CoreTypes.Session
+                             @ (Database.Persist.Class.PersistEntity.Key Model.CoreTypes.User)
+                             Model.CoreTypes.$fPersistFieldKey3
+                             Web.Actions.User.killSessions1
+                               `cast`
+                             (Sub (Sym (Model.CoreTypes.TFCo:R:EntityFieldSessiontyp[0])) <Database.Persist.Class.PersistEntity.Key
+                                                                                             Model.CoreTypes.User>_N)
+                             (Data.Either.Left
+                                @ (Database.Persist.Class.PersistEntity.Key Model.CoreTypes.User)
+                                @ [Database.Persist.Class.PersistEntity.Key Model.CoreTypes.User]
+                                userId)
+                             Database.Persist.Types.Base.Eq)
+                          (GHC.Types.[]
+                             @ (Database.Persist.Class.PersistEntity.Filter
+                                  Model.CoreTypes.Session)))
+                 } in
+                 (\ r1 :: Database.Persist.Sql.Types.SqlBackend ->
+                  let {
+                    a27 :: Control.Monad.Logger.NoLoggingT
+                             (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+                             GHC.Int.Int64
+                    = m2
+                        `cast`
+                      (Control.Monad.Trans.Reader.NTCo:ReaderT[0]
+                           <Database.Persist.Sql.Types.SqlBackend>_R
+                           <Control.Monad.Logger.NoLoggingT
+                              (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)>_R
+                           <GHC.Int.Int64>_N)
+                        r1
+                  } in
+                  (\ r :: GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap
+                     s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                   case (a27
+                           `cast`
+                         (Trans
+                              (Control.Monad.Logger.NTCo:NoLoggingT[0]
+                                   <Control.Monad.Trans.Resource.Internal.ResourceT
+                                      GHC.Types.IO>_R <GHC.Int.Int64>_N)
+                              (Control.Monad.Trans.Resource.Internal.NTCo:ResourceT[0]
+                                   <GHC.Types.IO>_R <GHC.Int.Int64>_N))
+                           r)
+                          `cast`
+                        (GHC.Types.NTCo:IO[0] <GHC.Int.Int64>_R)
+                          s of ds1 { (#,#) ipv ipv1 ->
+                   (# ipv, GHC.Tuple.() #) })
+                    `cast`
+                  (Trans
+                       (<GHC.IORef.IORef
+                           Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                        ->_R Sym (GHC.Types.NTCo:IO[0] <()>_R))
+                       (Trans
+                            (Sym (Control.Monad.Trans.Resource.Internal.NTCo:ResourceT[0]
+                                      <GHC.Types.IO>_R <()>_N))
+                            (Sym (Control.Monad.Logger.NTCo:NoLoggingT[0]
+                                      <Control.Monad.Trans.Resource.Internal.ResourceT
+                                         GHC.Types.IO>_R) <()>_N))))
+                   `cast`
+                 (Sym (Control.Monad.Trans.Reader.NTCo:ReaderT[0]
+                           <Database.Persist.Sql.Types.SqlBackend>_R
+                           <Control.Monad.Logger.NoLoggingT
+                              (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)>_R
+                           <()>_N))) -}
+dec634bd6512faf2c5689a047f9e7d5b
+  killSessions1 ::
+    Model.CoreTypes.R:EntityFieldSessiontyp
+      (Database.Persist.Class.PersistEntity.Key Model.CoreTypes.User)
+  {- HasNoCafRefs,
+     Unfolding: (Model.CoreTypes.SessionUserId
+                   @ (Database.Persist.Class.PersistEntity.Key Model.CoreTypes.User)
+                   @~ <Database.Persist.Class.PersistEntity.Key
+                         Model.CoreTypes.User>_N) -}
+71eedb4c160a618b4d3a9294bab79c2f
+  killSessions2 ::
+    [Database.Persist.Class.PersistEntity.Filter
+       Model.CoreTypes.Session]
+    -> Control.Monad.Trans.Reader.ReaderT
+         Database.Persist.Sql.Types.SqlBackend
+         (Control.Monad.Logger.NoLoggingT
+            (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO))
+         GHC.Int.Int64
+  {- Unfolding: (Database.Persist.Sql.Orphan.PersistQuery.$wdeleteWhereCount
+                   @ Model.CoreTypes.Session
+                   @ (Control.Monad.Logger.NoLoggingT
+                        (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO))
+                   Model.CoreTypes.$fPersistEntitySession
+                   Web.Actions.User.$s$fMonadIONoLoggingT) -}
+15da5860ac4552ce596532759461712d
+  loadUser ::
+    Model.CoreTypes.SessionId
+    -> Database.Persist.Sql.Types.SqlPersistM
+         (GHC.Base.Maybe (Model.CoreTypes.UserId, Model.CoreTypes.User))
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ sessId :: Model.CoreTypes.SessionId ->
+                 let {
+                   m1 :: Control.Monad.Trans.Reader.ReaderT
+                           Database.Persist.Sql.Types.SqlBackend
+                           (Control.Monad.Logger.NoLoggingT
+                              (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO))
+                           (GHC.Base.Maybe Model.CoreTypes.Session)
+                   = Web.Actions.User.loadUser2 sessId
+                 } in
+                 (\ r1 :: Database.Persist.Sql.Types.SqlBackend ->
+                  let {
+                    a27 :: Control.Monad.Logger.NoLoggingT
+                             (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+                             (GHC.Base.Maybe Model.CoreTypes.Session)
+                    = m1
+                        `cast`
+                      (Control.Monad.Trans.Reader.NTCo:ReaderT[0]
+                           <Database.Persist.Sql.Types.SqlBackend>_R
+                           <Control.Monad.Logger.NoLoggingT
+                              (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)>_R
+                           <GHC.Base.Maybe Model.CoreTypes.Session>_N)
+                        r1
+                  } in
+                  (\ r :: GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap
+                     s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                   case (a27
+                           `cast`
+                         (Trans
+                              (Control.Monad.Logger.NTCo:NoLoggingT[0]
+                                   <Control.Monad.Trans.Resource.Internal.ResourceT
+                                      GHC.Types.IO>_R <GHC.Base.Maybe Model.CoreTypes.Session>_N)
+                              (Control.Monad.Trans.Resource.Internal.NTCo:ResourceT[0]
+                                   <GHC.Types.IO>_R <GHC.Base.Maybe Model.CoreTypes.Session>_N))
+                           r)
+                          `cast`
+                        (GHC.Types.NTCo:IO[0] <GHC.Base.Maybe Model.CoreTypes.Session>_R)
+                          s of ds1 { (#,#) ipv ipv1 ->
+                   case Data.Time.Clock.POSIX.getPOSIXTime1
+                          ipv of ds { (#,#) ipv2 ipv3 ->
+                   case ipv1 of wild {
+                     GHC.Base.Nothing
+                     -> (# ipv2,
+                           GHC.Base.Nothing
+                             @ (Model.CoreTypes.UserId, Model.CoreTypes.User) #)
+                     GHC.Base.Just sess
+                     -> case sess of wild1 { Model.CoreTypes.Session ds2 ds3 ->
+                        case ds2 of ww { Data.Time.Clock.UTC.UTCTime ww1 ww2 ->
+                        case Data.Time.Clock.POSIX.$wposixSecondsToUTCTime
+                               ipv3 of ww4 { (#,#) ww5 ww6 ->
+                        case GHC.Integer.Type.compareInteger
+                               ww1 `cast` (Data.Time.Calendar.Days.NTCo:Day[0])
+                               ww5 `cast` (Data.Time.Calendar.Days.NTCo:Day[0]) of wild2 {
+                          GHC.Types.LT
+                          -> (# ipv2,
+                                GHC.Base.Nothing
+                                  @ (Model.CoreTypes.UserId, Model.CoreTypes.User) #)
+                          GHC.Types.EQ
+                          -> case GHC.Integer.Type.compareInteger
+                                    ww2
+                                      `cast`
+                                    (Trans
+                                         (Data.Time.Clock.Scale.NTCo:DiffTime[0])
+                                         (Data.Fixed.NTCo:Fixed[0] <Data.Fixed.E12>_P))
+                                    ww6
+                                      `cast`
+                                    (Trans
+                                         (Data.Time.Clock.Scale.NTCo:DiffTime[0])
+                                         (Data.Fixed.NTCo:Fixed[0] <Data.Fixed.E12>_P)) of wild3 {
+                               DEFAULT
+                               -> (# ipv2,
+                                     GHC.Base.Nothing
+                                       @ (Model.CoreTypes.UserId, Model.CoreTypes.User) #)
+                               GHC.Types.GT
+                               -> case (((Web.Actions.User.loadUser1 ds3)
+                                           `cast`
+                                         (Control.Monad.Trans.Reader.NTCo:ReaderT[0]
+                                              <Database.Persist.Sql.Types.SqlBackend>_R
+                                              <Control.Monad.Logger.NoLoggingT
+                                                 (Control.Monad.Trans.Resource.Internal.ResourceT
+                                                    GHC.Types.IO)>_R
+                                              <GHC.Base.Maybe Model.CoreTypes.User>_N)
+                                           r1)
+                                          `cast`
+                                        (Trans
+                                             (Control.Monad.Logger.NTCo:NoLoggingT[0]
+                                                  <Control.Monad.Trans.Resource.Internal.ResourceT
+                                                     GHC.Types.IO>_R <GHC.Base.Maybe
+                                                                        Model.CoreTypes.User>_N)
+                                             (Control.Monad.Trans.Resource.Internal.NTCo:ResourceT[0]
+                                                  <GHC.Types.IO>_R
+                                                  <GHC.Base.Maybe Model.CoreTypes.User>_N))
+                                          r)
+                                         `cast`
+                                       (GHC.Types.NTCo:IO[0]
+                                            <GHC.Base.Maybe Model.CoreTypes.User>_R)
+                                         ipv2 of ds4 { (#,#) ipv4 ipv5 ->
+                                  (# ipv4,
+                                     case ipv5 of wild4 {
+                                       GHC.Base.Nothing
+                                       -> GHC.Base.Nothing
+                                            @ (Database.Persist.Class.PersistEntity.Key
+                                                 Model.CoreTypes.User,
+                                               Model.CoreTypes.User)
+                                       GHC.Base.Just a28
+                                       -> GHC.Base.Just
+                                            @ (Database.Persist.Class.PersistEntity.Key
+                                                 Model.CoreTypes.User,
+                                               Model.CoreTypes.User)
+                                            (ds3, a28) } #) } }
+                          GHC.Types.GT
+                          -> case (((Web.Actions.User.loadUser1 ds3)
+                                      `cast`
+                                    (Control.Monad.Trans.Reader.NTCo:ReaderT[0]
+                                         <Database.Persist.Sql.Types.SqlBackend>_R
+                                         <Control.Monad.Logger.NoLoggingT
+                                            (Control.Monad.Trans.Resource.Internal.ResourceT
+                                               GHC.Types.IO)>_R
+                                         <GHC.Base.Maybe Model.CoreTypes.User>_N)
+                                      r1)
+                                     `cast`
+                                   (Trans
+                                        (Control.Monad.Logger.NTCo:NoLoggingT[0]
+                                             <Control.Monad.Trans.Resource.Internal.ResourceT
+                                                GHC.Types.IO>_R <GHC.Base.Maybe
+                                                                   Model.CoreTypes.User>_N)
+                                        (Control.Monad.Trans.Resource.Internal.NTCo:ResourceT[0]
+                                             <GHC.Types.IO>_R
+                                             <GHC.Base.Maybe Model.CoreTypes.User>_N))
+                                     r)
+                                    `cast`
+                                  (GHC.Types.NTCo:IO[0] <GHC.Base.Maybe Model.CoreTypes.User>_R)
+                                    ipv2 of ds4 { (#,#) ipv4 ipv5 ->
+                             (# ipv4,
+                                case ipv5 of wild3 {
+                                  GHC.Base.Nothing
+                                  -> GHC.Base.Nothing
+                                       @ (Database.Persist.Class.PersistEntity.Key
+                                            Model.CoreTypes.User,
+                                          Model.CoreTypes.User)
+                                  GHC.Base.Just a28
+                                  -> GHC.Base.Just
+                                       @ (Database.Persist.Class.PersistEntity.Key
+                                            Model.CoreTypes.User,
+                                          Model.CoreTypes.User)
+                                       (ds3, a28) } #) } } } } } } } })
+                    `cast`
+                  (Trans
+                       (<GHC.IORef.IORef
+                           Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                        ->_R Sym (GHC.Types.NTCo:IO[0]
+                                      <GHC.Base.Maybe
+                                         (Model.CoreTypes.UserId, Model.CoreTypes.User)>_R))
+                       (Trans
+                            (Sym (Control.Monad.Trans.Resource.Internal.NTCo:ResourceT[0]
+                                      <GHC.Types.IO>_R
+                                      <GHC.Base.Maybe
+                                         (Model.CoreTypes.UserId, Model.CoreTypes.User)>_N))
+                            (Sym (Control.Monad.Logger.NTCo:NoLoggingT[0]
+                                      <Control.Monad.Trans.Resource.Internal.ResourceT
+                                         GHC.Types.IO>_R) <GHC.Base.Maybe
+                                                             (Model.CoreTypes.UserId,
+                                                              Model.CoreTypes.User)>_N))))
+                   `cast`
+                 (Sym (Control.Monad.Trans.Reader.NTCo:ReaderT[0]
+                           <Database.Persist.Sql.Types.SqlBackend>_R
+                           <Control.Monad.Logger.NoLoggingT
+                              (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)>_R
+                           <GHC.Base.Maybe
+                              (Model.CoreTypes.UserId, Model.CoreTypes.User)>_N))) -}
+e7bd091e29338b6e37c7fb3dd2f35356
+  loadUser1 ::
+    Database.Persist.Class.PersistEntity.Key Model.CoreTypes.User
+    -> Control.Monad.Trans.Reader.ReaderT
+         Database.Persist.Sql.Types.SqlBackend
+         (Control.Monad.Logger.NoLoggingT
+            (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO))
+         (GHC.Base.Maybe Model.CoreTypes.User)
+  {- Unfolding: (Database.Persist.Sql.Orphan.PersistStore.$w$cget
+                   @ Model.CoreTypes.User
+                   @ (Control.Monad.Logger.NoLoggingT
+                        (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO))
+                   Web.Actions.User.$s$fMonadIONoLoggingT
+                   Model.CoreTypes.$fPersistEntityUser) -}
+14689580a1866d2cce823b6b5b28f6a3
+  loadUser2 ::
+    Database.Persist.Class.PersistEntity.Key Model.CoreTypes.Session
+    -> Control.Monad.Trans.Reader.ReaderT
+         Database.Persist.Sql.Types.SqlBackend
+         (Control.Monad.Logger.NoLoggingT
+            (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO))
+         (GHC.Base.Maybe Model.CoreTypes.Session)
+  {- Unfolding: (Database.Persist.Sql.Orphan.PersistStore.$w$cget
+                   @ Model.CoreTypes.Session
+                   @ (Control.Monad.Logger.NoLoggingT
+                        (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO))
+                   Web.Actions.User.$s$fMonadIONoLoggingT
+                   Model.CoreTypes.$fPersistEntitySession) -}
+7917e58f448acbfe080a60e5cdb7b131
+  loginUser ::
+    Data.Text.Internal.Text
+    -> Data.Text.Internal.Text
+    -> Database.Persist.Sql.Types.SqlPersistM
+         (GHC.Base.Maybe Model.CoreTypes.UserId)
+  {- Arity: 2, Strictness: <L,U><L,U(U,U,U)> -}
+305e1d164da184bbbb16c19b4723a62b
+  randomBS ::
+    GHC.Types.Int
+    -> System.Random.StdGen -> Data.ByteString.Internal.ByteString
+  {- Arity: 2, Strictness: <L,1*U(1*U)><L,1*U(U,U)>,
+     Unfolding: (\ len :: GHC.Types.Int g :: System.Random.StdGen ->
+                 let {
+                   ws :: [GHC.Word.Word8]
+                   = case len of ww { GHC.Types.I# ww1 ->
+                     Web.Actions.User.$wrandomBytes ww1 g }
+                 } in
+                 Data.ByteString.Internal.unsafePackLenBytes
+                   (case GHC.List.$wlenAcc @ GHC.Word.Word8 ws 0 of ww2 { DEFAULT ->
+                    GHC.Types.I# ww2 })
+                   ws) -}
+808722b47f8d1f882e7741957c189e1a
+  randomBytes ::
+    GHC.Types.Int -> System.Random.StdGen -> [GHC.Word.Word8]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(1*U)><L,1*U(U,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: GHC.Types.Int w1 :: System.Random.StdGen ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Web.Actions.User.$wrandomBytes ww1 w1 }) -}
+65131de2e19937cbe6faf2959d082da8
+  registerUser ::
+    Data.Text.Internal.Text
+    -> Data.Text.Internal.Text
+    -> Data.Text.Internal.Text
+    -> Database.Persist.Sql.Types.SqlPersistM
+         Model.ResponseTypes.CommonResponse
+  {- Arity: 3, Strictness: <L,U(U,U,U)><L,U(U,U,U)><L,U(U,U,U)>,
+     Unfolding: (\ username :: Data.Text.Internal.Text
+                   email :: Data.Text.Internal.Text
+                   password :: Data.Text.Internal.Text ->
+                 let {
+                   lvl2 :: Control.Monad.Trans.Reader.ReaderT
+                             Database.Persist.Sql.Types.SqlBackend
+                             (Control.Monad.Logger.NoLoggingT
+                                (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO))
+                             (GHC.Base.Maybe
+                                (Database.Persist.Class.PersistEntity.Entity Model.CoreTypes.User))
+                   = Web.Actions.User.registerUser6
+                       (Model.CoreTypes.UniqueEmail email)
+                         `cast`
+                       (Sub (Sym (Model.CoreTypes.TFCo:R:UniqueUser[0])))
+                 } in
+                 let {
+                   m1 :: Control.Monad.Trans.Reader.ReaderT
+                           Database.Persist.Sql.Types.SqlBackend
+                           (Control.Monad.Logger.NoLoggingT
+                              (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO))
+                           (GHC.Base.Maybe
+                              (Database.Persist.Class.PersistEntity.Entity Model.CoreTypes.User))
+                   = Web.Actions.User.registerUser6
+                       (Model.CoreTypes.UniqueUsername username)
+                         `cast`
+                       (Sub (Sym (Model.CoreTypes.TFCo:R:UniqueUser[0])))
+                 } in
+                 (\ r1 :: Database.Persist.Sql.Types.SqlBackend ->
+                  let {
+                    a27 :: Control.Monad.Logger.NoLoggingT
+                             (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+                             (GHC.Base.Maybe
+                                (Database.Persist.Class.PersistEntity.Entity Model.CoreTypes.User))
+                    = m1
+                        `cast`
+                      (Control.Monad.Trans.Reader.NTCo:ReaderT[0]
+                           <Database.Persist.Sql.Types.SqlBackend>_R
+                           <Control.Monad.Logger.NoLoggingT
+                              (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)>_R
+                           <GHC.Base.Maybe
+                              (Database.Persist.Class.PersistEntity.Entity
+                                 Model.CoreTypes.User)>_N)
+                        r1
+                  } in
+                  (\ r :: GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap
+                     s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                   case (a27
+                           `cast`
+                         (Trans
+                              (Control.Monad.Logger.NTCo:NoLoggingT[0]
+                                   <Control.Monad.Trans.Resource.Internal.ResourceT
+                                      GHC.Types.IO>_R <GHC.Base.Maybe
+                                                         (Database.Persist.Class.PersistEntity.Entity
+                                                            Model.CoreTypes.User)>_N)
+                              (Control.Monad.Trans.Resource.Internal.NTCo:ResourceT[0]
+                                   <GHC.Types.IO>_R
+                                   <GHC.Base.Maybe
+                                      (Database.Persist.Class.PersistEntity.Entity
+                                         Model.CoreTypes.User)>_N))
+                           r)
+                          `cast`
+                        (GHC.Types.NTCo:IO[0]
+                             <GHC.Base.Maybe
+                                (Database.Persist.Class.PersistEntity.Entity
+                                   Model.CoreTypes.User)>_R)
+                          s of ds1 { (#,#) ipv ipv1 ->
+                   case ((lvl2
+                            `cast`
+                          (Control.Monad.Trans.Reader.NTCo:ReaderT[0]
+                               <Database.Persist.Sql.Types.SqlBackend>_R
+                               <Control.Monad.Logger.NoLoggingT
+                                  (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)>_R
+                               <GHC.Base.Maybe
+                                  (Database.Persist.Class.PersistEntity.Entity
+                                     Model.CoreTypes.User)>_N)
+                            r1)
+                           `cast`
+                         (Trans
+                              (Control.Monad.Logger.NTCo:NoLoggingT[0]
+                                   <Control.Monad.Trans.Resource.Internal.ResourceT
+                                      GHC.Types.IO>_R <GHC.Base.Maybe
+                                                         (Database.Persist.Class.PersistEntity.Entity
+                                                            Model.CoreTypes.User)>_N)
+                              (Control.Monad.Trans.Resource.Internal.NTCo:ResourceT[0]
+                                   <GHC.Types.IO>_R
+                                   <GHC.Base.Maybe
+                                      (Database.Persist.Class.PersistEntity.Entity
+                                         Model.CoreTypes.User)>_N))
+                           r)
+                          `cast`
+                        (GHC.Types.NTCo:IO[0]
+                             <GHC.Base.Maybe
+                                (Database.Persist.Class.PersistEntity.Entity
+                                   Model.CoreTypes.User)>_R)
+                          ipv of ds2 { (#,#) ipv2 ipv3 ->
+                   case ipv1 of wild {
+                     GHC.Base.Nothing
+                     -> case ipv3 of wild1 {
+                          GHC.Base.Nothing
+                          -> case System.Random.theStdGen
+                                    `cast`
+                                  (GHC.IORef.NTCo:IORef[0] <System.Random.StdGen>_N) of wild2 { GHC.STRef.STRef var# ->
+                             case GHC.Prim.readMutVar#
+                                    @ GHC.Prim.RealWorld
+                                    @ System.Random.StdGen
+                                    var#
+                                    ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                             case (((Web.Actions.User.registerUser5
+                                       (case username of dt { Data.Text.Internal.Text ipv6 ipv7 ipv8 ->
+                                        case Web.Actions.User.randomBS
+                                               Web.Actions.User.registerUser4
+                                               ipv5 of ww { Data.ByteString.Internal.PS ww1 ww2 ww3 ww4 ->
+                                        case Web.Actions.User.hashPassword
+                                               password
+                                               ww of ww5 { Data.ByteString.Internal.PS ww6 ww7 ww8 ww9 ->
+                                        case Data.ByteString.Base16.$wencode
+                                               ww6
+                                               ww7
+                                               ww8
+                                               ww9 of ww10 { Data.ByteString.Internal.PS ww11 ww12 ww13 ww14 ->
+                                        case Data.Text.Encoding.$wdecodeUtf8With
+                                               Data.Text.Encoding.Error.strictDecode
+                                               ww11
+                                               ww12
+                                               ww13
+                                               ww14 of dt1 { Data.Text.Internal.Text ipv9 ipv10 ipv11 ->
+                                        case Data.ByteString.Base16.$wencode
+                                               ww1
+                                               ww2
+                                               ww3
+                                               ww4 of ww15 { Data.ByteString.Internal.PS ww16 ww17 ww18 ww19 ->
+                                        case Data.Text.Encoding.$wdecodeUtf8With
+                                               Data.Text.Encoding.Error.strictDecode
+                                               ww16
+                                               ww17
+                                               ww18
+                                               ww19 of dt2 { Data.Text.Internal.Text ipv12 ipv13 ipv14 ->
+                                        case email of dt3 { Data.Text.Internal.Text ipv15 ipv16 ipv17 ->
+                                        Model.CoreTypes.User
+                                          dt
+                                          dt1
+                                          dt2
+                                          dt3
+                                          GHC.Types.False
+                                          GHC.Types.False } } } } } } } }))
+                                      `cast`
+                                    (Control.Monad.Trans.Reader.NTCo:ReaderT[0]
+                                         <Database.Persist.Sql.Types.SqlBackend>_R
+                                         <Control.Monad.Logger.NoLoggingT
+                                            (Control.Monad.Trans.Resource.Internal.ResourceT
+                                               GHC.Types.IO)>_R
+                                         <Database.Persist.Class.PersistEntity.Key
+                                            Model.CoreTypes.User>_N)
+                                      r1)
+                                     `cast`
+                                   (Trans
+                                        (Control.Monad.Logger.NTCo:NoLoggingT[0]
+                                             <Control.Monad.Trans.Resource.Internal.ResourceT
+                                                GHC.Types.IO>_R <Database.Persist.Class.PersistEntity.Key
+                                                                   Model.CoreTypes.User>_N)
+                                        (Control.Monad.Trans.Resource.Internal.NTCo:ResourceT[0]
+                                             <GHC.Types.IO>_R
+                                             <Database.Persist.Class.PersistEntity.Key
+                                                Model.CoreTypes.User>_N))
+                                     r)
+                                    `cast`
+                                  (GHC.Types.NTCo:IO[0]
+                                       <Database.Persist.Class.PersistEntity.Key
+                                          Model.CoreTypes.User>_R)
+                                    ipv4 of ds4 { (#,#) ipv6 ipv7 ->
+                             (# ipv6, Web.Actions.User.registerUser_eta2 #) } } }
+                          GHC.Base.Just ds
+                          -> (# ipv2, Web.Actions.User.registerUser_eta1 #) }
+                     GHC.Base.Just ds
+                     -> (# ipv2, Web.Actions.User.registerUser_eta #) } } })
+                    `cast`
+                  (Trans
+                       (<GHC.IORef.IORef
+                           Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                        ->_R Sym (GHC.Types.NTCo:IO[0]
+                                      <Model.ResponseTypes.CommonResponse>_R))
+                       (Trans
+                            (Sym (Control.Monad.Trans.Resource.Internal.NTCo:ResourceT[0]
+                                      <GHC.Types.IO>_R <Model.ResponseTypes.CommonResponse>_N))
+                            (Sym (Control.Monad.Logger.NTCo:NoLoggingT[0]
+                                      <Control.Monad.Trans.Resource.Internal.ResourceT
+                                         GHC.Types.IO>_R) <Model.ResponseTypes.CommonResponse>_N))))
+                   `cast`
+                 (Sym (Control.Monad.Trans.Reader.NTCo:ReaderT[0]
+                           <Database.Persist.Sql.Types.SqlBackend>_R
+                           <Control.Monad.Logger.NoLoggingT
+                              (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)>_R
+                           <Model.ResponseTypes.CommonResponse>_N))) -}
+73dc159dc203f0141e1d1fddc0389347
+  registerUser1 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   "Username already taken!"#) -}
+acbd38ddf71e556de5a33bbab982e97b
+  registerUser2 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   "Email already registered!"#) -}
+ea7c405860d0560ebad16ae94fdba6fd
+  registerUser3 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   "Signup complete. You may now login."#) -}
+c21a44632f6dc16a56efd33b93033e60
+  registerUser4 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 512) -}
+da8c54e5816be45948bda5b4f3a5e41d
+  registerUser5 ::
+    Model.CoreTypes.User
+    -> Control.Monad.Trans.Reader.ReaderT
+         Database.Persist.Sql.Types.SqlBackend
+         (Control.Monad.Logger.NoLoggingT
+            (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO))
+         (Database.Persist.Class.PersistEntity.Key Model.CoreTypes.User)
+  {- Unfolding: (Database.Persist.Sql.Orphan.PersistStore.$w$cinsert
+                   @ Model.CoreTypes.User
+                   @ (Control.Monad.Logger.NoLoggingT
+                        (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO))
+                   Web.Actions.User.$s$fMonadIONoLoggingT
+                   Model.CoreTypes.$fPersistEntityUser) -}
+0e1defad19d27738886a4b246d2fcea0
+  registerUser6 ::
+    Database.Persist.Class.PersistEntity.Unique Model.CoreTypes.User
+    -> Control.Monad.Trans.Reader.ReaderT
+         Database.Persist.Sql.Types.SqlBackend
+         (Control.Monad.Logger.NoLoggingT
+            (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO))
+         (GHC.Base.Maybe
+            (Database.Persist.Class.PersistEntity.Entity Model.CoreTypes.User))
+  {- Unfolding: (Database.Persist.Sql.Orphan.PersistUnique.$w$cgetBy
+                   @ Model.CoreTypes.User
+                   @ (Control.Monad.Logger.NoLoggingT
+                        (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO))
+                   Web.Actions.User.$s$fMonadIONoLoggingT
+                   Model.CoreTypes.$fPersistEntityUser) -}
+f090c38fd73ce90269aefd1d9d3429ca
+  registerUser_eta :: Model.ResponseTypes.CommonResponse
+  {- Strictness: m1,
+     Unfolding: (Model.ResponseTypes.CommonError
+                   Web.Actions.User.registerUser1) -}
+f78a2802560fbc6f65f8204f81f1d285
+  registerUser_eta1 :: Model.ResponseTypes.CommonResponse
+  {- Strictness: m1,
+     Unfolding: (Model.ResponseTypes.CommonError
+                   Web.Actions.User.registerUser2) -}
+95b8d61c5475a2134490752031ab0705
+  registerUser_eta2 :: Model.ResponseTypes.CommonResponse
+  {- Strictness: m2,
+     Unfolding: (Model.ResponseTypes.CommonSuccess
+                   Web.Actions.User.registerUser3) -}
+9651c05c20a2810e64b3038d729bc15c
+  updateUser ::
+    Data.Text.Internal.Text
+    -> Database.Persist.Sql.Types.SqlPersistM
+         Model.ResponseTypes.CommonResponse
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ name :: Data.Text.Internal.Text ->
+                 let {
+                   m1 :: Control.Monad.Trans.Reader.ReaderT
+                           Database.Persist.Sql.Types.SqlBackend
+                           (Control.Monad.Logger.NoLoggingT
+                              (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO))
+                           ()
+                   = Web.Actions.User.updateUser10
+                       (GHC.Types.:
+                          @ (Database.Persist.Class.PersistEntity.Filter
+                               Model.CoreTypes.User)
+                          (Database.Persist.Class.PersistEntity.Filter
+                             @ Model.CoreTypes.User
+                             @ Data.Text.Internal.Text
+                             Database.Persist.Class.PersistField.$fPersistFieldText0
+                             Web.Actions.User.updateUser9
+                               `cast`
+                             (Sub (Sym (Model.CoreTypes.TFCo:R:EntityFieldUsertyp[0])) <Data.Text.Internal.Text>_N)
+                             (Data.Either.Left
+                                @ Data.Text.Internal.Text
+                                @ [Data.Text.Internal.Text]
+                                name)
+                             Database.Persist.Types.Base.Eq)
+                          (GHC.Types.[]
+                             @ (Database.Persist.Class.PersistEntity.Filter
+                                  Model.CoreTypes.User)))
+                       Web.Actions.User.updateUser3
+                 } in
+                 let {
+                   m2 :: Control.Monad.Trans.Reader.ReaderT
+                           Database.Persist.Sql.Types.SqlBackend
+                           (Control.Monad.Logger.NoLoggingT
+                              (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO))
+                           (GHC.Base.Maybe
+                              (Database.Persist.Class.PersistEntity.Entity Model.CoreTypes.User))
+                   = Web.Actions.User.registerUser6
+                       (Model.CoreTypes.UniqueUsername name)
+                         `cast`
+                       (Sub (Sym (Model.CoreTypes.TFCo:R:UniqueUser[0])))
+                 } in
+                 (\ r1 :: Database.Persist.Sql.Types.SqlBackend ->
+                  let {
+                    a27 :: Control.Monad.Logger.NoLoggingT
+                             (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)
+                             (GHC.Base.Maybe
+                                (Database.Persist.Class.PersistEntity.Entity Model.CoreTypes.User))
+                    = m2
+                        `cast`
+                      (Control.Monad.Trans.Reader.NTCo:ReaderT[0]
+                           <Database.Persist.Sql.Types.SqlBackend>_R
+                           <Control.Monad.Logger.NoLoggingT
+                              (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)>_R
+                           <GHC.Base.Maybe
+                              (Database.Persist.Class.PersistEntity.Entity
+                                 Model.CoreTypes.User)>_N)
+                        r1
+                  } in
+                  (\ r :: GHC.IORef.IORef
+                            Control.Monad.Trans.Resource.Internal.ReleaseMap
+                     s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                   case (a27
+                           `cast`
+                         (Trans
+                              (Control.Monad.Logger.NTCo:NoLoggingT[0]
+                                   <Control.Monad.Trans.Resource.Internal.ResourceT
+                                      GHC.Types.IO>_R <GHC.Base.Maybe
+                                                         (Database.Persist.Class.PersistEntity.Entity
+                                                            Model.CoreTypes.User)>_N)
+                              (Control.Monad.Trans.Resource.Internal.NTCo:ResourceT[0]
+                                   <GHC.Types.IO>_R
+                                   <GHC.Base.Maybe
+                                      (Database.Persist.Class.PersistEntity.Entity
+                                         Model.CoreTypes.User)>_N))
+                           r)
+                          `cast`
+                        (GHC.Types.NTCo:IO[0]
+                             <GHC.Base.Maybe
+                                (Database.Persist.Class.PersistEntity.Entity
+                                   Model.CoreTypes.User)>_R)
+                          s of ds1 { (#,#) ipv ipv1 ->
+                   case ipv1 of wild {
+                     GHC.Base.Nothing -> (# ipv, Web.Actions.User.updateUser_eta1 #)
+                     GHC.Base.Just ds
+                     -> case ((m1
+                                 `cast`
+                               (Control.Monad.Trans.Reader.NTCo:ReaderT[0]
+                                    <Database.Persist.Sql.Types.SqlBackend>_R
+                                    <Control.Monad.Logger.NoLoggingT
+                                       (Control.Monad.Trans.Resource.Internal.ResourceT
+                                          GHC.Types.IO)>_R
+                                    <()>_N)
+                                 r1)
+                                `cast`
+                              (Trans
+                                   (Control.Monad.Logger.NTCo:NoLoggingT[0]
+                                        <Control.Monad.Trans.Resource.Internal.ResourceT
+                                           GHC.Types.IO>_R <()>_N)
+                                   (Control.Monad.Trans.Resource.Internal.NTCo:ResourceT[0]
+                                        <GHC.Types.IO>_R <()>_N))
+                                r)
+                               `cast`
+                             (GHC.Types.NTCo:IO[0] <()>_R)
+                               ipv of ds2 { (#,#) ipv2 ipv3 ->
+                        (# ipv2, Web.Actions.User.updateUser_eta #) } } })
+                    `cast`
+                  (Trans
+                       (<GHC.IORef.IORef
+                           Control.Monad.Trans.Resource.Internal.ReleaseMap>_R
+                        ->_R Sym (GHC.Types.NTCo:IO[0]
+                                      <Model.ResponseTypes.CommonResponse>_R))
+                       (Trans
+                            (Sym (Control.Monad.Trans.Resource.Internal.NTCo:ResourceT[0]
+                                      <GHC.Types.IO>_R <Model.ResponseTypes.CommonResponse>_N))
+                            (Sym (Control.Monad.Logger.NTCo:NoLoggingT[0]
+                                      <Control.Monad.Trans.Resource.Internal.ResourceT
+                                         GHC.Types.IO>_R) <Model.ResponseTypes.CommonResponse>_N))))
+                   `cast`
+                 (Sym (Control.Monad.Trans.Reader.NTCo:ReaderT[0]
+                           <Database.Persist.Sql.Types.SqlBackend>_R
+                           <Control.Monad.Logger.NoLoggingT
+                              (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO)>_R
+                           <Model.ResponseTypes.CommonResponse>_N))) -}
+7377d54ec977f0d5c479c8568c43198a
+  updateUser1 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "It worked..."#) -}
+5636bb0237a5b633bac3c301ea176c2e
+  updateUser10 ::
+    [Database.Persist.Class.PersistEntity.Filter Model.CoreTypes.User]
+    -> [Database.Persist.Class.PersistEntity.Update
+          Model.CoreTypes.User]
+    -> Control.Monad.Trans.Reader.ReaderT
+         Database.Persist.Sql.Types.SqlBackend
+         (Control.Monad.Logger.NoLoggingT
+            (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO))
+         ()
+  {- Unfolding: (Database.Persist.Sql.Orphan.PersistQuery.$fPersistQuerySqlBackend_$cupdateWhere
+                   @ Model.CoreTypes.User
+                   @ (Control.Monad.Logger.NoLoggingT
+                        (Control.Monad.Trans.Resource.Internal.ResourceT GHC.Types.IO))
+                   Web.Actions.User.$s$fMonadIONoLoggingT
+                   Model.CoreTypes.$fPersistEntityUser
+                   Web.Actions.User.updateUser11) -}
+a177aaf684da2fef9532bcfb9cfaf7e0
+  updateUser11 ::
+    Database.Persist.Sql.Types.SqlBackend
+    ~ Database.Persist.Class.PersistEntity.PersistEntityBackend
+        Model.CoreTypes.User
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.Eq#
+                   @ *
+                   @ Database.Persist.Sql.Types.SqlBackend
+                   @ (Database.Persist.Class.PersistEntity.PersistEntityBackend
+                        Model.CoreTypes.User)
+                   @~ (Sym (Model.CoreTypes.TFCo:R:PersistEntityBackendUser[0]))) -}
+b5fe0ae4c68307b120e00c1b07c220de
+  updateUser2 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "Fuck"#) -}
+9390d60ba7548609a676bc898c7c6ab9
+  updateUser3 ::
+    [Database.Persist.Class.PersistEntity.Update Model.CoreTypes.User]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Database.Persist.Class.PersistEntity.Update
+                        Model.CoreTypes.User)
+                   Web.Actions.User.updateUser7
+                   Web.Actions.User.updateUser4) -}
+798276d4e91ac7fa9be44b6d75cb94ec
+  updateUser4 ::
+    [Database.Persist.Class.PersistEntity.Update Model.CoreTypes.User]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Database.Persist.Class.PersistEntity.Update
+                        Model.CoreTypes.User)
+                   Web.Actions.User.updateUser5
+                   (GHC.Types.[]
+                      @ (Database.Persist.Class.PersistEntity.Update
+                           Model.CoreTypes.User))) -}
+17b3f8bbff49ca0cf28541a17a3ee2d0
+  updateUser5 ::
+    Database.Persist.Class.PersistEntity.Update Model.CoreTypes.User
+  {- Unfolding: (Database.Persist.Class.PersistEntity.Update
+                   @ Model.CoreTypes.User
+                   @ GHC.Types.Bool
+                   Database.Persist.Class.PersistField.$fPersistFieldBool
+                   Web.Actions.User.updateUser6
+                     `cast`
+                   (Sub (Sym (Model.CoreTypes.TFCo:R:EntityFieldUsertyp[0])) <GHC.Types.Bool>_N)
+                   GHC.Types.True
+                   Database.Persist.Types.Base.Assign) -}
+19ed82c58a81cfb0ead8552a8d0e0bea
+  updateUser6 :: Model.CoreTypes.R:EntityFieldUsertyp GHC.Types.Bool
+  {- HasNoCafRefs,
+     Unfolding: (Model.CoreTypes.UserIsAuthor
+                   @ GHC.Types.Bool
+                   @~ <GHC.Types.Bool>_N) -}
+7bd83949b90e892e341d4ea5f7e2d90d
+  updateUser7 ::
+    Database.Persist.Class.PersistEntity.Update Model.CoreTypes.User
+  {- Unfolding: (Database.Persist.Class.PersistEntity.Update
+                   @ Model.CoreTypes.User
+                   @ GHC.Types.Bool
+                   Database.Persist.Class.PersistField.$fPersistFieldBool
+                   Web.Actions.User.updateUser8
+                     `cast`
+                   (Sub (Sym (Model.CoreTypes.TFCo:R:EntityFieldUsertyp[0])) <GHC.Types.Bool>_N)
+                   GHC.Types.True
+                   Database.Persist.Types.Base.Assign) -}
+e80bf834d5b9fbd93be506587747d48e
+  updateUser8 :: Model.CoreTypes.R:EntityFieldUsertyp GHC.Types.Bool
+  {- HasNoCafRefs,
+     Unfolding: (Model.CoreTypes.UserIsAdmin
+                   @ GHC.Types.Bool
+                   @~ <GHC.Types.Bool>_N) -}
+133b173c692914bf93796c437e7e5aca
+  updateUser9 ::
+    Model.CoreTypes.R:EntityFieldUsertyp Data.Text.Internal.Text
+  {- HasNoCafRefs,
+     Unfolding: (Model.CoreTypes.UserName
+                   @ Data.Text.Internal.Text
+                   @~ <Data.Text.Internal.Text>_N) -}
+c2040505478e422610ac3a452659ef19
+  updateUser_eta :: Model.ResponseTypes.CommonResponse
+  {- Strictness: m2,
+     Unfolding: (Model.ResponseTypes.CommonSuccess
+                   Web.Actions.User.updateUser1) -}
+ae3b42b53e312dabf9200f32605861d3
+  updateUser_eta1 :: Model.ResponseTypes.CommonResponse
+  {- Strictness: m1,
+     Unfolding: (Model.ResponseTypes.CommonError
+                   Web.Actions.User.updateUser2) -}
+"SPEC/Web.Actions.User $fApplicativeNoLoggingT @ (ResourceT IO)" [ALWAYS] forall $dFunctor :: GHC.Base.Functor
+                                                                                                (Control.Monad.Logger.NoLoggingT
+                                                                                                   (Control.Monad.Trans.Resource.Internal.ResourceT
+                                                                                                      GHC.Types.IO))
+                                                                                 $dMonad :: GHC.Base.Monad
+                                                                                              (Control.Monad.Trans.Resource.Internal.ResourceT
+                                                                                                 GHC.Types.IO)
+  Control.Monad.Logger.$fApplicativeNoLoggingT @ (Control.Monad.Trans.Resource.Internal.ResourceT
+                                                    GHC.Types.IO)
+                                               $dFunctor
+                                               $dMonad
+  = Web.Actions.User.$s$fApplicativeNoLoggingT
+"SPEC/Web.Actions.User $fApplicativeResourceT @ IO" [ALWAYS] forall $dFunctor :: GHC.Base.Functor
+                                                                                   (Control.Monad.Trans.Resource.Internal.ResourceT
+                                                                                      GHC.Types.IO)
+                                                                    $dApplicative :: GHC.Base.Applicative
+                                                                                       GHC.Types.IO
+  Control.Monad.Trans.Resource.Internal.$fApplicativeResourceT @ GHC.Types.IO
+                                                               $dFunctor
+                                                               $dApplicative
+  = Web.Actions.User.$s$fApplicativeNoLoggingT_$s$fApplicativeResourceT
+"SPEC/Web.Actions.User $fApplicativeResourceT_$c*> @ IO" [ALWAYS] forall $dFunctor :: GHC.Base.Functor
+                                                                                        (Control.Monad.Trans.Resource.Internal.ResourceT
+                                                                                           GHC.Types.IO)
+                                                                         $dApplicative :: GHC.Base.Applicative
+                                                                                            GHC.Types.IO
+  Control.Monad.Trans.Resource.Internal.$fApplicativeResourceT_$c*> @ GHC.Types.IO
+                                                                    $dFunctor
+                                                                    $dApplicative
+  = Web.Actions.User.$s$fApplicativeNoLoggingT_$s$fApplicativeResourceT_$c*>
+"SPEC/Web.Actions.User $fApplicativeResourceT_$c<* @ IO" [ALWAYS] forall $dFunctor :: GHC.Base.Functor
+                                                                                        (Control.Monad.Trans.Resource.Internal.ResourceT
+                                                                                           GHC.Types.IO)
+                                                                         $dApplicative :: GHC.Base.Applicative
+                                                                                            GHC.Types.IO
+  Control.Monad.Trans.Resource.Internal.$fApplicativeResourceT_$c<* @ GHC.Types.IO
+                                                                    $dFunctor
+                                                                    $dApplicative
+  = Web.Actions.User.$s$fApplicativeNoLoggingT_$s$fApplicativeResourceT_$c<*
+"SPEC/Web.Actions.User $fApplicativeResourceT_$cpure @ IO" [ALWAYS] forall $dFunctor :: GHC.Base.Functor
+                                                                                          (Control.Monad.Trans.Resource.Internal.ResourceT
+                                                                                             GHC.Types.IO)
+                                                                           $dApplicative :: GHC.Base.Applicative
+                                                                                              GHC.Types.IO
+  Control.Monad.Trans.Resource.Internal.$fApplicativeResourceT_$cpure @ GHC.Types.IO
+                                                                      $dFunctor
+                                                                      $dApplicative
+  = Web.Actions.User.$s$fApplicativeNoLoggingT_$s$fApplicativeResourceT_$cpure
+"SPEC/Web.Actions.User $fFunctorNoLoggingT @ (ResourceT IO)" [ALWAYS] forall $dMonad :: GHC.Base.Monad
+                                                                                          (Control.Monad.Trans.Resource.Internal.ResourceT
+                                                                                             GHC.Types.IO)
+  Control.Monad.Logger.$fFunctorNoLoggingT @ (Control.Monad.Trans.Resource.Internal.ResourceT
+                                                GHC.Types.IO)
+                                           $dMonad
+  = Web.Actions.User.$s$fApplicativeNoLoggingT_$s$fFunctorNoLoggingT
+"SPEC/Web.Actions.User $fFunctorResourceT @ IO" [ALWAYS] forall $dFunctor :: GHC.Base.Functor
+                                                                               GHC.Types.IO
+  Control.Monad.Trans.Resource.Internal.$fFunctorResourceT @ GHC.Types.IO
+                                                           $dFunctor
+  = Web.Actions.User.$s$fApplicativeNoLoggingT_$s$fFunctorResourceT
+"SPEC/Web.Actions.User $fMonadIONoLoggingT @ (ResourceT IO)" [ALWAYS] forall $dMonad :: GHC.Base.Monad
+                                                                                          (Control.Monad.Logger.NoLoggingT
+                                                                                             (Control.Monad.Trans.Resource.Internal.ResourceT
+                                                                                                GHC.Types.IO))
+                                                                             $dMonadIO :: Control.Monad.IO.Class.MonadIO
+                                                                                            (Control.Monad.Trans.Resource.Internal.ResourceT
+                                                                                               GHC.Types.IO)
+  Control.Monad.Logger.$fMonadIONoLoggingT @ (Control.Monad.Trans.Resource.Internal.ResourceT
+                                                GHC.Types.IO)
+                                           $dMonad
+                                           $dMonadIO
+  = Web.Actions.User.$s$fMonadIONoLoggingT
+"SPEC/Web.Actions.User $fMonadIOResourceT @ IO" [ALWAYS] forall $dMonad :: GHC.Base.Monad
+                                                                             (Control.Monad.Trans.Resource.Internal.ResourceT
+                                                                                GHC.Types.IO)
+                                                                $dMonadIO :: Control.Monad.IO.Class.MonadIO
+                                                                               GHC.Types.IO
+  Control.Monad.Trans.Resource.Internal.$fMonadIOResourceT @ GHC.Types.IO
+                                                           $dMonad
+                                                           $dMonadIO
+  = Web.Actions.User.$s$fMonadIONoLoggingT_$s$fMonadIOResourceT
+"SPEC/Web.Actions.User $fMonadIOResourceT_$cliftIO @ IO" [ALWAYS] forall $dMonad :: GHC.Base.Monad
+                                                                                      (Control.Monad.Trans.Resource.Internal.ResourceT
+                                                                                         GHC.Types.IO)
+                                                                         $dMonadIO :: Control.Monad.IO.Class.MonadIO
+                                                                                        GHC.Types.IO
+  Control.Monad.Trans.Resource.Internal.$fMonadIOResourceT_$cliftIO @ GHC.Types.IO
+                                                                    $dMonad
+                                                                    $dMonadIO
+  = Web.Actions.User.$s$fMonadIONoLoggingT_$s$fMonadIOResourceT_$cliftIO
+"SPEC/Web.Actions.User $fMonadNoLoggingT @ (ResourceT IO)" [ALWAYS] forall $dApplicative :: GHC.Base.Applicative
+                                                                                              (Control.Monad.Logger.NoLoggingT
+                                                                                                 (Control.Monad.Trans.Resource.Internal.ResourceT
+                                                                                                    GHC.Types.IO))
+                                                                           $dMonad :: GHC.Base.Monad
+                                                                                        (Control.Monad.Trans.Resource.Internal.ResourceT
+                                                                                           GHC.Types.IO)
+  Control.Monad.Logger.$fMonadNoLoggingT @ (Control.Monad.Trans.Resource.Internal.ResourceT
+                                              GHC.Types.IO)
+                                         $dApplicative
+                                         $dMonad
+  = Web.Actions.User.$s$fMonadIONoLoggingT_$s$fMonadNoLoggingT
+"SPEC/Web.Actions.User $fMonadNoLoggingT_$c>> @ (ResourceT IO)" [ALWAYS] forall $dApplicative :: GHC.Base.Applicative
+                                                                                                   (Control.Monad.Logger.NoLoggingT
+                                                                                                      (Control.Monad.Trans.Resource.Internal.ResourceT
+                                                                                                         GHC.Types.IO))
+                                                                                $dMonad :: GHC.Base.Monad
+                                                                                             (Control.Monad.Trans.Resource.Internal.ResourceT
+                                                                                                GHC.Types.IO)
+  Control.Monad.Logger.$fMonadNoLoggingT_$c>> @ (Control.Monad.Trans.Resource.Internal.ResourceT
+                                                   GHC.Types.IO)
+                                              $dApplicative
+                                              $dMonad
+  = Web.Actions.User.$s$fMonadIONoLoggingT_$s$fMonadNoLoggingT_$c>>
+"SPEC/Web.Actions.User $fMonadResourceT @ IO" [ALWAYS] forall $dApplicative :: GHC.Base.Applicative
+                                                                                 (Control.Monad.Trans.Resource.Internal.ResourceT
+                                                                                    GHC.Types.IO)
+                                                              $dMonad :: GHC.Base.Monad GHC.Types.IO
+  Control.Monad.Trans.Resource.Internal.$fMonadResourceT @ GHC.Types.IO
+                                                         $dApplicative
+                                                         $dMonad
+  = Web.Actions.User.$s$fApplicativeNoLoggingT_$s$fMonadResourceT
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

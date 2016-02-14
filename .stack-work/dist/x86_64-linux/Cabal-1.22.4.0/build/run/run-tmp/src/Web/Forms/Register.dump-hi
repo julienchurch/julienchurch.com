@@ -1,0 +1,509 @@
+
+==================== FINAL INTERFACE ====================
+2016-02-14 08:38:48.931505 UTC
+
+interface main@main:Web.Forms.Register 7102
+  interface hash: a80f398c5f23a8c59aefda1333e2717f
+  ABI hash: 87c8d43277cc71538303f3499d8bf694
+  export-list hash: 1de76fc2c490b660e1bbd624796904f8
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 8b4a7ca52c5a8aaee8dec9fdb702216b
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Web.Forms.Register.registerForm
+  Web.Forms.Register.registerFormSpec
+  Web.Forms.Register.RegisterRequest{Web.Forms.Register.RegisterRequest Web.Forms.Register.rr_email Web.Forms.Register.rr_password Web.Forms.Register.rr_passwordConfirm Web.Forms.Register.rr_username}
+module dependencies: Web.Forms.Common
+package dependencies: array-0.5.1.0@array_E0sTtauuKsGDLZoT7lTbgZ
+                      base-4.8.1.0 binary-0.7.5.0@binar_IvYoLp9H6Xy3zEH13MmZwd
+                      blaze-bootstrap-0.1.0.1@blaze_5SRNB4e9MwR2CxHNYyMDgh
+                      blaze-html-0.8.1.0@blaze_66ArNDIe2grI2k2uqvUABl
+                      blaze-markup-0.7.0.2@blaze_6nhu7sRJtdB5v7vsVCCq8v
+                      bytestring-0.10.6.0@bytes_6elQVSg5cWdFrvRnfxTUrH
+                      containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN
+                      deepseq-1.4.1.1@deeps_LbCWUlehDDeLxurARKDH5o
+                      digestive-functors-blaze-0.6.0.6@diges_0rUJ1NBhIV79u3XsJJmOnl
+                      digestive-functors-0.8.0.0@diges_4fM933LOkmWI9ExzL0lC1m
+                      digestive-bootstrap-0.1.0.1@diges_I0ogH1fIAKTJ5Nn8hsVg0P
+                      ghc-prim-0.4.0.0 http-types-0.8.6@httpt_9EbXaDnKxhPJJk9e6cJlj9
+                      integer-gmp-1.0.0.0 mtl-2.2.1@mtl_KMpng31YRYc5JfMWFZ3FCU
+                      text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh
+                      time-1.5.0.1@time_AXTdBF9VRQoBOqJT6qtmVH
+orphans: base-4.8.1.0:GHC.Base base-4.8.1.0:GHC.Float
+         binary-0.7.5.0@binar_IvYoLp9H6Xy3zEH13MmZwd:Data.Binary.Generic
+         bytestring-0.10.6.0@bytes_6elQVSg5cWdFrvRnfxTUrH:Data.ByteString.Builder
+         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text
+         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Lazy
+         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Show
+         time-1.5.0.1@time_AXTdBF9VRQoBOqJT6qtmVH:Data.Time.Calendar.Gregorian
+         time-1.5.0.1@time_AXTdBF9VRQoBOqJT6qtmVH:Data.Time.Format.Parse
+         time-1.5.0.1@time_AXTdBF9VRQoBOqJT6qtmVH:Data.Time.LocalTime.LocalTime
+family instance modules: base-4.8.1.0:Control.Applicative
+                         base-4.8.1.0:Data.Either base-4.8.1.0:Data.Functor.Identity
+                         base-4.8.1.0:Data.Monoid base-4.8.1.0:Data.Type.Equality
+                         base-4.8.1.0:Data.Void base-4.8.1.0:GHC.Exts
+                         base-4.8.1.0:GHC.Generics
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.IntMap.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.IntSet.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Map.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Sequence
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Set.Base
+                         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text
+                         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Lazy
+import  -/  base-4.8.1.0:Data.Functor 5c701b0af1708f0192a25dfe14ce6274
+import  -/  base-4.8.1.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.1.0:GHC.Show b8c65ca3124f92a166c9f05120382442
+import  -/  base-4.8.1.0:Prelude 518f762991bc287d78f21a73c974da1f
+import  -/  blaze-html-0.8.1.0@blaze_66ArNDIe2grI2k2uqvUABl:Text.Blaze.Html 39a67c7b43587d59c457711204577da4
+import  -/  digestive-functors-0.8.0.0@diges_4fM933LOkmWI9ExzL0lC1m:Text.Digestive a02ca0a7d2d75627d58cd9de1e11b390
+import  -/  digestive-functors-0.8.0.0@diges_4fM933LOkmWI9ExzL0lC1m:Text.Digestive.Form.Internal 0aae07d0765c122f391fbc367d7d9c27
+import  -/  digestive-bootstrap-0.1.0.1@diges_I0ogH1fIAKTJ5Nn8hsVg0P:Text.Digestive.Bootstrap 6304c63d092f7d1f6f3ac0f036cbb7ec
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  http-types-0.8.6@httpt_9EbXaDnKxhPJJk9e6cJlj9:Network.HTTP.Types.Method a0f8da9f3ab67676b2d43f0c9b49847e
+import  -/  Web.Forms.Common c90434c00876c90515c3a18fc7078a0d
+  exports: b93c5770fc3ce42727a85c5a5e1be11f
+  emailFormlet aaf3f9c5de5b17556170559be6219996
+  passwordFormlet 18e1b1cd2ff2802b1d43c2506de866b8
+  usernameFormlet f2c45974d9ee7f3054e269ab353d0ec2
+import  -/  text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text a305d268b7ef3fbd1de87bd464ac8e2a
+import  -/  text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Internal 9aaf446b91649c416d85a19f08d51f8e
+a83a6509ce62c2bce67f35c0a0eaa0a7
+  $fShowRegisterRequest ::
+    GHC.Show.Show Web.Forms.Register.RegisterRequest
+  DFunId[0]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Web.Forms.Register.RegisterRequest
+                  Web.Forms.Register.$fShowRegisterRequest_$cshowsPrec
+                  Web.Forms.Register.$fShowRegisterRequest_$cshow
+                  Web.Forms.Register.$fShowRegisterRequest_$cshowList -}
+a83a6509ce62c2bce67f35c0a0eaa0a7
+  $fShowRegisterRequest1 ::
+    Web.Forms.Register.RegisterRequest -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (\ w :: Web.Forms.Register.RegisterRequest
+                   w1 :: GHC.Base.String ->
+                 case w of ww { Web.Forms.Register.RegisterRequest ww1 ww2 ww3 ww4 ->
+                 Web.Forms.Register.$w$cshowsPrec 0 ww1 ww2 ww3 ww4 w1 }) -}
+e0e0da81ad276504c80ab031074477cc
+  $fShowRegisterRequest2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "RegisterRequest {"#) -}
+e6ceabdc932f41dbcd9ff9364febdcf8
+  $fShowRegisterRequest3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "}"#) -}
+fc24b46b61c6a8d41a937c7532663c35
+  $fShowRegisterRequest4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "rr_email = "#) -}
+3a6555cbe38bf514c48a401dd5f840bb
+  $fShowRegisterRequest5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "rr_passwordConfirm = "#) -}
+ee5915aa826faf23e9920be91729baf4
+  $fShowRegisterRequest6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "rr_password = "#) -}
+5d96cb292423a5d66cdb617b8e90c2ce
+  $fShowRegisterRequest7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# ", "#) -}
+9b001346604847ebdacb673114f582ac
+  $fShowRegisterRequest8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "rr_username = "#) -}
+a83a6509ce62c2bce67f35c0a0eaa0a7
+  $fShowRegisterRequest_$cshow ::
+    Web.Forms.Register.RegisterRequest -> GHC.Base.String
+  {- Arity: 1,
+     Strictness: <S,1*U(1*U(U,U,U),1*U(U,U,U),1*U(U,U,U),1*U(U,U,U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ x :: Web.Forms.Register.RegisterRequest ->
+                 Web.Forms.Register.$fShowRegisterRequest_$cshowsPrec
+                   GHC.Show.shows18
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+a83a6509ce62c2bce67f35c0a0eaa0a7
+  $fShowRegisterRequest_$cshowList ::
+    [Web.Forms.Register.RegisterRequest] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Web.Forms.Register.RegisterRequest
+                   Web.Forms.Register.$fShowRegisterRequest1) -}
+a83a6509ce62c2bce67f35c0a0eaa0a7
+  $fShowRegisterRequest_$cshowsPrec ::
+    GHC.Types.Int
+    -> Web.Forms.Register.RegisterRequest -> GHC.Show.ShowS
+  {- Arity: 3,
+     Strictness: <S,1*U(U)><S,1*U(1*U(U,U,U),1*U(U,U,U),1*U(U,U,U),1*U(U,U,U))><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ w :: GHC.Types.Int
+                   w1 :: Web.Forms.Register.RegisterRequest
+                   w2 :: GHC.Base.String ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Web.Forms.Register.RegisterRequest ww3 ww4 ww5 ww6 ->
+                 Web.Forms.Register.$w$cshowsPrec ww1 ww3 ww4 ww5 ww6 w2 } }) -}
+545d7017c47d81c669225e6e1cb248b4
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> Data.Text.Internal.Text
+    -> Data.Text.Internal.Text
+    -> Data.Text.Internal.Text
+    -> Data.Text.Internal.Text
+    -> GHC.Base.String
+    -> GHC.Base.String
+  {- Arity: 6,
+     Strictness: <L,U><L,1*U(U,U,U)><L,1*U(U,U,U)><L,1*U(U,U,U)><L,1*U(U,U,U)><L,U>,
+     Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.Int#
+                   ww1 :: Data.Text.Internal.Text
+                   ww2 :: Data.Text.Internal.Text
+                   ww3 :: Data.Text.Internal.Text
+                   ww4 :: Data.Text.Internal.Text
+                   w :: GHC.Base.String ->
+                 let {
+                   g :: GHC.Base.String -> GHC.Base.String
+                     {- Arity: 1, Strictness: <L,1*U> -}
+                   = \ x :: GHC.Base.String[OneShot] ->
+                     GHC.Base.++
+                       @ GHC.Types.Char
+                       Web.Forms.Register.$fShowRegisterRequest8
+                       (case Data.Text.Show.$w$cshowsPrec
+                               ww1
+                               (GHC.Base.++
+                                  @ GHC.Types.Char
+                                  Web.Forms.Register.$fShowRegisterRequest7
+                                  (GHC.Base.++
+                                     @ GHC.Types.Char
+                                     Web.Forms.Register.$fShowRegisterRequest6
+                                     (case Data.Text.Show.$w$cshowsPrec
+                                             ww2
+                                             (GHC.Base.++
+                                                @ GHC.Types.Char
+                                                Web.Forms.Register.$fShowRegisterRequest7
+                                                (GHC.Base.++
+                                                   @ GHC.Types.Char
+                                                   Web.Forms.Register.$fShowRegisterRequest5
+                                                   (case Data.Text.Show.$w$cshowsPrec
+                                                           ww3
+                                                           (GHC.Base.++
+                                                              @ GHC.Types.Char
+                                                              Web.Forms.Register.$fShowRegisterRequest7
+                                                              (GHC.Base.++
+                                                                 @ GHC.Types.Char
+                                                                 Web.Forms.Register.$fShowRegisterRequest4
+                                                                 (case Data.Text.Show.$w$cshowsPrec
+                                                                         ww4
+                                                                         (GHC.Base.++
+                                                                            @ GHC.Types.Char
+                                                                            Web.Forms.Register.$fShowRegisterRequest3
+                                                                            x) of ww5 { (#,#) ww6 ww7 ->
+                                                                  GHC.Types.:
+                                                                    @ GHC.Types.Char
+                                                                    ww6
+                                                                    ww7 }))) of ww5 { (#,#) ww6 ww7 ->
+                                                    GHC.Types.:
+                                                      @ GHC.Types.Char
+                                                      ww6
+                                                      ww7 }))) of ww5 { (#,#) ww6 ww7 ->
+                                      GHC.Types.:
+                                        @ GHC.Types.Char
+                                        ww6
+                                        ww7 }))) of ww5 { (#,#) ww6 ww7 ->
+                        GHC.Types.: @ GHC.Types.Char ww6 ww7 })
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 11) of wild {
+                   GHC.Types.False
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Web.Forms.Register.$fShowRegisterRequest2
+                        (g w)
+                   GHC.Types.True
+                   -> GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.shows9
+                        (GHC.Base.++
+                           @ GHC.Types.Char
+                           Web.Forms.Register.$fShowRegisterRequest2
+                           (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 w))) }) -}
+a83a6509ce62c2bce67f35c0a0eaa0a7
+  data RegisterRequest
+    = RegisterRequest {rr_username :: Data.Text.Internal.Text,
+                       rr_password :: Data.Text.Internal.Text,
+                       rr_passwordConfirm :: Data.Text.Internal.Text,
+                       rr_email :: Data.Text.Internal.Text}
+8d5c3c29e9ebd3baaeaecec076e819a9
+  registerForm ::
+    GHC.Base.Monad m =>
+    Text.Digestive.Form.Internal.Form
+      Text.Blaze.Html.Html m Web.Forms.Register.RegisterRequest
+  {- Arity: 1, Strictness: <L,U(A,C(C1(U)),A,U,A)>,
+     Unfolding: (\ @ (m :: * -> *) $dMonad :: GHC.Base.Monad m ->
+                 Text.Digestive.Form.Internal.App
+                   @ m
+                   @ (Text.Blaze.Internal.MarkupM ())
+                   @ m
+                   @ Web.Forms.Register.RegisterRequest
+                   @ Data.Text.Internal.Text
+                   (Text.Digestive.Form.Internal.App
+                      @ m
+                      @ (Text.Blaze.Internal.MarkupM ())
+                      @ m
+                      @ (Data.Text.Internal.Text -> Web.Forms.Register.RegisterRequest)
+                      @ Data.Text.Internal.Text
+                      (Text.Digestive.Form.Internal.App
+                         @ m
+                         @ (Text.Blaze.Internal.MarkupM ())
+                         @ m
+                         @ (Data.Text.Internal.Text
+                            -> Data.Text.Internal.Text -> Web.Forms.Register.RegisterRequest)
+                         @ Data.Text.Internal.Text
+                         (let {
+                            a5 :: Text.Digestive.Types.Result
+                                    (Text.Blaze.Internal.MarkupM ())
+                                    (Data.Text.Internal.Text
+                                     -> Data.Text.Internal.Text
+                                     -> Data.Text.Internal.Text
+                                     -> Web.Forms.Register.RegisterRequest)
+                                  -> m (Text.Digestive.Types.Result
+                                          (Text.Blaze.Internal.MarkupM ())
+                                          (Data.Text.Internal.Text
+                                           -> Data.Text.Internal.Text
+                                           -> Data.Text.Internal.Text
+                                           -> Web.Forms.Register.RegisterRequest))
+                            = GHC.Base.return
+                                @ m
+                                $dMonad
+                                @ (Text.Digestive.Types.Result
+                                     (Text.Blaze.Internal.MarkupM ())
+                                     (Data.Text.Internal.Text
+                                      -> Data.Text.Internal.Text
+                                      -> Data.Text.Internal.Text
+                                      -> Web.Forms.Register.RegisterRequest))
+                          } in
+                          Text.Digestive.Form.Internal.Map
+                            @ m
+                            @ (Text.Blaze.Internal.MarkupM ())
+                            @ m
+                            @ (Data.Text.Internal.Text
+                               -> Data.Text.Internal.Text
+                               -> Data.Text.Internal.Text
+                               -> Web.Forms.Register.RegisterRequest)
+                            @ Data.Text.Internal.Text
+                            (\ x :: Data.Text.Internal.Text ->
+                             a5
+                               (Text.Digestive.Types.Success
+                                  @ (Text.Blaze.Internal.MarkupM ())
+                                  @ (Data.Text.Internal.Text
+                                     -> Data.Text.Internal.Text
+                                     -> Data.Text.Internal.Text
+                                     -> Web.Forms.Register.RegisterRequest)
+                                  (Web.Forms.Register.RegisterRequest x)))
+                            (Text.Digestive.Form.Internal.Ref
+                               @ m
+                               @ Text.Blaze.Html.Html
+                               @ m
+                               @ Data.Text.Internal.Text
+                               Web.Forms.Register.registerForm4
+                               (Web.Forms.Common.usernameFormlet
+                                  @ m
+                                  $dMonad
+                                  (GHC.Base.Nothing @ Data.Text.Internal.Text))))
+                         (Text.Digestive.Form.Internal.Ref
+                            @ m
+                            @ Text.Blaze.Html.Html
+                            @ m
+                            @ Data.Text.Internal.Text
+                            Web.Forms.Register.registerForm3
+                            (Web.Forms.Common.passwordFormlet
+                               @ m
+                               $dMonad
+                               (GHC.Base.Nothing @ Data.Text.Internal.Text))))
+                      (Text.Digestive.Form.Internal.Ref
+                         @ m
+                         @ Text.Blaze.Html.Html
+                         @ m
+                         @ Data.Text.Internal.Text
+                         Web.Forms.Register.registerForm2
+                         (Web.Forms.Common.passwordFormlet
+                            @ m
+                            $dMonad
+                            (GHC.Base.Nothing @ Data.Text.Internal.Text))))
+                   (Text.Digestive.Form.Internal.Ref
+                      @ m
+                      @ Text.Blaze.Html.Html
+                      @ m
+                      @ Data.Text.Internal.Text
+                      Web.Forms.Register.registerForm1
+                      (Web.Forms.Common.emailFormlet
+                         @ m
+                         $dMonad
+                         (GHC.Base.Nothing @ Data.Text.Internal.Text)))) -}
+b3069260f5051b20441e2fdd45b05019
+  registerForm1 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "email"#) -}
+c8cbab93cb9f0bf9ff10e59fd0453d02
+  registerForm2 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "password2"#) -}
+33c60e2d959f42583411d4f43bb203dd
+  registerForm3 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "password1"#) -}
+0640cc65fb6576124fd2c8edf9140e10
+  registerForm4 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "name"#) -}
+ae8e6dfad66db8683d0377d86762fee8
+  registerFormSpec :: Text.Digestive.Bootstrap.FormMeta
+  {- Strictness: m,
+     Unfolding: (Text.Digestive.Bootstrap.FormMeta
+                   Network.HTTP.Types.Method.POST
+                   Web.Forms.Register.registerFormSpec18
+                   Web.Forms.Register.registerFormSpec2
+                   Web.Forms.Register.registerFormSpec1) -}
+0a810b55d0bdf580dac2d1084b7c9404
+  registerFormSpec1 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "Register"#) -}
+736b07e7ccbd5debf8764c0a2e737012
+  registerFormSpec10 :: GHC.Base.Maybe Data.Text.Internal.Text
+  {- Strictness: m2,
+     Unfolding: (GHC.Base.Just
+                   @ Data.Text.Internal.Text
+                   Web.Forms.Register.registerFormSpec11) -}
+3382e1acb62cc8dfb4138bb425e734d5
+  registerFormSpec11 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "Password"#) -}
+43152e827d2e2c64b3b61493501aad5d
+  registerFormSpec12 :: Text.Digestive.Bootstrap.FormElement
+  {- Strictness: m,
+     Unfolding: (Text.Digestive.Bootstrap.FormElement
+                   Web.Forms.Register.registerForm1
+                   Web.Forms.Register.registerFormSpec13
+                   Text.Digestive.Bootstrap.InputText) -}
+b05da7bb1c753e4f048e93b5fb6d75fd
+  registerFormSpec13 :: GHC.Base.Maybe Data.Text.Internal.Text
+  {- Strictness: m2,
+     Unfolding: (GHC.Base.Just
+                   @ Data.Text.Internal.Text
+                   Web.Forms.Register.registerFormSpec14) -}
+fcea5923ce7dcf8496b171f3dff6276d
+  registerFormSpec14 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "Email"#) -}
+977190b774c389c0109f80224e7787df
+  registerFormSpec15 :: Text.Digestive.Bootstrap.FormElement
+  {- Strictness: m,
+     Unfolding: (Text.Digestive.Bootstrap.FormElement
+                   Web.Forms.Register.registerForm4
+                   Web.Forms.Register.registerFormSpec16
+                   Text.Digestive.Bootstrap.InputText) -}
+fd316b3be38317c34bd584b1ce25182a
+  registerFormSpec16 :: GHC.Base.Maybe Data.Text.Internal.Text
+  {- Strictness: m2,
+     Unfolding: (GHC.Base.Just
+                   @ Data.Text.Internal.Text
+                   Web.Forms.Register.registerFormSpec17) -}
+654c9c79738e087db4410e2c267c34ff
+  registerFormSpec17 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "Username"#) -}
+dcff689dd3019f6b4efe0ef2f6abf67e
+  registerFormSpec18 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "/register"#) -}
+45f353acc01bdb0d2015ccca330d5eef
+  registerFormSpec2 :: [Text.Digestive.Bootstrap.FormElement]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Text.Digestive.Bootstrap.FormElement
+                   Web.Forms.Register.registerFormSpec15
+                   Web.Forms.Register.registerFormSpec3) -}
+c1a1d7ebe70c1fce4008917e370cafdd
+  registerFormSpec3 :: [Text.Digestive.Bootstrap.FormElement]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Text.Digestive.Bootstrap.FormElement
+                   Web.Forms.Register.registerFormSpec12
+                   Web.Forms.Register.registerFormSpec4) -}
+5d3769f8e7add3f9b512c537111bdc29
+  registerFormSpec4 :: [Text.Digestive.Bootstrap.FormElement]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Text.Digestive.Bootstrap.FormElement
+                   Web.Forms.Register.registerFormSpec9
+                   Web.Forms.Register.registerFormSpec5) -}
+fda30e7fdc8d52914cf4d43689310dfc
+  registerFormSpec5 :: [Text.Digestive.Bootstrap.FormElement]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Text.Digestive.Bootstrap.FormElement
+                   Web.Forms.Register.registerFormSpec6
+                   (GHC.Types.[] @ Text.Digestive.Bootstrap.FormElement)) -}
+54a5c11c605dd28fe34046e5a01d978b
+  registerFormSpec6 :: Text.Digestive.Bootstrap.FormElement
+  {- Strictness: m,
+     Unfolding: (Text.Digestive.Bootstrap.FormElement
+                   Web.Forms.Register.registerForm2
+                   Web.Forms.Register.registerFormSpec7
+                   Text.Digestive.Bootstrap.InputPassword) -}
+24a304c9095859e04ecc112f681d0aff
+  registerFormSpec7 :: GHC.Base.Maybe Data.Text.Internal.Text
+  {- Strictness: m2,
+     Unfolding: (GHC.Base.Just
+                   @ Data.Text.Internal.Text
+                   Web.Forms.Register.registerFormSpec8) -}
+4eff722bdb7703314a9e3e3bc5317b3c
+  registerFormSpec8 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "Repeat Password"#) -}
+39f34a2bdc99864072ee42caa49b4d2e
+  registerFormSpec9 :: Text.Digestive.Bootstrap.FormElement
+  {- Strictness: m,
+     Unfolding: (Text.Digestive.Bootstrap.FormElement
+                   Web.Forms.Register.registerForm3
+                   Web.Forms.Register.registerFormSpec10
+                   Text.Digestive.Bootstrap.InputPassword) -}
+029a1f7f0c20524b85278d34612e1e12
+  rr_email ::
+    Web.Forms.Register.RegisterRequest -> Data.Text.Internal.Text
+  RecSel Web.Forms.Register.RegisterRequest
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLS),1*U(A,A,A,1*U(U,U,U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Web.Forms.Register.RegisterRequest ->
+                 case ds of wild { Web.Forms.Register.RegisterRequest ds1 ds2 ds3 ds4 ->
+                 ds4 }) -}
+efa842c205eee563c54e9be0ca724df5
+  rr_password ::
+    Web.Forms.Register.RegisterRequest -> Data.Text.Internal.Text
+  RecSel Web.Forms.Register.RegisterRequest
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LSLL),1*U(A,1*U(U,U,U),A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Web.Forms.Register.RegisterRequest ->
+                 case ds of wild { Web.Forms.Register.RegisterRequest ds1 ds2 ds3 ds4 ->
+                 ds2 }) -}
+601d6a3890b9b69e85bec075ac8e8776
+  rr_passwordConfirm ::
+    Web.Forms.Register.RegisterRequest -> Data.Text.Internal.Text
+  RecSel Web.Forms.Register.RegisterRequest
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLSL),1*U(A,A,1*U(U,U,U),A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Web.Forms.Register.RegisterRequest ->
+                 case ds of wild { Web.Forms.Register.RegisterRequest ds1 ds2 ds3 ds4 ->
+                 ds3 }) -}
+0e10c71b6c087db50455ee62d2215ae3
+  rr_username ::
+    Web.Forms.Register.RegisterRequest -> Data.Text.Internal.Text
+  RecSel Web.Forms.Register.RegisterRequest
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SLLL),1*U(1*U(U,U,U),A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Web.Forms.Register.RegisterRequest ->
+                 case ds of wild { Web.Forms.Register.RegisterRequest ds1 ds2 ds3 ds4 ->
+                 ds1 }) -}
+instance GHC.Show.Show [Web.Forms.Register.RegisterRequest]
+  = Web.Forms.Register.$fShowRegisterRequest
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

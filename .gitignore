@@ -10,5 +10,4 @@
 *.aux
 *.hp
 *.swp
-.stack-work/
-funblog.db*
+julienchurch.db

@@ -1,0 +1,342 @@
+
+==================== FINAL INTERFACE ====================
+2016-02-14 08:38:49.112217 UTC
+
+interface main@main:Web.Forms.Login 7102
+  interface hash: 1759eb4d28bbb225034f3df77a50e1d3
+  ABI hash: a5ed6bacb3e00a9048fafee83270e57d
+  export-list hash: b334a7318dee7e82fc2fc49e9dda640c
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 8b4a7ca52c5a8aaee8dec9fdb702216b
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Web.Forms.Login.loginForm
+  Web.Forms.Login.loginFormSpec
+  Web.Forms.Login.LoginRequest{Web.Forms.Login.LoginRequest Web.Forms.Login.lr_password Web.Forms.Login.lr_user}
+module dependencies: Web.Forms.Common
+package dependencies: array-0.5.1.0@array_E0sTtauuKsGDLZoT7lTbgZ
+                      base-4.8.1.0 binary-0.7.5.0@binar_IvYoLp9H6Xy3zEH13MmZwd
+                      blaze-bootstrap-0.1.0.1@blaze_5SRNB4e9MwR2CxHNYyMDgh
+                      blaze-html-0.8.1.0@blaze_66ArNDIe2grI2k2uqvUABl
+                      blaze-markup-0.7.0.2@blaze_6nhu7sRJtdB5v7vsVCCq8v
+                      bytestring-0.10.6.0@bytes_6elQVSg5cWdFrvRnfxTUrH
+                      containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN
+                      deepseq-1.4.1.1@deeps_LbCWUlehDDeLxurARKDH5o
+                      digestive-functors-blaze-0.6.0.6@diges_0rUJ1NBhIV79u3XsJJmOnl
+                      digestive-functors-0.8.0.0@diges_4fM933LOkmWI9ExzL0lC1m
+                      digestive-bootstrap-0.1.0.1@diges_I0ogH1fIAKTJ5Nn8hsVg0P
+                      ghc-prim-0.4.0.0 http-types-0.8.6@httpt_9EbXaDnKxhPJJk9e6cJlj9
+                      integer-gmp-1.0.0.0 mtl-2.2.1@mtl_KMpng31YRYc5JfMWFZ3FCU
+                      text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh
+                      time-1.5.0.1@time_AXTdBF9VRQoBOqJT6qtmVH
+orphans: base-4.8.1.0:GHC.Base base-4.8.1.0:GHC.Float
+         binary-0.7.5.0@binar_IvYoLp9H6Xy3zEH13MmZwd:Data.Binary.Generic
+         bytestring-0.10.6.0@bytes_6elQVSg5cWdFrvRnfxTUrH:Data.ByteString.Builder
+         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text
+         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Lazy
+         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Show
+         time-1.5.0.1@time_AXTdBF9VRQoBOqJT6qtmVH:Data.Time.Calendar.Gregorian
+         time-1.5.0.1@time_AXTdBF9VRQoBOqJT6qtmVH:Data.Time.Format.Parse
+         time-1.5.0.1@time_AXTdBF9VRQoBOqJT6qtmVH:Data.Time.LocalTime.LocalTime
+family instance modules: base-4.8.1.0:Control.Applicative
+                         base-4.8.1.0:Data.Either base-4.8.1.0:Data.Functor.Identity
+                         base-4.8.1.0:Data.Monoid base-4.8.1.0:Data.Type.Equality
+                         base-4.8.1.0:Data.Void base-4.8.1.0:GHC.Exts
+                         base-4.8.1.0:GHC.Generics
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.IntMap.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.IntSet.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Map.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Sequence
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Set.Base
+                         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text
+                         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Lazy
+import  -/  base-4.8.1.0:Data.Functor 5c701b0af1708f0192a25dfe14ce6274
+import  -/  base-4.8.1.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.1.0:GHC.Show b8c65ca3124f92a166c9f05120382442
+import  -/  base-4.8.1.0:Prelude 518f762991bc287d78f21a73c974da1f
+import  -/  blaze-html-0.8.1.0@blaze_66ArNDIe2grI2k2uqvUABl:Text.Blaze.Html 39a67c7b43587d59c457711204577da4
+import  -/  digestive-functors-0.8.0.0@diges_4fM933LOkmWI9ExzL0lC1m:Text.Digestive a02ca0a7d2d75627d58cd9de1e11b390
+import  -/  digestive-functors-0.8.0.0@diges_4fM933LOkmWI9ExzL0lC1m:Text.Digestive.Form.Internal 0aae07d0765c122f391fbc367d7d9c27
+import  -/  digestive-bootstrap-0.1.0.1@diges_I0ogH1fIAKTJ5Nn8hsVg0P:Text.Digestive.Bootstrap 6304c63d092f7d1f6f3ac0f036cbb7ec
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  http-types-0.8.6@httpt_9EbXaDnKxhPJJk9e6cJlj9:Network.HTTP.Types.Method a0f8da9f3ab67676b2d43f0c9b49847e
+import  -/  Web.Forms.Common c90434c00876c90515c3a18fc7078a0d
+  exports: b93c5770fc3ce42727a85c5a5e1be11f
+  passwordFormlet 18e1b1cd2ff2802b1d43c2506de866b8
+  usernameFormlet f2c45974d9ee7f3054e269ab353d0ec2
+import  -/  text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text a305d268b7ef3fbd1de87bd464ac8e2a
+import  -/  text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Internal 9aaf446b91649c416d85a19f08d51f8e
+2202a81b349531cb9d7a9382612b4625
+  $fShowLoginRequest :: GHC.Show.Show Web.Forms.Login.LoginRequest
+  DFunId[0]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Web.Forms.Login.LoginRequest
+                  Web.Forms.Login.$fShowLoginRequest_$cshowsPrec
+                  Web.Forms.Login.$fShowLoginRequest_$cshow
+                  Web.Forms.Login.$fShowLoginRequest_$cshowList -}
+2202a81b349531cb9d7a9382612b4625
+  $fShowLoginRequest1 ::
+    Web.Forms.Login.LoginRequest -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (\ w :: Web.Forms.Login.LoginRequest
+                   w1 :: GHC.Base.String ->
+                 case w of ww { Web.Forms.Login.LoginRequest ww1 ww2 ->
+                 Web.Forms.Login.$w$cshowsPrec 0 ww1 ww2 w1 }) -}
+a710c13cd15c8f0bf75798ecc2820d8e
+  $fShowLoginRequest2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "LoginRequest {"#) -}
+91851d8325dcd1f04a0d66a844ca81ac
+  $fShowLoginRequest3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "}"#) -}
+ec748713fc049c164405a8b28ad0b8c8
+  $fShowLoginRequest4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "lr_password = "#) -}
+77406c48958283f3d19e7c5489be056e
+  $fShowLoginRequest5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# ", "#) -}
+be772de629b1d36919a35373164eb6fb
+  $fShowLoginRequest6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "lr_user = "#) -}
+2202a81b349531cb9d7a9382612b4625
+  $fShowLoginRequest_$cshow ::
+    Web.Forms.Login.LoginRequest -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U(U,U,U),1*U(U,U,U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ x :: Web.Forms.Login.LoginRequest ->
+                 Web.Forms.Login.$fShowLoginRequest_$cshowsPrec
+                   GHC.Show.shows18
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+2202a81b349531cb9d7a9382612b4625
+  $fShowLoginRequest_$cshowList ::
+    [Web.Forms.Login.LoginRequest] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Web.Forms.Login.LoginRequest
+                   Web.Forms.Login.$fShowLoginRequest1) -}
+2202a81b349531cb9d7a9382612b4625
+  $fShowLoginRequest_$cshowsPrec ::
+    GHC.Types.Int -> Web.Forms.Login.LoginRequest -> GHC.Show.ShowS
+  {- Arity: 3,
+     Strictness: <S,1*U(U)><S,1*U(1*U(U,U,U),1*U(U,U,U))><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ w :: GHC.Types.Int
+                   w1 :: Web.Forms.Login.LoginRequest
+                   w2 :: GHC.Base.String ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Web.Forms.Login.LoginRequest ww3 ww4 ->
+                 Web.Forms.Login.$w$cshowsPrec ww1 ww3 ww4 w2 } }) -}
+35eb897d6c0ece160d23a4496acc9fb5
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> Data.Text.Internal.Text
+    -> Data.Text.Internal.Text
+    -> GHC.Base.String
+    -> GHC.Base.String
+  {- Arity: 4, Strictness: <L,U><L,1*U(U,U,U)><L,1*U(U,U,U)><L,U>,
+     Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.Int#
+                   ww1 :: Data.Text.Internal.Text
+                   ww2 :: Data.Text.Internal.Text
+                   w :: GHC.Base.String ->
+                 let {
+                   g :: GHC.Base.String -> GHC.Base.String
+                     {- Arity: 1, Strictness: <L,1*U> -}
+                   = \ x :: GHC.Base.String[OneShot] ->
+                     GHC.Base.++
+                       @ GHC.Types.Char
+                       Web.Forms.Login.$fShowLoginRequest6
+                       (case Data.Text.Show.$w$cshowsPrec
+                               ww1
+                               (GHC.Base.++
+                                  @ GHC.Types.Char
+                                  Web.Forms.Login.$fShowLoginRequest5
+                                  (GHC.Base.++
+                                     @ GHC.Types.Char
+                                     Web.Forms.Login.$fShowLoginRequest4
+                                     (case Data.Text.Show.$w$cshowsPrec
+                                             ww2
+                                             (GHC.Base.++
+                                                @ GHC.Types.Char
+                                                Web.Forms.Login.$fShowLoginRequest3
+                                                x) of ww3 { (#,#) ww4 ww5 ->
+                                      GHC.Types.:
+                                        @ GHC.Types.Char
+                                        ww4
+                                        ww5 }))) of ww3 { (#,#) ww4 ww5 ->
+                        GHC.Types.: @ GHC.Types.Char ww4 ww5 })
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 11) of wild {
+                   GHC.Types.False
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Web.Forms.Login.$fShowLoginRequest2
+                        (g w)
+                   GHC.Types.True
+                   -> GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.shows9
+                        (GHC.Base.++
+                           @ GHC.Types.Char
+                           Web.Forms.Login.$fShowLoginRequest2
+                           (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 w))) }) -}
+2202a81b349531cb9d7a9382612b4625
+  data LoginRequest
+    = LoginRequest {lr_user :: Data.Text.Internal.Text,
+                    lr_password :: Data.Text.Internal.Text}
+0639dac264b0adefe2b477df92fb8c03
+  loginForm ::
+    GHC.Base.Monad m =>
+    Text.Digestive.Form.Internal.Form
+      Text.Blaze.Html.Html m Web.Forms.Login.LoginRequest
+  {- Arity: 1, Strictness: <L,U(A,A,A,U,A)>,
+     Unfolding: (\ @ (m :: * -> *) $dMonad :: GHC.Base.Monad m ->
+                 Text.Digestive.Form.Internal.App
+                   @ m
+                   @ (Text.Blaze.Internal.MarkupM ())
+                   @ m
+                   @ Web.Forms.Login.LoginRequest
+                   @ Data.Text.Internal.Text
+                   (let {
+                      a5 :: Text.Digestive.Types.Result
+                              (Text.Blaze.Internal.MarkupM ())
+                              (Data.Text.Internal.Text -> Web.Forms.Login.LoginRequest)
+                            -> m (Text.Digestive.Types.Result
+                                    (Text.Blaze.Internal.MarkupM ())
+                                    (Data.Text.Internal.Text -> Web.Forms.Login.LoginRequest))
+                      = GHC.Base.return
+                          @ m
+                          $dMonad
+                          @ (Text.Digestive.Types.Result
+                               (Text.Blaze.Internal.MarkupM ())
+                               (Data.Text.Internal.Text -> Web.Forms.Login.LoginRequest))
+                    } in
+                    Text.Digestive.Form.Internal.Map
+                      @ m
+                      @ (Text.Blaze.Internal.MarkupM ())
+                      @ m
+                      @ (Data.Text.Internal.Text -> Web.Forms.Login.LoginRequest)
+                      @ Data.Text.Internal.Text
+                      (\ x :: Data.Text.Internal.Text ->
+                       a5
+                         (Text.Digestive.Types.Success
+                            @ (Text.Blaze.Internal.MarkupM ())
+                            @ (Data.Text.Internal.Text -> Web.Forms.Login.LoginRequest)
+                            (Web.Forms.Login.LoginRequest x)))
+                      (Text.Digestive.Form.Internal.Ref
+                         @ m
+                         @ Text.Blaze.Html.Html
+                         @ m
+                         @ Data.Text.Internal.Text
+                         Web.Forms.Login.loginForm2
+                         (Web.Forms.Common.usernameFormlet
+                            @ m
+                            $dMonad
+                            (GHC.Base.Nothing @ Data.Text.Internal.Text))))
+                   (Text.Digestive.Form.Internal.Ref
+                      @ m
+                      @ Text.Blaze.Html.Html
+                      @ m
+                      @ Data.Text.Internal.Text
+                      Web.Forms.Login.loginForm1
+                      (Web.Forms.Common.passwordFormlet
+                         @ m
+                         $dMonad
+                         (GHC.Base.Nothing @ Data.Text.Internal.Text)))) -}
+92da704715b3d98e8d612f5c14eee697
+  loginForm1 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "password"#) -}
+0c2e7831ec829309eae6a180e8b3e664
+  loginForm2 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "name"#) -}
+e54d49058dd56ec96e382a8774f4e8df
+  loginFormSpec :: Text.Digestive.Bootstrap.FormMeta
+  {- Strictness: m,
+     Unfolding: (Text.Digestive.Bootstrap.FormMeta
+                   Network.HTTP.Types.Method.POST
+                   Web.Forms.Login.loginFormSpec10
+                   Web.Forms.Login.loginFormSpec2
+                   Web.Forms.Login.loginFormSpec1) -}
+85819d2ebd002aa86492d11780cb6ff5
+  loginFormSpec1 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "Login"#) -}
+b704689ac8fc75767105bf5e911f75d4
+  loginFormSpec10 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "/login"#) -}
+4283b2a1cf01dc13a0eb034aeb84e73d
+  loginFormSpec2 :: [Text.Digestive.Bootstrap.FormElement]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Text.Digestive.Bootstrap.FormElement
+                   Web.Forms.Login.loginFormSpec7
+                   Web.Forms.Login.loginFormSpec3) -}
+366a5702effc43651792d0aacec02299
+  loginFormSpec3 :: [Text.Digestive.Bootstrap.FormElement]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Text.Digestive.Bootstrap.FormElement
+                   Web.Forms.Login.loginFormSpec4
+                   (GHC.Types.[] @ Text.Digestive.Bootstrap.FormElement)) -}
+74bd064c3f633769d785e83ba9d764d6
+  loginFormSpec4 :: Text.Digestive.Bootstrap.FormElement
+  {- Strictness: m,
+     Unfolding: (Text.Digestive.Bootstrap.FormElement
+                   Web.Forms.Login.loginForm1
+                   Web.Forms.Login.loginFormSpec5
+                   Text.Digestive.Bootstrap.InputPassword) -}
+296fab423b6e8ca2d349e3c2d9eb7a71
+  loginFormSpec5 :: GHC.Base.Maybe Data.Text.Internal.Text
+  {- Strictness: m2,
+     Unfolding: (GHC.Base.Just
+                   @ Data.Text.Internal.Text
+                   Web.Forms.Login.loginFormSpec6) -}
+04010b11e95637bd0f177688a70593b3
+  loginFormSpec6 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "Password"#) -}
+5317f646b6b04c069b0af784c6f4069d
+  loginFormSpec7 :: Text.Digestive.Bootstrap.FormElement
+  {- Strictness: m,
+     Unfolding: (Text.Digestive.Bootstrap.FormElement
+                   Web.Forms.Login.loginForm2
+                   Web.Forms.Login.loginFormSpec8
+                   Text.Digestive.Bootstrap.InputText) -}
+db178976a8029f71f754a9bed9d3f4c6
+  loginFormSpec8 :: GHC.Base.Maybe Data.Text.Internal.Text
+  {- Strictness: m2,
+     Unfolding: (GHC.Base.Just
+                   @ Data.Text.Internal.Text
+                   Web.Forms.Login.loginFormSpec9) -}
+18c2682d3e2afefb1878ac7268e53331
+  loginFormSpec9 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "Username"#) -}
+982f5ee586f5460ea2eb5d67ba8cc73f
+  lr_password ::
+    Web.Forms.Login.LoginRequest -> Data.Text.Internal.Text
+  RecSel Web.Forms.Login.LoginRequest
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U(U,U,U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Web.Forms.Login.LoginRequest ->
+                 case ds of wild { Web.Forms.Login.LoginRequest ds1 ds2 -> ds2 }) -}
+39d64e79862c7ecb562d0ffbf3984a18
+  lr_user :: Web.Forms.Login.LoginRequest -> Data.Text.Internal.Text
+  RecSel Web.Forms.Login.LoginRequest
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U(U,U,U),A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: Web.Forms.Login.LoginRequest ->
+                 case ds of wild { Web.Forms.Login.LoginRequest ds1 ds2 -> ds1 }) -}
+instance GHC.Show.Show [Web.Forms.Login.LoginRequest]
+  = Web.Forms.Login.$fShowLoginRequest
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+
