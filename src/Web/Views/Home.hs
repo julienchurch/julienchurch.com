@@ -18,6 +18,7 @@ import Data.List (sort)
 
 homeView :: [Entity Post] -> SiteView -> Html
 homeView posts sv = [shamlet|
+                    <div>It works. Jesus Christ, it works.
                     $forall post <- posts
                         #{ (postTitle (entityVal post)) }
                         <br>
