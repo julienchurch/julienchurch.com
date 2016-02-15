@@ -65,12 +65,9 @@ mkSite content =
     maybeUser $ \mUser ->
     do blogSt <- getState
        let cfg = bs_cfg blogSt
-           sv =
-               SiteView
-               { sv_blogName = bcfg_name cfg
-               , sv_blogDesc = bcfg_desc cfg
-               , sv_user = fmap snd mUser
-               }
+           sv = SiteView { sv_blogName = bcfg_name cfg
+                         , sv_blogDesc = bcfg_desc cfg
+                         , sv_user = fmap snd mUser }
        blaze $ siteView sv (content sv)
 
 mkSite' :: Html -> BlogAction ctx a
@@ -85,9 +82,12 @@ blogApp =
               mkSite (homeView allPosts)
        get "/about" $
            mkSite mempty
+       get "/blog" $
+           do allPosts <- runSQL $ selectList [] [Desc PostDate]
+              mkSite (blogView allPosts)
        prehook guestOnlyHook $
-               do getpost "/register" registerAction
-                  getpost "/login" loginAction
+           do getpost "/register" registerAction
+              getpost "/login" loginAction
        prehook authHook $
                do get "/logout" logoutAction
                   prehook authorHook $

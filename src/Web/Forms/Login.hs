@@ -8,11 +8,9 @@ import Text.Digestive
 import Text.Digestive.Bootstrap
 import qualified Data.Text as T
 
-data LoginRequest
-   = LoginRequest
-   { lr_user :: T.Text
-   , lr_password :: T.Text
-   } deriving (Show)
+data LoginRequest = LoginRequest { lr_user :: T.Text
+                                 , lr_password :: T.Text } 
+                                 deriving (Show)
 
 loginForm :: Monad m => Form Html m LoginRequest
 loginForm =

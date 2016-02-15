@@ -36,35 +36,5 @@ panelWithErrorView title mError ct =
 homeView :: [Entity Post] -> SiteView -> Html
 homeView posts sv = $(shamletFile "src/Web/Views/homeview.hamlet")
 
-    {- H.html $ -}
-    {- do H.head $ -}
-        {- do H.title (H.toHtml $ sv_blogName sv) -}
-           {- H.meta ! A.charset "utf-8" -}
-           {- H.meta ! A.name "viewport" ! A.content "width=device-width, initial-scale=1" -}
-           {- H.link ! A.href "http://localhost:3030/css/main.css" ! A.rel "stylesheet" -}
-       {- H.body $ -}
-        {- do H.div ! A.class_ "blog-masthead" $ -}
-            {- H.div ! A.class_ "container" $ -}
-             {- H.nav ! A.class_ "blog-nav" $ -}
-              {- do H.a ! A.class_ "blog-nav-item" ! A.href "/" $ "Home" -}
-                 {- H.a ! A.class_ "blog-nav-item" ! A.href "/about" $ "About" -}
-                 {- case sv_user sv of -}
-                   {- Nothing -> -}
-                       {- do H.a ! A.class_ "blog-nav-item" ! A.href "/login" $ "Login" -}
-                   {- Just user -> -}
-                       {- do when (userIsAdmin user || userIsAuthor user) $ -}
-                               {- H.a ! A.class_ "blog-nav-item" ! A.href "/write" $ "Write" -}
-                          {- when (userIsAdmin user) $ -}
-                               {- H.a ! A.class_ "blog-nav-item" ! A.href "/manage" $ "Manage" -}
-                          {- H.a ! A.class_ "blog-nav-item" ! A.href "/logout" $ "Logout" -}
-           {- H.div ! A.class_ "container" $ body -}
-
-    {- H.div ! A.class_ "panel panel-info" ! A.style "margin-top: 30px;" $ -}
-     {- do H.div ! A.class_ "panel-heading" $ -}
-         {- H.div ! A.class_ "panel-title" $ H.toHtml title -}
-        {- H.div ! A.class_ "panel-body" $ -}
-         {- do case mError of -}
-              {- Just errMsg -> -}
-                  {- H.alertBox H.BootAlertDanger (H.toHtml errMsg) -}
-              {- Nothing -> mempty -}
-            {- H.div ct -}
+blogView :: [Entity Post] -> SiteView -> Html
+blogView post sv = $(shamletFile "src/Web/Views/blog.hamlet")

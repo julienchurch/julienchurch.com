@@ -7,7 +7,7 @@ $doctype html
            <nav>
            <ul>
              <li>
-               <a href="/home">Home
+               <a href="/">Home
              <li>
                <a href="/blog">Blog
              <li>
