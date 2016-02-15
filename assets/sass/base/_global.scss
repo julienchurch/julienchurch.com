@@ -1,8 +1,29 @@
 body {
-    background: #111;
+    background: #0a0a0a;
+    font-family: "Proxima Nova", "Avenir", "Helvetica Neue", helvetica, sans-serif;
+    font-size: 14px;
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 a {
-    color: white;
     text-decoration: none;
+}
+
+a:hover {
+    //
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 200;
+    margin: 0;
+}
+
+h1 {
+    color: white;
+    text-transform: uppercase;
+}
+
+.wrap {
+    max-width: 1000px;
+    margin: 0 auto;
 }

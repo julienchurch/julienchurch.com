@@ -13,7 +13,7 @@ import Web.Forms.Login
 import Web.Forms.Post
 import Web.Forms.Register
 import Web.Utils
-import Web.Views.Home
+--import Web.Views.Home
 import Web.Views.Site
 
 import Control.Monad
@@ -35,18 +35,12 @@ type SessionVal = Maybe SessionId
 type BlogApp ctx = SpockCtxM ctx SqlBackend SessionVal BlogState ()
 type BlogAction ctx a = SpockActionCtx ctx SqlBackend SessionVal BlogState a
 
-data BlogState
-   = BlogState
-   { bs_cfg :: BlogCfg
-   }
+data BlogState = BlogState { bs_cfg :: BlogCfg }
 
-data BlogCfg
-   = BlogCfg
-   { bcfg_db   :: T.Text
-   , bcfg_port :: Int
-   , bcfg_name :: T.Text
-   , bcfg_desc :: T.Text
-   }
+data BlogCfg = BlogCfg { bcfg_db   :: T.Text
+                       , bcfg_port :: Int
+                       , bcfg_name :: T.Text
+                       , bcfg_desc :: T.Text }
 
 parseConfig :: FilePath -> IO BlogCfg
 parseConfig cfgFile =

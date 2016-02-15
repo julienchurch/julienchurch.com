@@ -7,6 +7,7 @@ import Model.CoreTypes
 import System.FilePath
 
 import Control.Monad
+import Database.Persist
 import Text.Blaze.XHtml5 ((!))
 import qualified Data.Text as T
 import qualified Text.Blaze.Bootstrap as H
@@ -18,18 +19,22 @@ import Text.Hamlet (shamlet, hamlet, hamletFile, shamletFile)
 import Data.Char (toLower)
 import Data.List (sort)
 
-data SiteView
-   = SiteView
-   { sv_blogName :: T.Text
-   , sv_blogDesc :: T.Text
-   , sv_user :: Maybe User
-   }
+data SiteView = SiteView { sv_blogName :: T.Text
+                         , sv_blogDesc :: T.Text
+                         , sv_user     :: Maybe User }
 
 siteTemplate :: FilePath
 siteTemplate = "template.hamlet"
 
 siteView :: SiteView -> Html -> Html
 siteView sv body = $(shamletFile "src/Web/Views/template.hamlet")
+
+panelWithErrorView :: T.Text -> Maybe T.Text -> H.Html -> H.Html
+panelWithErrorView title mError ct = 
+    $(shamletFile "src/Web/Views/panelWithErrorView.hamlet")
+
+homeView :: [Entity Post] -> SiteView -> Html
+homeView posts sv = $(shamletFile "src/Web/Views/homeview.hamlet")
 
     {- H.html $ -}
     {- do H.head $ -}
@@ -54,9 +59,6 @@ siteView sv body = $(shamletFile "src/Web/Views/template.hamlet")
                           {- H.a ! A.class_ "blog-nav-item" ! A.href "/logout" $ "Logout" -}
            {- H.div ! A.class_ "container" $ body -}
 
-panelWithErrorView :: T.Text -> Maybe T.Text -> H.Html -> H.Html
-panelWithErrorView title mError ct = 
-    $(shamletFile "src/Web/Views/panelWithErrorView.hamlet")
     {- H.div ! A.class_ "panel panel-info" ! A.style "margin-top: 30px;" $ -}
      {- do H.div ! A.class_ "panel-heading" $ -}
          {- H.div ! A.class_ "panel-title" $ H.toHtml title -}

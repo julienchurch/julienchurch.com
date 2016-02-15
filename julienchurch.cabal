@@ -28,7 +28,6 @@ executable run
                        Web.Forms.Post
                        Web.Forms.Register
                        Web.Utils
-                       Web.Views.Home
                        Web.Views.Site
   build-depends:
                        Spock >=0.9,

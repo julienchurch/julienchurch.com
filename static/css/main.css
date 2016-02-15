@@ -353,12 +353,61 @@ td,
 th {
   padding: 0; }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
 body {
-  background: #111; }
+  background: #0a0a0a;
+  font-family: "Proxima Nova", "Avenir", "Helvetica Neue", helvetica, sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: subpixel-antialiased; }
 
 a {
-  color: white;
   text-decoration: none; }
 
-.header {
-  width: 100%; }
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 200;
+  margin: 0; }
+
+h1 {
+  color: white;
+  text-transform: uppercase; }
+
+.wrap {
+  max-width: 1000px;
+  margin: 0 auto; }
+
+header {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  padding: 25px 0;
+  font-size: 12px;
+  top: 0; }
+  header li {
+    display: inline-block;
+    margin-right: 25px; }
+  header li:last-of-type {
+    margin-right: 0; }
+  header a {
+    color: white;
+    text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    transition: color 0.25s; }
+  header a:hover {
+    color: #aaa; }
+
+.hero {
+  height: 100vh; }
+  .hero .guts {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%); }
+    .hero .guts h1 {
+      font-size: 14px;
+      letter-spacing: 0.5em; }

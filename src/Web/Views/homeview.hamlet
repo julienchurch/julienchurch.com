@@ -1,0 +1,12 @@
+<div class="hero">
+  <div class="guts">
+    <div class="wrap">
+      <h1>Of course I still love you
+
+$forall post <- posts
+    <br>
+    #{ (postTitle (entityVal post)) }
+    <br>
+    #{ (show $ postDate (entityVal post)) }
+    <br>
+    #{ (postContent (entityVal post)) }
