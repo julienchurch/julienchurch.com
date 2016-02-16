@@ -9,6 +9,7 @@ import qualified Text.Blaze.Bootstrap as H
 import qualified Text.Blaze.XHtml5 as H
 import Text.Hamlet (hamletFile, shamletFile)
 import Data.Monoid
+import Config (static)
 
 data SiteView = SiteView { sv_blogName :: T.Text
                          , sv_blogDesc :: T.Text

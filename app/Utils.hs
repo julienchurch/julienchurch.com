@@ -1,6 +1,7 @@
 {-# LANGUAGE TypeFamilies #-}
 module Utils where
 
+import System.Environment
 import Control.Monad.Logger
 import Control.Monad.Trans
 import Control.Monad.Trans.Resource
@@ -12,6 +13,7 @@ import qualified Data.ByteString as BS
 import qualified Data.ByteString.Base16 as B16
 import qualified Data.Text as T
 import qualified Data.Text.Encoding as T
+import qualified Data.Configurator as C
 
 blaze :: MonadIO m => Html -> ActionCtxT ctx m a
 blaze = lazyBytes . renderHtml

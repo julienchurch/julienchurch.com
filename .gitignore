@@ -14,4 +14,5 @@ julienchurch.db
 julienchurch.db-wal
 julienchurch.db-shm
 blog.cfg
+Config.hs
 .stack-work/**
