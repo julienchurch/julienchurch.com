@@ -27,8 +27,8 @@ executable run
                        Web.Forms.Login
                        Web.Forms.Post
                        Web.Forms.Register
+                       Web.Controllers
                        Web.Utils
-                       Web.Views.Site
   build-depends:
                        Spock >=0.9,
                        Spock-digestive >=0.2,

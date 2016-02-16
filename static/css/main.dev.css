@@ -170,7 +170,8 @@ figure {
  * Address differences between Firefox and other browsers.
  */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   height: 0; }
 
 /**
@@ -276,7 +277,8 @@ input {
  */
 input[type="checkbox"],
 input[type="radio"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */ }
@@ -297,7 +299,8 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   /* 2 */ }
 
 /**
@@ -354,7 +357,8 @@ th {
   padding: 0; }
 
 *, *:before, *:after {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 ul {
   list-style-type: none;
@@ -374,34 +378,11 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0; }
 
 h1 {
-  color: white;
   text-transform: uppercase; }
 
 .wrap {
   max-width: 1000px;
   margin: 0 auto; }
-
-header {
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  padding: 25px 0;
-  font-size: 12px;
-  top: 0; }
-  header li {
-    display: inline-block;
-    margin-right: 25px; }
-  header li:last-of-type {
-    margin-right: 0; }
-  header a {
-    color: white;
-    text-decoration: none;
-    color: #333;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    transition: color 0.25s; }
-  header a:hover {
-    color: #aaa; }
 
 .hero {
   height: 100vh;
@@ -412,8 +393,72 @@ header {
     position: relative;
     text-align: center;
     top: 50%;
-    transform: translateY(-50%);
-    display: flex; }
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
     .hero .guts h1 {
       font-size: 14px;
-      letter-spacing: 0.5em; }
+      -webkit-animation: heading 3.25s linear forwards;
+              animation: heading 3.25s linear forwards; }
+
+@-webkit-keyframes heading {
+  0% {
+    color: #000;
+    letter-spacing: 0.475em; }
+  100% {
+    color: #fff;
+    letter-spacing: 0.50em; } }
+
+@keyframes heading {
+  0% {
+    color: #000;
+    letter-spacing: 0.475em; }
+  100% {
+    color: #fff;
+    letter-spacing: 0.50em; } }
+
+.layout-header {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  padding: 25px 0;
+  font-size: 12px;
+  top: 0; }
+  .layout-header li {
+    display: inline-block;
+    margin-right: 25px; }
+  .layout-header li:last-of-type {
+    margin-right: 0; }
+  .layout-header a {
+    color: white;
+    text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    -webkit-transition: color 0.10s linear;
+    transition: color 0.10s linear; }
+  .layout-header a:hover {
+    color: #aaa; }
+
+.layout-footer {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 12px;
+  color: #333;
+  background-color: #040404; }
+  .layout-footer a {
+    color: #555;
+    -webkit-transition: color 0.25s linear;
+    transition: color 0.25s linear; }
+  .layout-footer a:hover {
+    color: #666; }
+
+.content {
+  min-height: -webkit-calc(100vh - 20px);
+  min-height: calc(100vh - 20px);
+  padding-top: 100px;
+  text-align: center; }
+  .content span {
+    position: relative;
+    color: #bbb;
+    top: 45%; }

@@ -4,6 +4,7 @@
 {-# LANGUAGE FlexibleContexts #-}
 {-# LANGUAGE TypeOperators #-}
 {-# LANGUAGE ScopedTypeVariables #-}
+{-# LANGUAGE TemplateHaskell #-}
 module Web.Blog where
 
 import Model.CoreTypes
@@ -13,9 +14,7 @@ import Web.Forms.Login
 import Web.Forms.Post
 import Web.Forms.Register
 import Web.Utils
---import Web.Views.Home
-import Web.Views.Site
-
+import Web.Controllers
 import Control.Monad
 import Control.Monad.Logger
 import Control.Monad.Trans
@@ -37,10 +36,10 @@ type BlogAction ctx a = SpockActionCtx ctx SqlBackend SessionVal BlogState a
 
 data BlogState = BlogState { bs_cfg :: BlogCfg }
 
-data BlogCfg = BlogCfg { bcfg_db   :: T.Text
-                       , bcfg_port :: Int
-                       , bcfg_name :: T.Text
-                       , bcfg_desc :: T.Text }
+data BlogCfg = BlogCfg { bcfg_db         :: T.Text
+                       , bcfg_port       :: Int
+                       , bcfg_name       :: T.Text
+                       , bcfg_desc       :: T.Text }
 
 parseConfig :: FilePath -> IO BlogCfg
 parseConfig cfgFile =
@@ -68,7 +67,7 @@ mkSite content =
            sv = SiteView { sv_blogName = bcfg_name cfg
                          , sv_blogDesc = bcfg_desc cfg
                          , sv_user = fmap snd mUser }
-       blaze $ siteView sv (content sv)
+       blaze $ layoutView sv (content sv)
 
 mkSite' :: Html -> BlogAction ctx a
 mkSite' content = mkSite (const content)
@@ -77,17 +76,13 @@ blogApp :: BlogApp ()
 blogApp =
     prehook baseHook $
     do middleware (staticPolicy (addBase "static"))
-       get "/" $
-           do allPosts <- runSQL $ selectList [] [Desc PostDate]
-              mkSite (homeView allPosts)
+       get "/" $ mkSite homeView
        get "/about" $
            mkSite mempty
        get "/blog" $
            do allPosts <- runSQL $ selectList [] [Desc PostDate]
               mkSite (blogView allPosts)
-       prehook guestOnlyHook $
-           do getpost "/register" registerAction
-              getpost "/login" loginAction
+       prehook guestOnlyHook $ getpost "/login" loginAction 
        prehook authHook $
                do get "/logout" logoutAction
                   prehook authorHook $
@@ -155,7 +150,7 @@ writeAction =
              mkSite' (formView Nothing view)
          (_, Just newPost) ->
              do _ <- runSQL $ insert newPost
-                mkSite' (panelWithErrorView "Post - Success!" Nothing "Thanks for the post! You can now see it on the home page")
+                mkSite' (panelWithErrorView "Your entry was posted successfully." Nothing "You can now see it on the home page.")
 
 logoutAction :: ListContains n (UserId, User) xs => BlogAction (HVect xs) a
 logoutAction =
@@ -173,7 +168,7 @@ authHook =
     do oldCtx <- getContext
        case mUser of
          Nothing ->
-             noAccessPage "Unknown user. Login first!"
+             noAccessPage "Please log in first."
          Just val ->
              return (val :&: oldCtx)
 
@@ -183,7 +178,7 @@ adminHook :: ListContains n (UserId, User) xs => BlogAction (HVect xs) (HVect (I
 adminHook =
     do (_ :: UserId, user) <- liftM findFirst getContext
        oldCtx <- getContext
-       if userIsAdmin user then return (IsAdmin :&: oldCtx) else noAccessPage "You don't have enough rights, sorry"
+       if userIsAdmin user then return (IsAdmin :&: oldCtx) else noAccessPage "You can't do that."
 
 data IsAuthor = IsAuthor
 
@@ -191,7 +186,7 @@ authorHook :: ListContains n (UserId, User) xs => BlogAction (HVect xs) (HVect (
 authorHook =
     do (_ :: UserId, user) <- liftM findFirst getContext
        oldCtx <- getContext
-       if userIsAuthor user then return (IsAuthor :&: oldCtx) else noAccessPage "You don't have enough rights, sorry"
+       if userIsAuthor user then return (IsAuthor :&: oldCtx) else noAccessPage "You can't do that."
 
 data IsGuest = IsGuest
 

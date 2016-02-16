@@ -2,5 +2,7 @@
 @import "base/override";
 @import "base/global";
 
-@import "modules/header";
 @import "modules/hero";
+@import "modules/layout-header";
+@import "modules/layout-footer";
+@import "modules/content";

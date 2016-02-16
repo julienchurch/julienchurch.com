@@ -1,0 +1,23 @@
+$doctype html
+<meta charset="utf-8">
+<link rel="stylesheet" href="http://localhost:3030/css/main.css">
+  <body>
+     <header class="layout-header">
+       <div class="wrap">
+         <nav>
+         <ul>
+           <li>
+             <a href="/">Home
+           <li>
+             <a href="/blog">Blog
+           <li>
+             <a href="/about">About
+           <li>
+             $maybe name <- (sv_user sv)
+               <a href="/logout">Logout
+             $nothing
+               <a href="/login">Login
+
+     ^{body}
+     <footer class="layout-footer">
+         <span>Proudly written in <img src="http://localhost:3030/img/haskell_logo.svg" width="12">&nbsp;<a href="https://haskell.org">Haskell</a> using <a href="https://www.spock.li/">Spock</a> and <a href="https://hackage.haskell.org/package/warp">Warp</a>.

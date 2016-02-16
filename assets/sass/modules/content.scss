@@ -1,0 +1,10 @@
+.content {
+    min-height: calc(100vh - 20px);
+    padding-top: 100px;
+    text-align: center;
+    span {
+        position: relative;
+        color: #bbb;
+        top: 45%;
+    }
+}

@@ -1,4 +1,4 @@
-header {
+.layout-header {
     position: absolute;
     text-align: center;
     width: 100%;
@@ -18,7 +18,7 @@ header {
         color: #333;
         text-transform: uppercase;
         letter-spacing: 0.15em;
-        transition: color 0.25s;
+        transition: color 0.10s linear;
     }
     a:hover {
         color: #aaa;

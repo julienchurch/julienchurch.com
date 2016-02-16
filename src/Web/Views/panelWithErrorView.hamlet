@@ -1,0 +1,4 @@
+$maybe err <- mError 
+    err
+$nothing
+    ^{ ct }

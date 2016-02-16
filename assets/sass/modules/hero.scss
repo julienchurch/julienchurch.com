@@ -6,11 +6,23 @@
     .guts {
         h1 {
             font-size: 14px;
-            letter-spacing: 0.5em;
+            animation: heading 3.25s linear forwards;
         }
         position: relative;
         text-align: center;
         top: 50%;
         transform: translateY(-50%);
+    }
+}
+
+@keyframes heading {
+    0% {
+        color: #000;
+        letter-spacing: 0.475em;
+    }
+
+    100% {
+        color: #fff;
+        letter-spacing: 0.50em;
     }
 }
